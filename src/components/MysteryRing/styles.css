@@ -1,0 +1,52 @@
+.MysteryRing {
+  background-color: #e7e9ea;
+}
+
+.MysteryRing-selectWrapper {
+  margin-top: 0rem;
+  position: relative;
+}
+
+.MysteryRing-selectWrapper select {
+  width: 100%;
+}
+
+.MysteryRing-selectSize label {
+  display: block;
+  line-height: 1.5;
+}
+
+.MysteryRing-selectSize label + select {
+  margin: 0;
+}
+
+.MysteryRing-selectSize select {
+  border-color: #191818;
+  border-width: 2px;
+}
+.MysteryRing-selectSize select:focus {
+  border-color: #f38732;
+}
+
+.MysteryRing-addToCart .Button {
+  width: 100%;
+  padding: 0.75em;
+}
+
+.MysteryRing-info summary {
+  font-weight: 700;
+}
+.MysteryRing-info summary:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.2em #f38732;
+}
+.MysteryRing-info summary:focus:not(:focus-visible) {
+  box-shadow: none;
+}
+.MysteryRing-info summary:focus-visible {
+  box-shadow: 0 0 0 0.2em #f38732;
+}
+
+.MysteryRing-info summary + p {
+  margin-top: 0;
+}

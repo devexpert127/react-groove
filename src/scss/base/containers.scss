@@ -1,0 +1,38 @@
+// Containers
+// ---
+
+@mixin container-fluid {
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  width: $container_width_fluid;
+}
+
+@mixin container {
+  margin-left: auto;
+  margin-right: auto;
+  @if ($container_max_width) {
+    max-width: $container_max_width;
+  }
+  @each $breakpoint_key, $breakpoint in $breakpoint_sizes {
+    @include build-containers($breakpoint_key, $breakpoint);
+  }
+}
+
+@mixin build-container($container_key, $container_size, $breakpoint_key, $breakpoint) {
+  @if ($container_key == $breakpoint_key) {
+    @if ($breakpoint) {
+      @media (min-width: $breakpoint) {
+        width: $container_size;
+      }
+    } @else {
+      width: $container_size;
+    }
+  }
+}
+
+@mixin build-containers($breakpoint_key, $breakpoint) {
+  @each $container_key, $container in $container_sizes {
+    @include build-container($container_key, $container, $breakpoint_key, $breakpoint);
+  }
+}

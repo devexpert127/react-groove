@@ -1,0 +1,13 @@
+.FeaturedArticles {
+  display: flex;
+  flex-wrap: wrap;
+}
+.FeaturedArticles .ArticleCard {
+  flex: 1 1 calc(100% / 3);
+  margin-top: 0;
+}
+@media (max-width: 60em) {
+  .FeaturedArticles .ArticleCard {
+    flex: 1 1 100%;
+  }
+}

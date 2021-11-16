@@ -1,0 +1,127 @@
+@import '../../scss/global.scss';
+// might need to switch to this, actuall wee bit nicer, no position absolute and no need to transform
+// https://codesandbox.io/s/determined-torvalds-6ofrb?file=/index.html
+
+.Banner-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0;
+  color: inherit;
+  z-index: 2;
+
+  padding: 1.5em 2em;
+  @media (max-width: $breakpoint_sm) {
+    top: 0;
+    transform: translate(0, 0);
+  }
+
+  @media (min-width: $breakpoint_sm) {
+    &--hero,
+    &--video {
+      padding: 1.5em 1em;
+    }
+    &--maxWidth {
+      max-width: 50%;
+    }
+  }
+
+  @media (min-width: $breakpoint_md) {
+    padding: 3em;
+    &--hero,
+    &--video {
+      padding-left: 1.5em;
+      padding-right: 1.5em;
+    }
+  }
+
+  @media (min-width: $breakpoint_lg) {
+    padding: 6em;
+    &--hero,
+    &--video {
+      padding-left: 3em;
+      padding-right: 3em;
+    }
+
+  }
+
+
+  // ----
+  // Positioning -  horizontal
+  // ----
+  &--top-left,
+  &--center-left,
+  &--bottom-left {
+    text-align: left;
+    align-items: left;
+  }
+  &--top-center,
+  &--center-center,
+  &--bottom-center {
+    text-align: center;
+    align-items: center;
+    &.Banner-content--maxWidth {
+      transform: translateX(50%);
+    }
+  }
+  &--top-right,
+  &--center-right,
+  &--bottom-right {
+    text-align: right;
+    align-items: flex-end;
+    &.Banner-content--maxWidth {
+      transform: translateX(100%);
+    }
+  }
+  // ----
+  // Positioning -  vertical
+  //  justify-content to flex-start, so we do have commented out the --top version need but commented out just incase
+  // ----
+  &--top-left,
+  &--top-center,
+  &--top-right {
+    justify-content: center;
+  }  
+
+  &--center-left,
+  &--center-center,
+  &--center-right {
+    justify-content: center;
+  }
+  &--bottom-left,
+  &--bottom-center,
+  &--bottom-right {
+    justify-content: flex-end;
+  }
+
+  // ----
+  // Text Alignment
+  // if used then we can overwrite the positioning text alignment
+  // ----
+  &--left {
+    text-align: left;
+  }
+  &--center {
+    text-align: center;
+  }
+  &--right {
+    text-align: right;
+  }
+
+  &--hidden {
+    @include visually-hidden;
+  }
+}
+
+
+
+.Banner-content-suptitle {
+  display: block;
+  font-size: 1.25rem;
+  font-weight: $font_weight_base;
+}

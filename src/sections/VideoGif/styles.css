@@ -1,0 +1,16 @@
+.VideoGif {
+  padding-top: 1.5rem;
+}
+.VideoGif .VideoGif-content {
+  max-width: 46.875rem;
+  margin: 0 auto;
+}
+.VideoGif video {
+  width: 100%;
+}
+.VideoGif .VideoGif--align-center {
+  text-align: center;
+}
+.VideoGif .VideoGif--align-right {
+  text-align: right;
+}

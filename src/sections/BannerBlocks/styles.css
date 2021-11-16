@@ -1,0 +1,99 @@
+.BannerBlocks {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.BannerBlock {
+  flex: 1 1 100%;
+  margin-top: 0;
+}
+@media (min-width: 37.5em) {
+  .BannerBlock {
+    flex: 1 1 50%;
+  }
+}
+@media (min-width: 60em) {
+  .BannerBlock {
+    flex: 50%;
+  }
+}
+@media (min-width: 75em) {
+  .BannerBlock {
+    flex: 25%;
+  }
+}
+@media (min-width: 37.5em) and (max-width: 60em) {
+  .BannerBlocks[data-banners='3'] .BannerBlock {
+    flex: 1 1 100%;
+  }
+}
+
+.BannerBlock-content {
+  width: 100%;
+  padding: 1em;
+  margin-top: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1.5em 2em;
+}
+
+.BannerBlock-content--top-center,
+.BannerBlock-content--center-center,
+.BannerBlock-content--bottom-center {
+  text-align: center;
+}
+
+.BannerBlock-content--top-right,
+.BannerBlock-content--center-right,
+.BannerBlock-content--bottom-right {
+  text-align: right;
+}
+
+.BannerBlock-content--top-left,
+.BannerBlock-content--top-center,
+.BannerBlock-content--top-right {
+  top: 0;
+  transform: translate(-50%, 0);
+}
+
+.BannerBlock-content--bottom-left,
+.BannerBlock-content--bottom-center,
+.BannerBlock-content--bottom-right {
+  top: auto;
+  bottom: 0;
+  transform: translate(-50%, 0);
+}
+
+.BannerBlock-title {
+  position: relative;
+  padding-left: 0.25em;
+  color: #fff;
+  font-weight: 400;
+  display: inline-block;
+  padding-left: 0.5em;
+  border-left: solid 2px #f38732;
+}
+.BannerBlock-title:before {
+  content: '';
+  height: 75%;
+  position: absolute;
+  left: -0.0625em;
+  top: 50%;
+  transform: translateY(-50%);
+  border-left: solid 0.0625em #f38732;
+}
+.BannerBlock-title b,
+.BannerBlock-title strong {
+  color: #f38732;
+  font-weight: 800;
+}
+.BannerBlock-title::before {
+  border-left: 0;
+}
+
+.BannerBlock-link {
+  display: block;
+  background: none !important;
+}

@@ -1,0 +1,83 @@
+@import '../../scss/global.scss';
+
+.RichTextContent {
+  padding: $section_padding;
+}
+
+.RichTextContent--dark {
+  color: $brand_color_white;
+  background-color: $brand_color_darker_gray;
+}
+
+.RichTextContent--grey {
+  background: $brand_color_light_gray;
+}
+
+.RichTextContent--cutaway {
+  padding: 125px 0 75px 0;
+  clip-path: polygon(50% 10%, 100% 0%, 100% 100%, 0% 100%, 0% 0%);
+  -webkit-clip-path: polygon(50% 10%, 100% 0%, 100% 100%, 0% 100%, 0% 0%);
+
+  @media (min-width: $breakpoint_md) {
+    padding: 300px 0 100px 0;
+    clip-path: polygon(50% 25%, 100% 0%, 100% 100%, 0% 100%, 0% 0%);
+    -webkit-clip-path: polygon(50% 25%, 100% 0%, 100% 100%, 0% 100%, 0% 0%);
+  }
+}
+
+.RichTextContent--noTopPadding {
+  padding-top: 0;
+}
+
+.RichTextContent--noBottomPadding {
+  padding-bottom: 0;
+}
+
+.RichTextContent--restrictImageWidths {
+  img {
+    max-width: 200px;
+  }
+}
+
+.RichTextContent-content {
+  margin-top: 0;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    b,
+    strong {
+      color: $highlight_color;
+    }
+  }
+}
+
+.RichTextContent-subtitle {
+  margin-top: 1rem;
+}
+
+.RichTextContent-content {
+  .RichText--align-center & {
+    text-align: center;
+  }
+
+  .RichText--align-right & {
+    text-align: right;
+  }
+}
+
+.RichTextContent-content--reading-length {
+  @include reading-length;
+
+  .RichText--align-center & {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .RichText--align-right & {
+    margin-left: auto;
+  }
+}

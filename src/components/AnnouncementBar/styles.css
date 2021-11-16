@@ -1,0 +1,63 @@
+.AnnouncementBar {
+  position: relative;
+  padding: 1rem;
+  font-size: 0.6875em;
+  letter-spacing: 0.05em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #424242;
+  margin-top: 0;
+  max-height: 50px;
+}
+@media (min-width: 48em) {
+  .AnnouncementBar {
+    padding: 1.25rem 1rem;
+  }
+}
+
+.AnnouncementBar--hidden {
+  display: none;
+}
+
+@media (min-width: 48em) {
+  .AnnouncementBar-slider {
+    padding: 1px 0;
+  }
+}
+
+.AnnouncementBar-item a {
+  color: inherit;
+}
+.AnnouncementBar-item a:hover,
+.AnnouncementBar-item a:focus {
+  color: #f38732;
+}
+
+.AnnouncementBar-item[hidden] {
+  visibility: hidden;
+}
+
+.AnnouncementBar-close {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  height: 100%;
+  transform: translateY(-50%);
+  margin: 0;
+  border: none;
+}
+.AnnouncementBar-close .Icon {
+  max-width: 1.5em;
+}
+
+.AnnouncementBar-closeText {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}

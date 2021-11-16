@@ -1,0 +1,5 @@
+@import '../../scss/global.scss';
+
+.PageWidth {
+  @include container;
+}

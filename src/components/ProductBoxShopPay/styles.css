@@ -1,0 +1,36 @@
+.ShopPay {
+  font-size: 14px;
+}
+.ShopPay svg.shop-pay-logo {
+  max-width: 5em;
+  position: relative;
+  top: 0.3em;
+  padding-right: 6px;
+}
+.ShopPay button {
+  padding: 0 0 0 0;
+  text-transform: none;
+  text-decoration: underline;
+  letter-spacing: normal;
+  font-size: 14px;
+  margin: 0;
+}
+.ShopPay .Modal h1 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 120%;
+}
+.ShopPay .Modal p {
+  font-size: 18px;
+}
+.ShopPay .Modal p .price {
+  color: #5a31f4;
+}
+.ShopPay .Modal p sub {
+  text-align: center;
+  display: block;
+}
+.ShopPay .Modal svg {
+  display: block;
+  margin: auto;
+}

@@ -1,0 +1,27 @@
+.KlaviyoBackInStockForm,
+.KlaviyoBackInStockForm-newsletterSubscribeWrapper {
+  margin: 0;
+}
+
+.KlaviyoBackInStockForm-email-label {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+.KlaviyoBackInStockForm-hide {
+  display: none;
+}
+
+.KlaviyoBackInStockForm-submit {
+  width: 100%;
+}
+
+#KlaviyoBackInStockForm-newsletterSubscribe {
+  margin-right: 5px;
+}

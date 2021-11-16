@@ -1,0 +1,90 @@
+@import '../../scss/global.scss';
+
+.ProductFeatures {
+  padding: $section_padding;
+
+  .Accordions {
+    padding-left: 0;
+  }
+
+  .AccordionItem-heading {
+    font-weight: 900;
+    color: $brand_color_accent;
+
+    @media (min-width: $breakpoint_lg) {
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      cursor: pointer;
+      padding-left: 0;
+    }
+  }
+
+  .Accordion {
+    padding: 0;
+  }
+
+  .AccordionItem-headingText {
+    font-size: 1.5rem;
+  }
+
+  .AccordionItem--active .AccordionItem-content {
+    margin-bottom: 1em;
+  }
+}
+
+.ProductFeatures-grid {
+  @media (min-width: $breakpoint_md) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+
+.ProductFeatures-featuresContainer {
+  @media (min-width: $breakpoint_md) {
+    grid-column: 1 / 2;
+  }
+}
+
+.ProductFeatures-imagesContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $breakpoint_md) {
+    grid-column: 2 / 3;
+    margin-top: 0;
+  }
+}
+
+.ProductFeatures-title {
+  font-size: $font_size_xxl;
+  line-height: 1.1;
+  margin-bottom: 1em;
+
+  @media (max-width: $breakpoint_sm) {
+    font-size: $font_size_xl;
+    margin-bottom: 0.5em;
+  }
+}
+
+.ProductFeatures-image {
+  width: 100%;
+  margin: 0 auto;
+
+  @media (min-width: $breakpoint_md) {
+    display: block;
+    max-width: 80%;
+    margin: 0 0 0 auto;
+  }
+}
+
+.ProductFeatures-image--mobile {
+  display: block;
+
+  @media (min-width: $breakpoint_md) {
+    display: none;
+  }
+}

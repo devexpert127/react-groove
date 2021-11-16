@@ -1,0 +1,7 @@
+.ArticlesList {
+  padding: 3.75rem 0;
+  text-align: center;
+}
+.ArticlesList .ArticlesList-button {
+  font-size: 1.25em;
+}

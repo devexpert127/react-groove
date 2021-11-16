@@ -1,0 +1,47 @@
+.FloatingForm {
+  margin-top: 1em;
+  transition: opacity 0.2s ease-in-out, z-index 0.2s ease-in-out;
+  /* Floating product form */
+}
+.FloatingForm--floating {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 0;
+  margin: 0;
+  padding: 0.75em 0.75rem;
+  color: #fff;
+  background: #191818;
+  opacity: 0;
+  pointer-events: none;
+}
+@media (min-width: 60em) {
+  .FloatingForm--floating {
+    display: none;
+  }
+}
+.FloatingForm--floating .ProductTitle,
+.FloatingForm--floating .ProductBox-input,
+.FloatingForm--floating .ProductBox-submit {
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+.FloatingForm--floating .ProductTitle {
+  font-size: 0.875em;
+}
+.FloatingForm--floating .ProductBox-input,
+.FloatingForm--floating .ProductBox-submit .Button {
+  font-size: 1em;
+  line-height: 1.75;
+}
+.FloatingForm--floating-visible {
+  opacity: 1;
+  z-index: 10;
+  pointer-events: all;
+}
+.FloatingForm--floating-visible .ProductTitle,
+.FloatingForm--floating-visible .ProductBox-input,
+.FloatingForm--floating-visible .ProductBox-submit {
+  opacity: 1;
+}

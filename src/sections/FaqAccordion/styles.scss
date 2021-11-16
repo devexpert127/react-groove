@@ -1,0 +1,73 @@
+@import '../../scss/global.scss';
+
+.FaqAccordion {
+  padding: $section_padding;
+
+  .Accordion {
+    padding: 0;
+  }
+
+  .AccordionItem {
+    padding: 1.25em 0 0 0;
+
+    &:last-child {
+      margin-bottom: 1.25em;
+    }
+  }
+
+  .AccordionItem-heading {
+    justify-content: start;
+    text-transform: none;
+    margin: 0;
+    max-width: 100%;
+    transition: 0.3s all;
+    letter-spacing: $letter_spacing_base;
+    cursor: pointer;
+    justify-content: space-between;
+    @media screen and (min-width: $breakpoint_md) {
+      justify-content: flex-start;
+    }
+  }
+
+  .AccordionItem--active .AccordionItem-heading,
+  .AccordionItem-heading:hover {
+    color: $brand_color_accent;
+  }
+
+  .AccordionItem-content {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .AccordionItem-body {
+    padding-top: 1em;
+  }
+
+  .AccordionItem-icon {
+    width: 0.5em;
+    height: 0.5em;
+    transition: none;
+  }
+
+  .Accordion--default .AccordionItem {
+    border-bottom: none;
+  }
+
+  @media (min-width: $breakpoint_sm) {
+    .AccordionItem-icon {
+      position: relative;
+    }
+
+    .AccordionItem-headingText {
+      margin-right: 1em;
+    }
+  }
+}
+
+.FaqAccordion--noTopPadding {
+  padding-top: 0;
+}
+
+.FaqAccordion--noBottomPadding {
+  padding-bottom: 0;
+}

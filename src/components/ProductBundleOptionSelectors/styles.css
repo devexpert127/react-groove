@@ -1,0 +1,18 @@
+/* Bundled items */
+.ProductBundle-bundledItem {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.ProductBundle-bundledItemTitle {
+  flex: 1 1 100%;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.ProductBundle-bundledItemTitleLabel {
+  font-weight: 800;
+}

@@ -1,0 +1,561 @@
+@import 'scss/global.scss';
+
+/*
+ * The Typekit service used to deliver this font or fonts for use on websites
+ * is provided by Adobe and is subject to these Terms of Use
+ * http://www.adobe.com/products/eulas/tou_typekit. For font license
+ * information, see the list below.
+ *
+ * proxima-nova:
+ *   - http://typekit.com/eulas/00000000000000003b9b306a
+ *   - http://typekit.com/eulas/00000000000000003b9b306b
+ *   - http://typekit.com/eulas/00000000000000003b9b3062
+ *   - http://typekit.com/eulas/00000000000000003b9b3063
+ *   - http://typekit.com/eulas/00000000000000003b9b3064
+ *   - http://typekit.com/eulas/00000000000000003b9b3065
+ *
+ * © 2009-2020 Adobe Systems Incorporated. All Rights Reserved.
+ */
+/*{"last_published":"2019-04-30 18:36:29 UTC"}*/
+
+@font-face {
+  font-family: 'proxima-nova';
+  src: url('https://use.typekit.net/af/d82519/00000000000000003b9b306a/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3')
+      format('woff2'),
+    url('https://use.typekit.net/af/d82519/00000000000000003b9b306a/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3')
+      format('woff'),
+    url('https://use.typekit.net/af/d82519/00000000000000003b9b306a/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3')
+      format('opentype');
+  font-display: swap;
+  font-style: normal;
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'proxima-nova';
+  src: url('https://use.typekit.net/af/3e6df8/00000000000000003b9b306b/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i8&v=3')
+      format('woff2'),
+    url('https://use.typekit.net/af/3e6df8/00000000000000003b9b306b/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i8&v=3')
+      format('woff'),
+    url('https://use.typekit.net/af/3e6df8/00000000000000003b9b306b/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i8&v=3')
+      format('opentype');
+  font-display: swap;
+  font-style: italic;
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'proxima-nova';
+  src: url('https://use.typekit.net/af/705e94/00000000000000003b9b3062/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3')
+      format('woff2'),
+    url('https://use.typekit.net/af/705e94/00000000000000003b9b3062/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3')
+      format('woff'),
+    url('https://use.typekit.net/af/705e94/00000000000000003b9b3062/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3')
+      format('opentype');
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'proxima-nova';
+  src: url('https://use.typekit.net/af/5c70f2/00000000000000003b9b3063/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3')
+      format('woff2'),
+    url('https://use.typekit.net/af/5c70f2/00000000000000003b9b3063/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3')
+      format('woff'),
+    url('https://use.typekit.net/af/5c70f2/00000000000000003b9b3063/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3')
+      format('opentype');
+  font-display: swap;
+  font-style: italic;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'proxima-nova';
+  src: url('https://use.typekit.net/af/6e816b/00000000000000003b9b3064/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3')
+      format('woff2'),
+    url('https://use.typekit.net/af/6e816b/00000000000000003b9b3064/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3')
+      format('woff'),
+    url('https://use.typekit.net/af/6e816b/00000000000000003b9b3064/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3')
+      format('opentype');
+  font-display: swap;
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'proxima-nova';
+  src: url('https://use.typekit.net/af/5b5251/00000000000000003b9b3065/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i5&v=3')
+      format('woff2'),
+    url('https://use.typekit.net/af/5b5251/00000000000000003b9b3065/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i5&v=3')
+      format('woff'),
+    url('https://use.typekit.net/af/5b5251/00000000000000003b9b3065/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i5&v=3')
+      format('opentype');
+  font-display: swap;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.tk-proxima-nova {
+  font-family: 'proxima-nova', sans-serif;
+}
+.tk-proxima-nova-condensed {
+  font-family: 'proxima-nova-condensed', sans-serif;
+}
+.tk-proxima-nova-extra-condensed {
+  font-family: 'proxima-nova-extra-condensed', sans-serif;
+}
+
+/*
+ * End of proxima-nova font-loading
+ */
+
+// Foundation
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@include lobotomized-owl($gutter_horizontal);
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+main {
+  display: block;
+}
+
+img {
+  max-width: 100%;
+}
+
+svg {
+  fill: currentColor;
+  width: 100%;
+  height: auto;
+  max-width: 2em;
+}
+
+::selection {
+  color: $selection_color;
+  background: $selection_bg_color;
+  text-shadow: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+// Type
+html {
+  @include fluid-lock(
+    font-size,
+    $fluid_type_min_vw,
+    $fluid_type_max_vw,
+    $font_size_min_value,
+    $font_size_max_value
+  );
+  @include fluid-lock(
+    line-height,
+    $fluid_type_min_vw,
+    $fluid_type_max_vw,
+    $line_height_min_value,
+    $line_height_max_value
+  );
+}
+
+body {
+  font-family: $font_family_body;
+  font-weight: $font_weight_base;
+  color: $text_color;
+  letter-spacing: $letter_spacing_base;
+  font-display: swap;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include heading-style;
+}
+
+h1 {
+  @include font-size-xxl;
+}
+h2 {
+  @include font-size-xl;
+}
+h3 {
+  @include font-size-lg;
+}
+h4 {
+  @include font-size-md;
+}
+h5 {
+  @include font-size-sm;
+}
+h6,
+small {
+  @include font-size-xs;
+}
+
+// -webkit-user-stylesheets adjusts the size of h1's nested in these block elements, so we do as well.
+// Future note: it would be good to use :any() https://developer.mozilla.org/en-US/docs/Web/CSS/%3Aany
+article,
+aside,
+nav,
+section {
+  h1 {
+    @include font-size-xxl;
+  }
+  article,
+  aside,
+  nav,
+  section {
+    h1 {
+      @include font-size-xl;
+    }
+  }
+}
+
+blockquote {
+  border-left: $border_color_blockquote $border_size_blockquote $border_style_blockquote;
+  padding-left: $gutter_vertical;
+}
+
+strong {
+  font-weight: $font_weight_bold;
+}
+
+hr {
+  border: none;
+  border-bottom: $border_color $border_size $border_style;
+}
+
+pre,
+code,
+kbd,
+samp {
+  font-family: $font_family_monospaced;
+  font-size: 1em;
+  font-display: swap;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline dotted;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+// Links
+a {
+  color: $link_color;
+
+  &:hover,
+  &:active {
+    color: $link_color_hover;
+    @include force-redraw();
+  }
+
+  @if ($transition_duration_hover) {
+    transition: background-color $transition_duration_hover, color $transition_duration_hover,
+      opacity $transition_duration_hover;
+  }
+
+  @if ($include_pretty_underlines) {
+    @include pretty-underlines();
+  }
+
+  svg {
+    vertical-align: top;
+  }
+}
+
+a:focus,
+a:focus-visible {
+  outline: none; // replaced by styles below
+  color: $selection_color;
+  background: $outline_color;
+  box-shadow: 0 0 0 0.2em $outline_color;
+  text-shadow: none;
+}
+
+a:focus:not(:focus-visible) {
+  box-shadow: none;
+}
+
+figure > a:focus {
+  outline-color: $outline_color;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  text-decoration: none;
+  color: inherit;
+  @if ($include_pretty_underlines) {
+    background: none;
+  }
+}
+
+// lists
+ul {
+  padding-left: 1em;
+}
+
+ol {
+  padding-left: 1.5em; // numbers need more room than dots
+}
+
+li {
+  margin-top: 0;
+  > ul,
+  > ol {
+    margin-top: 0;
+  }
+}
+
+dd {
+  margin-top: 0;
+  margin-left: 2em;
+}
+
+// forms
+fieldset {
+  border: none;
+  padding: 0;
+}
+
+legend {
+  width: 100%;
+  padding-bottom: ($gutter_horizontal / 4);
+  border-bottom: $border_color_input $border_size_input $border_style_input;
+}
+
+label {
+  display: inline-block;
+}
+
+label + label {
+  margin-top: 0;
+  margin-left: $gutter_vertical;
+}
+
+label + input,
+label + textarea {
+  margin-top: ($gutter_horizontal / 4);
+}
+
+label + select {
+  margin-top: 0;
+  margin-left: ($gutter_vertical / 2);
+}
+
+select {
+  display: inline-block;
+  font-size: $font_size_forms;
+  background-color: #fff;
+  background-image: url("data:image/svg+xml,%3Csvg width='11' height='11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.719 3.781a.343.343 0 01.587-.243L5.5 6.733l3.194-3.195a.344.344 0 11.487.486L5.743 7.462a.344.344 0 01-.486 0L1.819 4.024a.343.343 0 01-.1-.243z' fill='%23000'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: top 50% right 1em;
+  background-size: 12px;
+}
+
+textarea {
+  min-width: 100%;
+  max-width: 100%;
+  resize: vertical;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='password'],
+input[type='url'],
+input[type='tel'],
+input[type='text'],
+input[type='number'],
+input[type='search'],
+input[type='time'],
+input[type='week'],
+input[type='month'],
+input[type='date'],
+input[type='datetime'],
+input[type='datetime-local'],
+input[type='checkbox'],
+input[type='radio'],
+textarea,
+select {
+  color: rgba($text_color, 0.8);
+  border: $border_color_input $border_size_input $border_style_input;
+  border-radius: $border_radius_input;
+  transition: $transition_duration_base;
+  &:focus {
+    outline: none; // replaced by styles below
+    color: $text_color;
+    border-color: $highlight_color;
+    box-shadow: 0 0 6px $outline_color;
+  }
+}
+
+input[type='text'],
+input[type='email'],
+input[type='password'],
+input[type='url'],
+input[type='tel'],
+input[type='text'],
+input[type='number'],
+input[type='search'],
+input[type='time'],
+input[type='week'],
+input[type='month'],
+input[type='date'],
+input[type='datetime'],
+input[type='datetime-local'],
+textarea,
+select {
+  -webkit-appearance: none;
+  font-size: $font_size_forms;
+  line-height: $line_height_base;
+  font-weight: $font_weight_base;
+  display: block;
+  padding: ($gutter_horizontal / 4) ($gutter_vertical / 2);
+}
+
+input[type='text'],
+input[type='email'],
+input[type='password'],
+input[type='url'],
+input[type='tel'],
+input[type='text'],
+input[type='number'],
+input[type='range'],
+textarea {
+  width: 100%;
+}
+
+input[type='search'] {
+  border-radius: 1.5em; // ???
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+  vertical-align: middle;
+}
+
+input[type='radio'] {
+  border-radius: 50%;
+}
+
+input[type='file'] {
+  &:focus {
+    outline: none; // replaced by styles below
+    color: $text_color;
+    border-color: $highlight_color;
+    box-shadow: 0 0 6px $outline_color;
+  }
+}
+
+// Buttons
+input[type='button'],
+input[type='reset'],
+input[type='submit'],
+button {
+  @include button-base;
+}
+
+// figure
+figure {
+  @include lobotomized-owl($gutter_horizontal/2);
+
+  img {
+    display: block;
+  }
+
+  @if ($include_figure_link_hover) {
+    > a:hover + figcaption {
+      h1 a,
+      h2 a,
+      h3 a,
+      h4 a,
+      h5 a,
+      h6 a,
+      a {
+        color: $link_color_hover;
+        @include force-redraw;
+      }
+    }
+  }
+}
+
+// tables
+table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  text-align: left;
+
+  @media (min-width: $breakpoint_tables) {
+    td,
+    th {
+      padding: ($gutter_horizontal / 2) ($gutter_vertical / 2);
+    }
+  }
+
+  @if ($include_tables_responsive) {
+    @media (max-width: $breakpoint_tables) {
+      @include responsive-table;
+    }
+  }
+}
+
+// Outer Styles
+#__next,
+#root,
+#react-app,
+#frontend-root,
+.frontend-SectionHighlighter__container {
+  margin-top: 0;
+
+  & > section {
+    margin-top: 0;
+  }
+}
+
+// Google Optimize snippet
+.async-hide {
+  opacity: 0 !important;
+}

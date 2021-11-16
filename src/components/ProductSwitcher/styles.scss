@@ -1,0 +1,53 @@
+@import '../../scss/global.scss';
+
+.ProductSwitcher-wrapper {
+  flex: 100%;
+  order: 2;
+  width: 100%;
+  max-width: 100%;
+  margin-top: 0.75em;
+
+  @media (min-width: $breakpoint_lg) {
+    order: 3;
+    margin-top: 0;
+    margin-right: auto;
+  }
+
+  .FloatingForm--floating & {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+.ProductSwitcher {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  margin-top: 0.25em;
+}
+
+.ProductSwitcher-title {
+  cursor: pointer;
+  display: block;
+  font-size: $font_size_xs;
+  margin-bottom: $gutter_vertical / 6;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.ProductSwitcher-link {
+  display: flex;
+  flex-direction: column;
+  max-width: 6em;
+  margin: $gutter_horizontal / 8;
+
+  &:hover,
+  &:focus {
+    background: transparent;
+  }
+}
+
+.ProductSwitcher-name {
+  @include visually-hidden;
+}

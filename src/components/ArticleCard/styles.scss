@@ -1,0 +1,62 @@
+@import '../../scss/global.scss';
+
+.ArticleCard {
+  position: relative;
+}
+
+.ArticleCard-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  margin-top: 0;
+  padding: ($gutter_horizontal / 2) ($gutter_vertical / 2);
+  text-align: center;
+
+  @media (min-width: $breakpoint_md) {
+    padding: $gutter_horizontal $gutter_vertical;
+  }
+
+  &.ArticleCard-content--hidden {
+    top: auto;
+    bottom: 0;
+    transform: translate(-50%, 0);
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.ArticleCard-title {
+  @include title;
+  @include font-size-xl;
+  width: max-content;
+  max-width: 15em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+
+  &:before {
+    height: 90%;
+  }
+
+  .ArticleCard-content--hidden & {
+    @include visually-hidden;
+  }
+
+  .ArticleCard-content--full-width & {
+    @media (min-width: $breakpoint_sm) {
+      @include font-size-xxl;
+    }
+  }
+}
+
+.ArticleCard-button {
+  margin-top: 0.75em;
+
+  .ArticleCard-content--hidden & {
+    margin-top: 0;
+  }
+}

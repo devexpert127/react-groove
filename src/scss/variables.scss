@@ -1,0 +1,269 @@
+// Globals & Includes
+// ---
+
+// Include pretty underlines: https://medium.com/designing-medium/crafting-link-underlines-on-medium-7c03a9274f9
+// This will stop chromes underlines looking super chunky at larger font sizes.
+$include_pretty_underlines: false;
+
+// If hovering on a figure element make all the links inside have hover styles
+$include_figure_link_hover: true;
+
+// Include fluid type settings:
+//  - https://www.smashingmagazine.com/2016/05/fluid-typography/
+//  - https://blog.typekit.com/2016/08/17/flexible-typography-with-css-locks/
+// This will increase the font size as the screen size increases.
+// Set to false if you want to keep a consistent font size across all screen sizes.
+$include_fluid_type: true;
+
+// Have the tables reflow on small screens
+$include_tables_responsive: false;
+
+// Breakpoints
+// ---
+//
+// xs is implied by whatever is less than sm
+$breakpoint_sm: 37.5em; // 600px @ 16px
+$breakpoint_md: 60em; // 960px @ 16px
+$breakpoint_1024: 64em; // 1024px @ 16px
+$breakpoint_lg: 75em; // 1200px @ 16px
+$breakpoint_xl: 93.75em; // 1500px @ 16px
+// $breakpoint_large_nav: $breakpoint_sm;
+$breakpoint_large_nav: $breakpoint_1024; // NOTE: referenced in src/Components/Navigation/index.js, if you change value here change in js too!
+$breakpoint_xl_nav: 86.25em;
+$breakpoint_lg_mobile: 47em; // 752px @ 16px
+$breakpoint_pdp_form: 48em;
+
+$breakpoint_sizes: (
+  xs: false,
+  sm: $breakpoint_sm,
+  md: $breakpoint_md,
+  lg: $breakpoint_lg,
+  xl: $breakpoint_xl,
+);
+
+// The max-height in which a table is no longer collapsed for mobile
+$breakpoint_tables: $breakpoint_sm;
+
+// Type
+// ---
+//
+// Target / Context:
+// Foundtion sets the body font size at 100% which is usually 16px
+// A standard line height of 1.5ems on the body (@16px) is 24px
+
+// Heading and component sizes
+$font_size_base: 1em;
+$font_size_xxl: 3em; // ~ 48px
+$font_size_xl: 2em; // ~ 32px
+$font_size_lg: 1.5em; // ~ 24px and used inside hero objects
+$font_size_md: 1.25em; // ~ 20px
+$font_size_sm: $font_size_base; // ~ 16px
+$font_size_xs: 0.875em; // ~ 14px
+$font_size_forms: 16px; // font-size for inputs to force stop them from zooming on mobiles
+$font_size_button: $font_size_xs;
+
+// Base sizes and heights
+$line_height_base: 1.5;
+$line_height_xxl: 1.1;
+$line_height_xl: 1.2;
+$line_height_lg: 1.3;
+$line_height_md: 1.4;
+$line_height_sm: $line_height_base;
+$line_height_xs: 1.6;
+$line_height_button: $line_height_base;
+
+$letter_spacing_base: 0.01rem;
+$letter_spacing_button: 0.2rem;
+$letter_spacing_headings: 0.1em;
+$letter_spacing_navigation: 0.2em;
+
+// Fluid type sizes
+$fluid_type_min_vw: 20em;
+$fluid_type_max_vw: 87.5em;
+$font_size_min_value: $font_size_xs;
+$font_size_max_value: $font_size_base;
+$line_height_min_value: 1.3;
+$line_height_max_value: 1.5;
+
+$max_reading_length: 46.875rem;
+
+// Font families
+$font_family_serif: Georgia, 'Times New Roman', Times, serif;
+$font_family_sans_serif: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font_family_monospaced: Consolas, 'Lucida Console', Monaco, monospace;
+
+$font_family_brand: proxima-nova, #{$font_family_sans_serif};
+
+$font_family_body: $font_family_brand;
+$font_family_headings: $font_family_brand;
+$font_family_code: $font_family_monospaced;
+$font_family_pullquote: $font_family_headings;
+$font_family_button: $font_family_body;
+
+// Font weights
+$font_weight_base: 400;
+$font_weight_semibold: 500;
+$font_weight_bold: 800; // was 500;
+$font_weight_extrabold: 800;
+$font_weight_headings: $font_weight_extrabold; //$font_weight_base;
+$font_weight_button: $font_weight_base; // $font_weight_extrabold;
+
+$uppercase_headings: true;
+$uppercase_button: true;
+
+// Underline thickness
+$underline_weight: 1px; // 2px;
+$underline_position: 95%;
+
+// Grids
+// ---
+
+$container_width_fluid: 100%;
+$container_width_xs: 90%;
+$container_width_sm: 90%;
+$container_width_md: 90%;
+$container_width_lg: 85%;
+$container_width_xl: 80%;
+
+$container_sizes: (
+  xs: $container_width_xs,
+  sm: $container_width_sm,
+  md: $container_width_md,
+  lg: $container_width_lg,
+  xl: $container_width_xl,
+);
+
+// Set to a value like 55em to constrain the max width of a container
+$container_max_width: 87.5rem;
+
+$gutter_horizontal: 1.5rem;
+$gutter_vertical: 1.5em;
+
+// Padding
+$section_padding_small: 1.5rem 0;
+$section_padding_single_direction: 3.75rem;
+$section_padding: $section_padding_single_direction 0;
+$section_padding_tall: 7.5rem 0;
+$padding_button: 0.75em 2.5em; // default: ($gutter_horizontal / 4) ($gutter_vertical / 1.5)
+$padding_button_vertical: 0.75em;
+$padding_button_horizontal: 2.5em;
+
+// Colours
+// ---
+
+// Brand colors
+$brand_color_accent: #f38732;
+$brand_color_black: #191818;
+$brand_color_white: #fff;
+$brand_color_light_gray: #e7e9ea;
+$brand_color_mid_gray: #b7b7b7;
+$brand_color_dark_gray: #424242;
+$brand_color_darker_gray: #1f1f1e;
+$brand_color_red: #ff100b;
+
+// Social media colors
+$social_media_color_facebook: #3b5998;
+$social_media_color_twitter: #1da1f2;
+$social_media_color_reddit: #ff4500;
+$social_media_color_linkedin: #0077b5;
+$social_media_color_google: #dd4b39;
+$social_media_color_pinterest: #bd081c;
+
+// elements
+$highlight_color: $brand_color_accent;
+
+$text_color: $brand_color_black;
+$text_color_light: $brand_color_white;
+$link_color: $highlight_color; //inherit; // $highlight_color
+$link_color_hover: inherit; // rgba($highlight_color, .6);
+$selection_color: $text_color;
+$selection_bg_color: rgba($highlight_color, 0.6);
+$outline_color: $highlight_color; //rgba($highlight_color, 0.6);
+
+$background_color: $brand_color_white;
+
+// tables
+$background_color_table: $brand_color_light_gray;
+$background_hover_color_table: darken($background_color_table, 5%);
+
+// buttons
+$button_disabled_color: $brand_color_mid_gray;
+
+$background_color_button: $brand_color_black;
+$background_hover_color_button: rgba($brand_color_black, 0.6);
+$background_color_disabled_button: $brand_color_mid_gray;
+$text_color_button: $brand_color_white;
+$text_hover_color_button: $text_color_button;
+$text_color_disabled_button: $text_color_button;
+$border_color_button: transparent;
+$border_color_hover_button: transparent;
+$border_color_disabled_button: transparent;
+
+$background_color_button_primary: $highlight_color;
+$background_hover_color_button_primary: rgba($highlight_color, 0.6);
+$background_color_disabled_button_primary: rgba($highlight_color, 0.6);
+$text_color_button_primary: $brand_color_white; // if(lightness($background_color_button_primary) > 55%, $text_color, lighten($background_color, 45%));
+$text_hover_color_button_primary: $text_color_button_primary;
+$text_color_disabled_button_primary: $text_color_button_primary;
+$border_color_button_primary: transparent;
+$border_color_hover_button_primary: transparent;
+$border_color_disabled_button_primary: transparent;
+
+$focus_color_button: $highlight_color;
+$focus_color_button_primary: $brand_color_black;
+
+// Borders
+// ---
+
+$border_color: $brand_color_light_gray;
+$border_color_product_input: $brand_color_black;
+$border_size: 1px;
+$border_size_product_input: 2px;
+$border_style: solid;
+$border_radius: 0;
+
+// tables
+$border_color_table: $border_color;
+$border_size_table: $border_size;
+$border_size_table_lg: 2px;
+$border_style_table: $border_style;
+
+// inputs
+$border_color_input: $border_color;
+$border_size_input: $border_size;
+$border_style_input: $border_style;
+$border_radius_input: $border_radius;
+
+// buttons
+$border_size_button: $border_size;
+$border_style_button: $border_style;
+$border_radius_button: $border_radius;
+
+// blockquotes
+$border_color_blockquote: $border_color;
+$border_size_blockquote: $border_size * 4;
+$border_style_blockquote: $border_style;
+
+// Misc
+// ---
+
+// Transition durations.
+// These are here as a nicety for things like link hovers.
+// If you don't want the transitions then set them to `false`
+$transition_duration_base: 0.3s;
+$transition_duration_hover: $transition_duration_base;
+
+// Banner ratios
+$banner_ratios: (
+  150: 150%,
+  1x1: 100%,
+  25x23: 92.857%,
+  5x4: 80%,
+  4x3: 75%,
+  16x9: 56.25%,
+  2x1: 50%,
+  3x1: 33.333%,
+);
+
+// Logo Width
+$logo_width: 11em;

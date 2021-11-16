@@ -1,0 +1,24 @@
+@import '../../scss/global.scss';
+
+.ProductTitle  {
+    @include font-size-md;
+
+    .FloatingForm:not(.FloatingForm--floating) & {
+      display: none;
+    }
+  
+    .FloatingForm--floating .ProductForm--stacked & {
+      font-size: $font_size_xs;
+      line-height: 1.3;
+    }
+  
+    /* Floating product form */
+    .FloatingForm--floating .ProductForm--stacked & {
+      text-align: center;
+    }
+  
+    .ProductForm:not(.ProductForm--stacked) & {
+        flex: 1 1 40%;
+        padding-right: $gutter_horizontal / 4;
+    }
+  }

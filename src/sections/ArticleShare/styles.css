@@ -1,0 +1,104 @@
+.Article-share {
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+  padding: 1em 1em 0 1em;
+  margin: 1em auto !important;
+  max-width: 30em;
+  border-radius: 0px;
+  border: 1px solid #fff;
+  -webkit-box-shadow: 6px 6px 5px 0px rgba(0, 0, 0, 0.29);
+  -moz-box-shadow: 6px 6px 5px 0px rgba(0, 0, 0, 0.29);
+  box-shadow: 6px 6px 5px 0px rgba(0, 0, 0, 0.29);
+  text-align: center;
+  width: 90%;
+}
+.Article-share .blog-post-share {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5em;
+}
+@media (min-width: 60em) {
+  .Article-share {
+    position: fixed;
+    top: 10em;
+    right: 2em;
+    z-index: 99999;
+    padding: 1em;
+    margin: 0 !important;
+    width: auto;
+  }
+  .Article-share .blog-post-share {
+    display: block;
+    margin-top: 1.5em;
+  }
+}
+
+.Article-share-button:last-child {
+  margin-bottom: 10px;
+}
+
+.Article-share-button {
+  display: block;
+  background-color: #3b5998;
+  margin: 10px;
+  margin-bottom: 24px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: relative;
+}
+.Article-share-button svg {
+  fill: #fff;
+}
+.Article-share-button:focus,
+.Article-share-button:hover {
+  box-shadow: none;
+}
+.Article-share-button.Article-share-button--facebook {
+  background-color: #3b5998;
+}
+.Article-share-button.Article-share-button--twitter {
+  background-color: #1da1f2;
+}
+.Article-share-button.Article-share-button--reddit {
+  background-color: transparent;
+}
+.Article-share-button.Article-share-button--reddit .Icon {
+  width: 100%;
+}
+.Article-share-button.Article-share-button--reddit img,
+.Article-share-button.Article-share-button--reddit svg,
+.Article-share-button.Article-share-button--reddit path {
+  fill: #ff4500;
+  padding: 0;
+}
+.Article-share-button.Article-share-button--linkedin {
+  background-color: #0077b5;
+}
+.Article-share-button.Article-share-button--google {
+  background-color: #dd4b39;
+}
+.Article-share-button.Article-share-button--pinterest {
+  background-color: transparent;
+}
+.Article-share-button.Article-share-button--pinterest .Icon {
+  width: 100%;
+}
+.Article-share-button.Article-share-button--pinterest img,
+.Article-share-button.Article-share-button--pinterest svg,
+.Article-share-button.Article-share-button--pinterest path {
+  fill: #bd081c;
+  padding: 0;
+}
+.Article-share-button img,
+.Article-share-button svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 6px;
+}
+.Article-share-button img {
+  display: block;
+}

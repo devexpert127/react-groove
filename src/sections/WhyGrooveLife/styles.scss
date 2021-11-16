@@ -1,0 +1,20 @@
+@import '../../scss/global.scss';
+
+.WhyGrooveLife {
+  .TextColumn {
+    max-width: 50%;
+    padding: $gutter_vertical $gutter_horizontal / 1.5;
+
+    @media (min-width: $breakpoint_sm) {
+      padding: 1.5em;
+    }
+  }
+
+  .TextColumn-title {
+    font-size: $font_size_md;
+
+    @media (min-width: $breakpoint_sm) {
+      font-size: $font_size_lg;
+    }
+  }
+}

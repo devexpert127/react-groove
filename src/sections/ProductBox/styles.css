@@ -1,0 +1,353 @@
+.ProductBox {
+  padding: 0.5em 0 0;
+}
+.ProductBox .RingSizingOptions {
+  padding: 0;
+}
+.ProductBox .RingSizingOption:after {
+  display: none;
+}
+@media (min-width: 60em) {
+  .ProductBox {
+    padding: 3.75rem 0;
+  }
+  .ProductBox .RingSizingOption {
+    flex: 1;
+  }
+}
+
+.ProductBox--noTopPadding {
+  padding-top: 0;
+}
+
+.ProductBox--noBottomPadding {
+  padding-bottom: 0;
+}
+
+.ProductBox-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+@media (min-width: 60em) {
+  .ProductBox-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.ProductBox-carousel {
+  width: 100%;
+  max-width: 100%;
+  order: 1;
+}
+@media (min-width: 60em) {
+  .ProductBox-carousel {
+    flex: 62.5%;
+    max-width: 62.5%;
+  }
+}
+
+.ProductBox-info {
+  display: contents;
+  width: 100%;
+  max-width: 100%;
+  order: 3;
+}
+@media (min-width: 60em) {
+  .ProductBox-info {
+    display: block;
+    flex: 37.5%;
+    max-width: 37.5%;
+    order: 2;
+    padding-left: 3rem;
+  }
+}
+.ProductBox-info .OkendoReviewStars {
+  margin-top: 0.5em;
+}
+
+/* Product details */
+.ProductBox-title,
+.ProductBox-reviewStars,
+.ProductBox-price,
+.ProductBox-sezzle,
+.ProductBox-stockNote,
+.ProductBox-formInline,
+.ProductBox-additionalText,
+.TinEngraving {
+  margin-top: 0.5em;
+}
+
+.ProductBox-price {
+  font-size: 1.4em;
+}
+@media (min-width: 60em) {
+  .ProductBox-price {
+    font-size: 1.125em;
+  }
+}
+
+.ProductBox-title {
+  font-size: 1.125em;
+}
+
+.ProductBox-title,
+.ProductBox-reviewStars {
+  order: 0;
+}
+
+.ProductBox .ProductCarousel-wrapper {
+  order: 1;
+}
+
+.ProductBox-price,
+.ProductBox-sezzle,
+.ProductBox-stockNote,
+.TinEngraving {
+  order: 2;
+}
+
+.ProductBox .FloatingForm,
+.ProductBox-ringSizing {
+  order: 3;
+}
+
+@media (min-width: 60em) {
+  .ProductBox-title,
+  .ProductBox-reviewStars,
+  .ProductBox .ProductCarousel-wrapper,
+  .ProductBox-price,
+  .ProductBox-sezzle,
+  .ProductBox-stockNote,
+  .TinEngraving,
+  .ProductBox .FloatingForm,
+  .ProductBox-ringSizing {
+    order: 0;
+  }
+}
+
+.ProductBox-sezzle {
+  margin-top: 0.5em;
+}
+
+.ProductBox-additionalText {
+  margin-top: 1em;
+}
+
+/* Form fields */
+.ProductBox-form-selectors {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0;
+  margin-left: -0.3rem;
+  margin-right: -0.3rem;
+}
+@media (min-width: 60em) {
+  .ProductBox-form-selectors {
+    margin-top: 0.75em;
+  }
+}
+
+.ProductBox-variantsWrapper,
+.ProductBox-quantityWrapper {
+  margin-top: 0.75em;
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+@media (min-width: 37.5em) {
+  .ProductBox-variantsWrapper,
+  .ProductBox-quantityWrapper {
+    min-width: 6.104571557em;
+    max-width: calc(50% - 0.6rem);
+  }
+}
+@media (min-width: 60em) {
+  .ProductBox-variantsWrapper,
+  .ProductBox-quantityWrapper {
+    min-width: auto;
+    max-width: none;
+  }
+}
+
+.ProductBox-variantsWrapper {
+  flex-basis: calc(35%);
+}
+@media (min-width: 75em) {
+  .ProductBox-variantsWrapper {
+    flex-basis: calc(25%);
+  }
+}
+
+.ProductBox-quantityWrapper {
+  flex-basis: calc(15%);
+}
+@media (min-width: 75em) {
+  .ProductBox-quantityWrapper {
+    flex-basis: calc(25%);
+  }
+}
+
+.ProductBox-submit {
+  display: flex;
+  align-items: flex-end;
+  flex-grow: 2;
+  flex-shrink: 0;
+  flex-basis: calc(25%);
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
+  max-width: calc(100% - 0.6rem);
+}
+.ProductBox-submit .Button {
+  width: 100%;
+  max-width: 100%;
+  font-size: 16px;
+  white-space: nowrap;
+  overflow: auto;
+  text-overflow: ellipsis;
+}
+
+.ProductBox-inputLabel {
+  cursor: pointer;
+  display: block;
+  font-size: 0.875em;
+  margin-bottom: 0.25em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.ProductBox-selectWrapper {
+  position: relative;
+  margin-top: 0;
+}
+
+.ProductBox-input {
+  width: 100%;
+  margin-top: 0.25em;
+  padding: 0.75em calc(0.75em + 1.5rem) 0.75em 0.75em;
+  border: 2px solid #191818;
+}
+
+select.ProductBox-input,
+.ProductBox-input--select {
+  display: block;
+  margin-left: 0;
+}
+
+/* Floating product form */
+.FloatingForm--floating .ProductForm:not(.ProductForm--stacked) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+@media (min-width: 37.5em) {
+  .FloatingForm--floating .ProductForm:not(.ProductForm--stacked) {
+    flex-direction: row;
+  }
+}
+.FloatingForm--floating .ProductForm:not(.ProductForm--stacked) .ProductTitle {
+  margin-bottom: 0.75rem;
+  text-align: center;
+}
+@media (min-width: 37.5em) {
+  .FloatingForm--floating .ProductForm:not(.ProductForm--stacked) .ProductTitle {
+    margin-bottom: 0;
+    text-align: left;
+  }
+}
+.FloatingForm--floating .ProductForm:not(.ProductForm--stacked) .ProductBox-form-selectors {
+  flex: 1 1 60%;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+.FloatingForm--floating .ProductForm:not(.ProductForm--stacked) .ProductBox-variantsWrapper,
+.FloatingForm--floating .ProductForm:not(.ProductForm--stacked) .ProductBox-submit {
+  margin-top: 0;
+}
+@media (min-width: 37.5em) {
+  .FloatingForm--floating .ProductForm:not(.ProductForm--stacked) .ProductBox-submit .Button {
+    max-width: 10em;
+  }
+}
+
+.FloatingForm--floating .ProductBox-form-selectors {
+  margin-top: 0;
+  margin-left: -0.375rem;
+  margin-right: -0.375rem;
+}
+
+.FloatingForm--floating .ProductBox-variantsWrapper,
+.FloatingForm--floating .ProductBox-submit {
+  flex: 1 1 calc(50% - 0.75rem);
+  margin-left: 0.375rem;
+  margin-right: 0.375rem;
+}
+@media (min-width: 37.5em) {
+  .FloatingForm--floating .ProductBox-variantsWrapper,
+  .FloatingForm--floating .ProductBox-submit {
+    flex: 1 1 calc(25% - 0.75rem);
+  }
+}
+
+.FloatingForm--floating .ProductBox-quantityWrapper {
+  display: none;
+}
+
+.FloatingForm--floating .ProductBox-inputLabel {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+.FloatingForm--floating .ProductBox-input--select {
+  margin-top: 0;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: #191818;
+}
+
+.FloatingForm--floating .ProductBox-submit {
+  margin-top: 0.75em;
+  max-width: calc(100% - 0.75rem);
+}
+.FloatingForm--floating .ProductBox-submit .Button {
+  padding: 0.25rem 0.75rem;
+  border-width: 1px;
+}
+
+.FloatingForm--floating .ProductBox-bundledItem {
+  margin-top: 0;
+}
+@supports (display: contents) {
+  .FloatingForm--floating .ProductBox-bundledItem {
+    display: contents;
+  }
+}
+
+.FloatingForm--floating .ProductBox-bundledItemTitle {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}

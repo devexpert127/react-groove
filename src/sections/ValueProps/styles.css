@@ -1,0 +1,104 @@
+.ValueProps {
+  padding: 1em 0 2.5em;
+}
+.ValueProps .SvgImage {
+  width: 75px;
+  height: 75px;
+  max-width: none;
+}
+.ValueProps .SvgImage--lock {
+  width: 52.5px;
+  height: 52.5px;
+}
+@media (min-width: 60em) {
+  .ValueProps {
+    padding: 3.75rem 0;
+  }
+}
+
+.ValueProps--noTopPadding {
+  padding-top: 0;
+}
+
+.ValueProps--noBottomPadding {
+  padding-bottom: 0;
+}
+
+.ValueProps-title {
+  font-size: 2em;
+  text-align: center;
+}
+
+.ValueProps-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: -0.75em;
+  margin-left: -0.75em;
+}
+@media (min-width: 60em) {
+  .ValueProps-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.ValueProp {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 0;
+  padding: 0.375em 0;
+  text-align: left;
+  text-transform: uppercase;
+}
+@media (min-width: 60em) {
+  .ValueProp {
+    justify-content: center;
+    padding: 0.375em 0.75rem;
+  }
+}
+
+.ValueProp-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75px;
+  height: 75px;
+  max-width: none;
+}
+
+.ValueProp-text {
+  margin-top: 0;
+  margin-left: 1em;
+}
+
+.ValueProp-title {
+  font-size: 1em;
+  line-height: 2rem;
+}
+@media (min-width: 60em) {
+  .ValueProp-title {
+    font-size: 1.25em;
+  }
+}
+
+.ValueProp-image {
+  max-height: 4.6875em;
+  transition: 0.3s ease-in-out;
+}
+.ValueProp-image:hover {
+  transform: scale(1.05);
+}
+
+.ValueProp-subtitle {
+  margin-top: 0;
+  font-size: 1em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+@media (min-width: 60em) {
+  .ValueProp-subtitle {
+    font-size: 0.875em;
+  }
+}

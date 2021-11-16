@@ -1,0 +1,26 @@
+@import '../../scss/global.scss';
+
+.Wistia {
+  padding: $section_padding;
+}
+
+.Wistia-wrapper {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.Wistia-video {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.Wistia-embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

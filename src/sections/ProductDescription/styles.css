@@ -1,0 +1,13 @@
+.ProductDescription .TextContent-title {
+  color: #191818;
+  font-size: 2em;
+}
+
+.ProductDescription + .SellingIcons {
+  padding-top: 0;
+}
+@media (min-width: 60em) {
+  .ProductDescription + .SellingIcons {
+    padding-top: 3.75rem;
+  }
+}

@@ -1,0 +1,64 @@
+@import '../../scss/global.scss';
+
+.ProductCarousel {
+  padding: 0;
+  overflow: hidden;
+
+  .Slider__slot {
+    padding: 0 1.5em; // leave room for arrows
+    height: 100%;
+    min-height: 1px;
+
+    @media (min-width: $breakpoint_md) {
+      padding: 0 2em; // leave room for arrows
+    }
+
+    img,
+    video {
+      max-height: 30em;
+    }
+
+    video {
+      display: block;
+      max-width: 100%;
+      margin: auto;
+    }
+  }
+}
+
+.ProductCarousel-image {
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+}
+
+.ProductCarousel-prevArrow,
+.ProductCarousel-nextArrow {
+  max-width: 1.5em;
+
+  @media (min-width: $breakpoint_md) {
+    max-width: 2em;
+  }
+
+  &-text {
+    @include visually-hidden;
+  }
+}
+
+
+.ProductCarousel-nav {
+  .Slider__slot {
+    margin-top: $gutter_vertical / 2;
+    cursor: pointer;
+    max-width: 5em;
+
+    @media (min-width: $breakpoint_lg) {
+      margin-top: $gutter_vertical;
+      max-width: 10em;
+    }
+
+    img {
+      height: 100%;
+    }
+  }
+}

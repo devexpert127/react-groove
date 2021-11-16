@@ -1,0 +1,389 @@
+@import '../../scss/global.scss';
+
+.ProductCard {
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  text-align: center;
+
+  .Slider__control {
+    position: absolute;
+    top: 50%;
+    margin: 0;
+    padding: 0;
+    z-index: 2;
+    opacity: 0;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transition: 0.3s all;
+    -o-transition: 0.3s all;
+    transition: 0.3s all;
+    border-style: none;
+
+    svg {
+      fill: #ddd;
+    }
+  }
+
+  &:hover .Slider__control,
+  &:focus .Slider__control {
+    opacity: 1;
+  }
+
+  @media (min-width: $breakpoint_sm) {
+    margin-top: 0;
+  }
+
+  @media (max-width: $breakpoint_md) {
+    // stack review stars as there's not enough horizontal space
+    .okeReviews {
+      .okeReviews-reviewsSummary-starRating,
+      .okeReviews-reviewsSummary-ratingCount {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.ProductCard-top {
+  position: relative;
+}
+
+.ProductCard-video {
+  width: 100%;
+}
+
+.ProductCard-link {
+  @include block-link;
+  color: $text_color;
+  text-decoration: none;
+  margin-top: 0;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $brand_color_accent;
+  }
+}
+
+.ProductCard-linkText {
+  @include visually-hidden;
+}
+
+.ProductCard-meta {
+  margin-top: 0;
+  margin-bottom: 5em;
+  position: relative;
+
+  .OkendoReviewStars {
+    margin-top: .5em;
+  }
+}
+
+@media (min-width: $breakpoint_sm) {
+
+  .ProductCard-top:hover .ProductCard-slider {
+    color: $link_color;
+
+    .Slider__control {
+      opacity: 1;
+      pointer-events: all;
+    }
+  }
+
+  .ProductCard--allowQuickaddDesktop .ProductCard-top:hover + .ProductCard-meta,
+  .ProductCard--allowQuickaddDesktop .ProductCard-meta:hover,
+  .ProductCard--allowQuickaddDesktop .ProductCard-meta:focus-within,
+  .ProductCard--allowQuickaddDesktop .ProductCard-meta:active {
+    .ProductCard-variants-wrapper {
+      opacity: 1;
+      pointer-events: all;
+      z-index: 2;
+    }
+
+    .ProductCard-info--hide-hover {
+      opacity: 0;
+    }
+  }
+}
+
+.ProductCard-image {
+  width: 100%;
+  height: auto;
+}
+
+.ProductCard-slider {
+  margin-top: 0;
+
+  @media (min-width: $breakpoint_sm) {
+    margin-bottom: 1.5rem;
+  }
+}
+
+
+.ProductCard-slider-next-text,
+.ProductCard-slider-prev-text {
+  @include visually-hidden;
+}
+
+.ProductCard-variants-wrapper {
+  position: absolute;
+  width: 100%;
+  top: -2rem;
+  left: 0;
+  margin-top: 0;
+  opacity: 0; // this opacity is toggled to show/hide the variant options
+  -webkit-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  transition: 0.3s all;
+  background-color: #fff;
+  pointer-events: none;
+
+  @media (min-width: $breakpoint_sm) {
+    top: auto;
+    bottom: 0;
+    min-height: 100%;
+
+    &:focus-within {
+      opacity: 1;
+    }
+
+    &::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 1em;
+      transform: translateY(-100%);
+      background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 0.6) 60%,
+        rgba(255, 255, 255, 0) 100%
+      );
+    }
+  }
+}
+
+.ProductCard-info {
+  width: 100%;
+}
+
+.ProductCard-variants-wrapper--active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.ProductCard-variants {
+  display: none; // hide on mobile
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 150px;
+  margin: -0.25em auto 0;
+  list-style-type: none;
+
+  @media (min-width: $breakpoint_sm) {
+    display: flex; // show on desktop
+  }
+}
+
+.ProductCard-variantsMobile {
+  margin-top: 0;
+
+  button {
+    margin-bottom: 2em;
+  }
+
+  .Slider__control {
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  @media (min-width: $breakpoint_sm) {
+    display: none; // hide on desktop
+  }
+}
+
+.ProductCard-variantsMobileToggle {
+  // button overrides
+  display: block;
+  position: absolute;
+  bottom: 200%;
+  border-radius: 50%;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  font-size: 30px;
+  line-height: 32px;
+  text-align: center;
+  z-index: 2;
+
+  svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 16px;
+    height: 16px;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  @media (min-width: $breakpoint_sm) {
+    display: none !important; // hide on desktop
+  }
+}
+
+.ProductCard-variantsMobileToggle--hidden {
+  display: none;
+}
+
+.ProductCard-variantsMobileToggleText {
+  @include visually-hidden;
+}
+
+.ProductCard-button-wrapper {
+  margin: 0;
+  padding: 0.25em 0.5em;
+  display: block;
+  min-width: 25%;
+}
+
+.ProductCard-buttonTooltip {
+  @include visually-hidden;
+  display: block;
+  text-align: center;
+}
+
+.ProductCard-button {
+  display: block;
+  padding: 2px 0;
+  text-align: center;
+  margin: 0;
+  width: 100%;
+  border: none;
+  position: relative;
+  color: $brand_color_mid_gray;
+
+  &:hover,
+  &:focus {
+    .ProductCard-buttonTooltip {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      top: -3.75rem;
+      left: 50%;
+      height: 3rem;
+      width: 4.5rem;
+      margin: 0;
+      font-size: 0.625rem;
+      color: #fff;
+      transform: translate(-50%, 0);
+      overflow: visible;
+      clip: auto;
+      z-index: 3;
+    }
+  }
+}
+
+// begin tooltip
+.ProductCard-button:hover::before,
+.ProductCard-button:focus::before {
+  position: absolute;
+  top: -4px;
+  left: 50%;
+  width: 0.9375rem;
+  height: 0.9375rem;
+  background-color: $brand_color_accent;
+  content: '';
+  transform-origin: 50% 50%;
+  transform: translate(-50%, -110%) rotate(45deg);
+}
+
+.ProductCard-button:hover::after,
+.ProductCard-button:focus::after {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  padding: 1.5rem 2rem;
+  background-color: $brand_color_accent;
+  color: #fff;
+  text-align: center;
+  content: '';
+  white-space: nowrap;
+  transform: translate(-50%, -125%);
+  z-index: 2;
+  font-weight: bold;
+}
+
+.ProductCard-button--unavailable:hover::before,
+.ProductCard-button--unavailable:hover::after,
+.ProductCard-button--unavailable:focus::before,
+.ProductCard-button--unavailable:focus::after {
+  background-color: $brand_color_dark_gray;
+}
+// end tooltip
+
+.ProductCard-buttonVisuallyHiddenText {
+  @include visually-hidden;
+}
+
+.ProductCard-info {
+  margin: 0;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.ProductCard-info--hidden {
+  opacity: 0;
+
+  .ProductCard-link {
+    visibility: hidden;
+  }
+}
+
+.ProductCard-title {
+  margin: 0;
+  font-size: $font_size_xs;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+}
+
+.ProductCard-title--hidden {
+  opacity: 0;
+}
+
+.ProductCard-price {
+  @include dl-list-unstyled;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 0.5em;
+  margin-top: 0.5em;
+  font-size: $font_size_xs;
+  font-weight: $font_weight_semibold;
+
+  dt {
+    @include visually-hidden;
+  }
+}
+
+.ProductCard-sale-price {
+  color: $brand_color_accent;
+  span + span {
+    margin-left: 0.5em;
+  }
+}
+
+.ProductCard-regular-price {
+  .ProductCard-price--on-sale & {
+    font-size: 0.75rem;
+    text-decoration: line-through;
+  }
+}
+
+.ProductLabel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 0;
+  z-index: 2;
+}

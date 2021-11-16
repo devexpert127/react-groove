@@ -1,0 +1,89 @@
+.Banner {
+  position: relative;
+  color: #fff;
+  background-color: #b7b7b7;
+  overflow: hidden;
+}
+.Banner > .PageWidth {
+  position: inherit;
+}
+
+.Banner-image--overlay {
+  position: relative;
+}
+
+.Banner-image--overlay:before {
+  position: relative;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.Image.Banner-image--overlay:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+@media (min-width: 37.5em) {
+  .Banner--limit-height .BackgroundImage {
+    max-height: 50vh;
+  }
+}
+
+.Banner-title {
+  position: relative;
+  padding-left: 0.25em;
+  color: #fff;
+  font-weight: 400;
+  width: max-content;
+  max-width: 100%;
+  text-align: left;
+}
+.Banner-title:before {
+  content: '';
+  height: 75%;
+  position: absolute;
+  left: -0.0625em;
+  top: 50%;
+  transform: translateY(-50%);
+  border-left: solid 0.0625em #f38732;
+}
+.Banner-title b,
+.Banner-title strong {
+  color: #f38732;
+  font-weight: 800;
+}
+@media (min-width: 60em) {
+  .Banner-title {
+    font-size: 3em;
+    line-height: 1.1;
+  }
+}
+
+.Banner-bg {
+  margin-top: 0;
+}
+
+.Banner-link {
+  display: block;
+  background: none !important;
+  color: inherit;
+  transition: 0.3s;
+}
+.Banner-link:focus-within {
+  color: #f38732;
+}
+.Banner-link:focus-within .Button--primary {
+  color: #fff;
+  background-color: rgba(243, 135, 50, 0.6);
+  border-color: transparent;
+}
+.Banner-link:focus-within .Button--default {
+  color: #fff;
+  background-color: rgba(25, 24, 24, 0.6);
+  border-color: transparent;
+}

@@ -1,0 +1,55 @@
+@import '../../scss/global.scss';
+
+.SupportOptions {
+  padding: $section_padding;
+}
+
+.SupportOptions-title {
+  text-align: center;
+  font-size: $font_size_xl;
+}
+
+.SupportOptions-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -$gutter_vertical / 2;
+}
+
+.SupportOption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0 1 calc((100% / 3) - #{$gutter_vertical});
+  padding: 1.5em;
+  margin: $gutter_vertical / 2;
+  font-size: $font_size_xs;
+  text-align: center;
+  border: 2px solid #aaa;
+  @media (max-width: $breakpoint_md) {
+    flex: 1 1 100%;
+  }
+}
+
+.SupportOption-title {
+  font-size: $font_size_md;
+  font-weight: normal;
+  color: $highlight_color;
+}
+
+.SupportOption-icon {
+  width: 100%;
+  max-width: 5em;
+  max-height: 5em;
+  margin: 0 auto;
+  padding: 0.5rem;
+  transition: $transition_duration_hover ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.SupportOption-description {
+  margin-bottom: auto;
+  letter-spacing: 0.05em;
+}

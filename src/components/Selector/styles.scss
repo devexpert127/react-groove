@@ -1,0 +1,56 @@
+@import '../../scss/global.scss';
+
+.Selector {
+  flex: 1 1 calc(50% - #{$gutter_horizontal});
+  margin-top: $gutter_vertical / 2;
+  margin-left: $gutter_horizontal / 2;
+  margin-right: $gutter_horizontal / 2;
+
+  @media (min-width: $breakpoint_sm) {
+    // flex: none; // If GL want's the fields to be un even replace the below line with this.
+    flex: 1 0 calc(25% - #{$gutter_horizontal * 1.5});
+  }
+}
+
+// label ??? used on other field types
+.Selector-inputLabel {
+  cursor: pointer;
+  display: block;
+  font-size: 0.875em;
+  margin-bottom: 0.25em;
+  text-transform: uppercase;
+  white-space: nowrap;
+
+  .ProductBox-form--floating & {
+    @include visually-hidden;
+  }
+}
+
+.Selector-selectWrapper {
+  position: relative;
+  margin-top: 0;
+}
+
+// .Input ??? used on other input types
+.Selector-input {
+  width: 100%;
+  margin-top: $gutter_vertical / 6;
+  padding: $padding_button_vertical calc(#{$padding_button_vertical} + 1.5rem)
+    $padding_button_vertical $padding_button_vertical;
+  border: $border_size_product_input $border_style $border_color_product_input;
+}
+
+// .Input--select ??? used on other field types
+select.Selector-input {
+  display: block;
+  margin-left: 0;
+
+  .ProductBox-form--floating & {
+    margin-top: 0;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    color: $brand_color_white;
+    border: 1px solid $brand_color_white;
+    background-color: $brand_color_black;
+  }
+}

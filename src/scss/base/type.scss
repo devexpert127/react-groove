@@ -1,0 +1,102 @@
+// Type
+// ---
+
+// `strip-unit()` function by Hugo Giraudel
+@function strip-unit($value) {
+  @return $value / ($value * 0 + 1);
+}
+
+// `fluid-lock()` mixin by Indrek Paas http://www.sassmeister.com/gist/7f22e44ace49b5124eec
+@mixin fluid-lock($properties, $min-vw, $max-vw, $min-value, $max-value) {
+  @each $property in $properties {
+    #{$property}: $min-value;
+  }
+
+  @if $include_fluid_type {
+    @media (min-width: $min-vw) {
+      @each $property in $properties {
+        #{$property}: calc(
+          #{$min-value} +
+            #{strip-unit($max-value - $min-value)} *
+            (100vw - #{$min-vw}) /
+            #{strip-unit($max-vw - $min-vw)}
+        );
+      }
+    }
+
+    @media (min-width: $max-vw) {
+      @each $property in $properties {
+        #{$property}: $max-value;
+      }
+    }
+  }
+}
+
+// Sizes
+@mixin font-size-xs {
+  font-size: $font_size_xs;
+  line-height: $line_height_xs;
+}
+
+@mixin font-size-sm {
+  font-size: $font_size_sm;
+  line-height: $line_height_sm;
+}
+
+@mixin font-size-md {
+  font-size: $font_size_md;
+  line-height: $line_height_md;
+}
+
+@mixin font-size-lg {
+  font-size: $font_size_lg;
+  line-height: $line_height_lg;
+}
+
+@mixin font-size-xl {
+  font-size: $font_size_xl;
+  line-height: $line_height_xl;
+}
+
+@mixin font-size-xxl {
+  font-size: $font_size_xxl;
+  line-height: $line_height_xxl;
+}
+
+// Styles
+@mixin heading-style {
+  color: currentColor;
+  font-family: $font_family_headings;
+  font-weight: $font_weight_headings;
+  font-display: swap;
+  letter-spacing: $letter_spacing_headings;
+
+  @if ($uppercase_headings) {
+    text-transform: uppercase;
+  }
+}
+
+@mixin reading-length {
+  max-width: $max_reading_length;
+}
+
+// Alignment
+@mixin text-align($alignment, $breakpoint: false) {
+  @if $breakpoint {
+    @media (min-width: $breakpoint) {
+      text-align: $alignment;
+    }
+  } @else {
+    text-align: $alignment;
+  }
+}
+
+@mixin pull-quote {
+  border-left: none;
+  padding-left: 0;
+  @include font-size-lg;
+  font-family: $font_family_pullquote;
+  font-weight: $font_weight_pullquote;
+  font-style: $font_style_pullquote;
+  font-display: swap;
+}

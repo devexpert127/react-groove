@@ -1,0 +1,75 @@
+.Pagination {
+  margin-bottom: 1.5rem;
+}
+
+.Pagination-list {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding-left: 0;
+  font-size: 0.875em;
+  list-style-type: none;
+}
+@media screen and (min-width: 60em) {
+  .Pagination-list {
+    flex-wrap: nowrap;
+  }
+}
+
+.Pagination-list-item {
+  margin: 0 1em;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.Pagination-list-item--hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.Pagination-list-item--prev,
+.Pagination-list-item--next {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex: 100%;
+}
+@media screen and (min-width: 60em) {
+  .Pagination-list-item--prev,
+  .Pagination-list-item--next {
+    flex: initial;
+  }
+}
+
+.Pagination-list-item--prev {
+  margin-bottom: 1.5rem;
+}
+@media screen and (min-width: 60em) {
+  .Pagination-list-item--prev {
+    margin-bottom: 0;
+  }
+}
+
+.Pagination-list-item--next {
+  margin-top: 1.5rem;
+}
+@media screen and (min-width: 60em) {
+  .Pagination-list-item--next {
+    margin-top: 0;
+  }
+}
+
+.Pagination-list-item--current {
+  color: #f38732;
+  text-decoration: none;
+  cursor: default;
+}
+
+.Pagination-list-item--disabled {
+  color: #b7b7b7;
+  cursor: default;
+}

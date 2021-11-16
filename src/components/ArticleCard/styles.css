@@ -1,0 +1,82 @@
+.ArticleCard {
+  position: relative;
+}
+
+.ArticleCard-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  margin-top: 0;
+  padding: 0.75rem 0.75em;
+  text-align: center;
+}
+@media (min-width: 60em) {
+  .ArticleCard-content {
+    padding: 1.5rem 1.5em;
+  }
+}
+.ArticleCard-content.ArticleCard-content--hidden {
+  top: auto;
+  bottom: 0;
+  transform: translate(-50%, 0);
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ArticleCard-title {
+  position: relative;
+  padding-left: 0.25em;
+  color: #fff;
+  font-weight: 400;
+  font-size: 2em;
+  line-height: 1.2;
+  width: max-content;
+  max-width: 15em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+.ArticleCard-title:before {
+  content: '';
+  height: 75%;
+  position: absolute;
+  left: -0.0625em;
+  top: 50%;
+  transform: translateY(-50%);
+  border-left: solid 0.0625em #f38732;
+}
+.ArticleCard-title b,
+.ArticleCard-title strong {
+  color: #f38732;
+  font-weight: 800;
+}
+.ArticleCard-title:before {
+  height: 90%;
+}
+.ArticleCard-content--hidden .ArticleCard-title {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+@media (min-width: 37.5em) {
+  .ArticleCard-content--full-width .ArticleCard-title {
+    font-size: 3em;
+    line-height: 1.1;
+  }
+}
+
+.ArticleCard-button {
+  margin-top: 0.75em;
+}
+.ArticleCard-content--hidden .ArticleCard-button {
+  margin-top: 0;
+}

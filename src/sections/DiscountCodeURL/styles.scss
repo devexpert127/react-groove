@@ -1,0 +1,13 @@
+@import '../../scss/global.scss';
+
+.DiscountCodeURL {
+  padding: $section_padding_small;
+
+  @media (min-width: $breakpoint_md) {
+    padding: $section_padding;
+  }
+}
+
+.DiscountCodeURL-content {
+  text-align: center;
+}

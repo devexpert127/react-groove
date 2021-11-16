@@ -1,0 +1,10 @@
+@import '../../scss/global.scss';
+
+.SkipToContent {
+    position: absolute;
+    z-index: 5;
+    @include button-primary;
+    &:not(:focus) {
+        @include visually-hidden;
+    }
+}

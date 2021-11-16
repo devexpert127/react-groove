@@ -1,0 +1,18 @@
+@import '../../scss/global.scss';
+
+.ProductDescription {
+  .TextContent-title {
+    color: $text_color;
+    font-size: $font_size_xl;
+  }
+}
+
+// ProductDescription is usually followed by SellingIcons. This reduces the icon
+// section's padding on mobile
+.ProductDescription + .SellingIcons {
+  padding-top: 0;
+
+  @media (min-width: $breakpoint_md) {
+    padding-top: $section_padding_single_direction;
+  }
+}

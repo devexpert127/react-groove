@@ -1,0 +1,416 @@
+.ProductCard {
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  text-align: center;
+}
+.ProductCard .Slider__control {
+  position: absolute;
+  top: 50%;
+  margin: 0;
+  padding: 0;
+  z-index: 2;
+  opacity: 0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  transition: 0.3s all;
+  border-style: none;
+}
+.ProductCard .Slider__control svg {
+  fill: #ddd;
+}
+.ProductCard:hover .Slider__control,
+.ProductCard:focus .Slider__control {
+  opacity: 1;
+}
+@media (min-width: 37.5em) {
+  .ProductCard {
+    margin-top: 0;
+  }
+}
+@media (max-width: 60em) {
+  .ProductCard .okeReviews .okeReviews-reviewsSummary-starRating,
+  .ProductCard .okeReviews .okeReviews-reviewsSummary-ratingCount {
+    display: block;
+    width: 100%;
+  }
+}
+
+.ProductCard-top {
+  position: relative;
+}
+
+.ProductCard-video {
+  width: 100%;
+}
+
+.ProductCard-link {
+  display: block;
+  background: none !important;
+  color: #191818;
+  text-decoration: none;
+  margin-top: 0;
+}
+.ProductCard-link:hover,
+.ProductCard-link:focus,
+.ProductCard-link:active {
+  color: #f38732;
+}
+
+.ProductCard-linkText {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+.ProductCard-meta {
+  margin-top: 0;
+  margin-bottom: 5em;
+  position: relative;
+}
+.ProductCard-meta .OkendoReviewStars {
+  margin-top: 0.5em;
+}
+
+@media (min-width: 37.5em) {
+  .ProductCard-top:hover .ProductCard-slider {
+    color: #f38732;
+  }
+  .ProductCard-top:hover .ProductCard-slider .Slider__control {
+    opacity: 1;
+    pointer-events: all;
+  }
+  .ProductCard--allowQuickaddDesktop
+    .ProductCard-top:hover
+    + .ProductCard-meta
+    .ProductCard-variants-wrapper,
+  .ProductCard--allowQuickaddDesktop .ProductCard-meta:hover .ProductCard-variants-wrapper,
+  .ProductCard--allowQuickaddDesktop .ProductCard-meta:focus-within .ProductCard-variants-wrapper,
+  .ProductCard--allowQuickaddDesktop .ProductCard-meta:active .ProductCard-variants-wrapper {
+    opacity: 1;
+    pointer-events: all;
+    z-index: 2;
+  }
+  .ProductCard--allowQuickaddDesktop
+    .ProductCard-top:hover
+    + .ProductCard-meta
+    .ProductCard-info--hide-hover,
+  .ProductCard--allowQuickaddDesktop .ProductCard-meta:hover .ProductCard-info--hide-hover,
+  .ProductCard--allowQuickaddDesktop .ProductCard-meta:focus-within .ProductCard-info--hide-hover,
+  .ProductCard--allowQuickaddDesktop .ProductCard-meta:active .ProductCard-info--hide-hover {
+    opacity: 0;
+  }
+}
+
+.ProductCard-image {
+  width: 100%;
+  height: auto;
+}
+
+.ProductCard-slider {
+  margin-top: 0;
+}
+@media (min-width: 37.5em) {
+  .ProductCard-slider {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.ProductCard-slider-next-text,
+.ProductCard-slider-prev-text {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+.ProductCard-variants-wrapper {
+  position: absolute;
+  width: 100%;
+  top: -2rem;
+  left: 0;
+  margin-top: 0;
+  opacity: 0;
+  -webkit-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  transition: 0.3s all;
+  background-color: #fff;
+  pointer-events: none;
+}
+@media (min-width: 37.5em) {
+  .ProductCard-variants-wrapper {
+    top: auto;
+    bottom: 0;
+    min-height: 100%;
+  }
+  .ProductCard-variants-wrapper:focus-within {
+    opacity: 1;
+  }
+  .ProductCard-variants-wrapper::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1em;
+    transform: translateY(-100%);
+    background: linear-gradient(
+      0deg,
+      white 0%,
+      rgba(255, 255, 255, 0.6) 60%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  }
+}
+
+.ProductCard-info {
+  width: 100%;
+}
+
+.ProductCard-variants-wrapper--active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.ProductCard-variants {
+  display: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 150px;
+  margin: -0.25em auto 0;
+  list-style-type: none;
+}
+@media (min-width: 37.5em) {
+  .ProductCard-variants {
+    display: flex;
+  }
+}
+
+.ProductCard-variantsMobile {
+  margin-top: 0;
+}
+.ProductCard-variantsMobile button {
+  margin-bottom: 2em;
+}
+.ProductCard-variantsMobile .Slider__control {
+  opacity: 1;
+  cursor: pointer;
+}
+@media (min-width: 37.5em) {
+  .ProductCard-variantsMobile {
+    display: none;
+  }
+}
+
+.ProductCard-variantsMobileToggle {
+  display: block;
+  position: absolute;
+  bottom: 200%;
+  border-radius: 50%;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  font-size: 30px;
+  line-height: 32px;
+  text-align: center;
+  z-index: 2;
+}
+.ProductCard-variantsMobileToggle svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 16px;
+  height: 16px;
+  transform: translateX(-50%) translateY(-50%);
+}
+@media (min-width: 37.5em) {
+  .ProductCard-variantsMobileToggle {
+    display: none !important;
+  }
+}
+
+.ProductCard-variantsMobileToggle--hidden {
+  display: none;
+}
+
+.ProductCard-variantsMobileToggleText {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+.ProductCard-button-wrapper {
+  margin: 0;
+  padding: 0.25em 0.5em;
+  display: block;
+  min-width: 25%;
+}
+
+.ProductCard-buttonTooltip {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  display: block;
+  text-align: center;
+}
+
+.ProductCard-button {
+  display: block;
+  padding: 2px 0;
+  text-align: center;
+  margin: 0;
+  width: 100%;
+  border: none;
+  position: relative;
+  color: #b7b7b7;
+}
+.ProductCard-button:hover .ProductCard-buttonTooltip,
+.ProductCard-button:focus .ProductCard-buttonTooltip {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  top: -3.75rem;
+  left: 50%;
+  height: 3rem;
+  width: 4.5rem;
+  margin: 0;
+  font-size: 0.625rem;
+  color: #fff;
+  transform: translate(-50%, 0);
+  overflow: visible;
+  clip: auto;
+  z-index: 3;
+}
+
+.ProductCard-button:hover::before,
+.ProductCard-button:focus::before {
+  position: absolute;
+  top: -4px;
+  left: 50%;
+  width: 0.9375rem;
+  height: 0.9375rem;
+  background-color: #f38732;
+  content: '';
+  transform-origin: 50% 50%;
+  transform: translate(-50%, -110%) rotate(45deg);
+}
+
+.ProductCard-button:hover::after,
+.ProductCard-button:focus::after {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  padding: 1.5rem 2rem;
+  background-color: #f38732;
+  color: #fff;
+  text-align: center;
+  content: '';
+  white-space: nowrap;
+  transform: translate(-50%, -125%);
+  z-index: 2;
+  font-weight: bold;
+}
+
+.ProductCard-button--unavailable:hover::before,
+.ProductCard-button--unavailable:hover::after,
+.ProductCard-button--unavailable:focus::before,
+.ProductCard-button--unavailable:focus::after {
+  background-color: #424242;
+}
+
+.ProductCard-buttonVisuallyHiddenText {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+.ProductCard-info {
+  margin: 0;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.ProductCard-info--hidden {
+  opacity: 0;
+}
+.ProductCard-info--hidden .ProductCard-link {
+  visibility: hidden;
+}
+
+.ProductCard-title {
+  margin: 0;
+  font-size: 0.875em;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+}
+
+.ProductCard-title--hidden {
+  opacity: 0;
+}
+
+.ProductCard-price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 0.5em;
+  margin-top: 0.5em;
+  font-size: 0.875em;
+  font-weight: 500;
+}
+.ProductCard-price dd {
+  margin-left: 0;
+}
+.ProductCard-price dt {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+.ProductCard-sale-price {
+  color: #f38732;
+}
+.ProductCard-sale-price span + span {
+  margin-left: 0.5em;
+}
+
+.ProductCard-price--on-sale .ProductCard-regular-price {
+  font-size: 0.75rem;
+  text-decoration: line-through;
+}
+
+.ProductLabel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 0;
+  z-index: 2;
+}

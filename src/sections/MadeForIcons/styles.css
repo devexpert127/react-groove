@@ -1,0 +1,29 @@
+.SellingIcons {
+  font-size: 0.875em;
+}
+.SellingIcons .TextColumn-title {
+  font-weight: 400;
+}
+.SellingIcons .TextColumn {
+  flex: 0 1 50%;
+  max-width: 50%;
+}
+@media (min-width: 60em) {
+  .SellingIcons .TextColumn {
+    flex: none;
+    max-width: none;
+  }
+}
+.SellingIcons .TextColumn-image--icon {
+  width: 4.6875rem;
+  margin: auto;
+}
+@media (min-width: 64em) {
+  .SellingIcons .TextColumn-image--icon {
+    width: 6.25rem;
+  }
+}
+.SellingIcons .TextColumn-title {
+  margin-top: 0.75em;
+  font-size: 1.25em;
+}

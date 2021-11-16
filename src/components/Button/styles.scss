@@ -1,0 +1,47 @@
+@import '../../scss/global.scss';
+
+.Button {
+  @include button-base;
+
+  b,
+  strong {
+    color: $highlight_color;
+    font-weight: $font_weight_extrabold;
+  }
+
+  i,
+  em {
+    color: $highlight_color;
+  }
+
+  &__hidden {
+    @include visually-hidden;
+  }
+}
+
+
+
+.Button:not(.Button--unstyled) {
+  font-weight: $font_weight_extrabold;
+}
+
+.Button--default {
+  // black with white text
+  @include button-default;
+}
+
+.Button--primary {
+  // orange with white text
+  @include button-primary;
+
+  i,
+  em,
+  b,
+  strong {
+    color: $text_color_button_primary !important;
+  }
+}
+
+.Button--unstyled {
+  @include button-unstyled;
+}

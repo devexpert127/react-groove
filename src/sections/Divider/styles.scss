@@ -1,0 +1,7 @@
+@import '../../scss/global.scss';
+
+.Divider {
+  hr {
+    border-bottom: $text_color solid 2px;
+  }
+}

@@ -1,0 +1,40 @@
+.OkendoReviewStars {
+  display: inline-block;
+}
+.OkendoReviewStars:hover {
+  border-bottom: solid 1px #f38732;
+}
+.OkendoReviewStars:focus {
+  background: none;
+}
+.OkendoReviewStars * {
+  margin-top: 0;
+}
+
+.okeReviews.okeReviews {
+  font-size: 13px;
+  line-height: normal;
+}
+.okeReviews.okeReviews .okeReviews-reviewsSummary-ratingCount {
+  margin-bottom: 0;
+}
+.okeReviews.okeReviews .okeReviews-starRating {
+  width: 4.5em;
+  height: 1em;
+}
+.okeReviews.okeReviews .okeReviews-starRating .okeReviews-starRating-indicator {
+  width: 4.5em;
+  height: 1em;
+}
+.okeReviews.okeReviews
+  .okeReviews-starRating
+  .okeReviews-starRating-indicator
+  .okeReviews-starRating-indicator-layer {
+  background-size: 4.5em 1em;
+}
+.okeReviews.okeReviews .okeReviews-reviewsSummary-ratingCount {
+  color: #f38732;
+}
+.okeReviews.okeReviews .okeReviews-reviewsSummary.is-okeReviews-empty {
+  display: none;
+}

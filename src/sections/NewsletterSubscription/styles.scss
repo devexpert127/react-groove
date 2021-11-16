@@ -1,0 +1,49 @@
+@import '../../scss/global.scss';
+
+.NewsletterSubscription {
+  background: $brand_color_black;
+  padding: 150px 0 50px 0;
+  clip-path: polygon(50% 40%, 100% 0%, 100% 100%, 0% 100%, 0% 0%);
+  -webkit-clip-path: polygon(50% 40%, 100% 0%, 100% 100%, 0% 100%, 0% 0%);
+}
+
+.NewsletterSubscription-text {
+  color: $brand_color_white;
+  font-weight: 500;
+  font-size: $font_size_xs;
+  letter-spacing: 0.02em;
+  text-align: center;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+
+  em {
+    color: $brand_color_accent;
+    font-style: normal;
+  }
+}
+
+.NewsletterSubscription-form {
+  margin-top: 0;
+}
+
+.NewsletterSubscription-inputs {
+  display: flex;
+  justify-content: center;
+}
+
+.NewsletterSubscription-label {
+  @include visually-hidden;
+}
+
+.NewsletterSubscription-email {
+  flex-grow: 1;
+  max-width: 325px;
+  padding: 1px;
+  border: 1px solid #f5f5f5;
+  margin-right: $gutter_horizontal / 2;
+}
+
+.NewsletterSubscription-button {
+  margin-top: 0;
+  flex-shrink: 0;
+}

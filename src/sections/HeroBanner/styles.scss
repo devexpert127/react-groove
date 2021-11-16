@@ -1,0 +1,15 @@
+@import '../../scss/global.scss';
+
+.HeroBanner {
+  @include hero-block;
+}
+
+.HeroBanner-image--has-content {
+  min-height: 20em;
+
+  @media (max-width: $breakpoint_sm) {
+    &:before {
+      padding-top: 120%;
+    }
+  }
+}

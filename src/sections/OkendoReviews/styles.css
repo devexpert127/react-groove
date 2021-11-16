@@ -1,0 +1,145 @@
+.OkendoReviews {
+  padding: 3.75rem 0;
+}
+
+.OkendoReviews__title {
+  text-align: center;
+}
+
+.OkendoReviews__widget {
+  position: relative;
+}
+@media only screen and (min-width: 60em) {
+  .OkendoReviews__widget [data-oke-reviews-nav-bar] {
+    width: 50%;
+  }
+}
+
+.OkendoReviews__modal {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  margin-top: 0;
+}
+@media only screen and (min-width: 60em) {
+  .OkendoReviews__modal {
+    position: absolute;
+    position: absolute;
+    top: 0;
+    right: 0;
+    justify-content: flex-end;
+    width: 50%;
+  }
+}
+.OkendoReviews__modal .Modal-content {
+  width: 95%;
+  max-width: 75em;
+  max-height: 80%;
+  padding: 0;
+}
+.OkendoReviews__modal iframe {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 75em;
+  min-height: 960px;
+  margin-top: 0;
+  border: none;
+}
+.OkendoReviews__modal .LoadingSpinner-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.okeReviews.okeReviews * + *,
+.okeReviews.okeReviews.okeReviews--theme * + * {
+  margin-top: 0;
+}
+
+@media only screen and (max-width: 60em) {
+  .okeReviews.okeReviews .okeReviews-widgetNavBar,
+  .okeReviews.okeReviews.okeReviews--theme .okeReviews-widgetNavBar {
+    display: flex;
+    font-size: 10px;
+  }
+  .okeReviews.okeReviews .okeReviews-widgetNavBar-item:last-of-type,
+  .okeReviews.okeReviews.okeReviews--theme .okeReviews-widgetNavBar-item:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.okeReviews.okeReviews .okeReviews-widgetNavBar-item[aria-selected='false'],
+.okeReviews.okeReviews.okeReviews--theme .okeReviews-widgetNavBar-item[aria-selected='false'] {
+  border-bottom: 2px solid transparent;
+}
+
+.okeReviews.okeReviews .okeReviews-widgetNavBar-item[aria-selected='true'],
+.okeReviews.okeReviews.okeReviews--theme .okeReviews-widgetNavBar-item[aria-selected='true'] {
+  border-bottom: 2px solid #f38732;
+}
+
+.okeReviews.okeReviews .okeReviews-widgetNavBar-count,
+.okeReviews.okeReviews.okeReviews--theme .okeReviews-widgetNavBar-count {
+  background-color: #f38732;
+}
+
+.okeReviews.okeReviews .okeReviews-barGraph-layer--foreground,
+.okeReviews.okeReviews.okeReviews--theme .okeReviews-barGraph-layer--foreground {
+  background-color: #f38732;
+}
+
+.okeReviews.okeReviews .okeReviews-reviewsWidget-reviewsAggregate,
+.okeReviews.okeReviews.okeReviews--theme .okeReviews-reviewsWidget-reviewsAggregate {
+  margin-top: 0;
+}
+
+.okeReviews.okeReviews .okeReviews-reviewsAggregate-ratingDistribution,
+.okeReviews.okeReviews.okeReviews--theme .okeReviews-reviewsAggregate-ratingDistribution {
+  margin-top: 1em;
+}
+
+.okeReviews.okeReviews .okeReviews-reviewsAggregate-mod,
+.okeReviews.okeReviews.okeReviews--theme .okeReviews-reviewsAggregate-mod {
+  margin-top: 1.5em;
+}
+
+.okeReviews.okeReviews .okeReviews-avatar,
+.okeReviews.okeReviews.okeReviews--theme .okeReviews-avatar {
+  background-color: #f38732;
+  color: #fff;
+}
+
+.okeReviews.okeReviews .okeReviews-starRating-indicator,
+.okeReviews.okeReviews.okeReviews--theme .okeReviews-starRating-indicator {
+  position: static;
+  width: 125px;
+  height: 25px;
+  vertical-align: middle;
+}
+
+.okeReviews.okeReviews .okeReviews-badge--recommended.okeReviews-badge--recommended,
+.okeReviews.okeReviews.okeReviews--theme
+  .okeReviews-badge--recommended.okeReviews-badge--recommended {
+  background: #f38732;
+}
+
+.okeReviews.okeReviews
+  .okeReviews-review-reviewer-profile-status--verified.okeReviews-review-reviewer-profile-status--verified,
+.okeReviews.okeReviews.okeReviews--theme
+  .okeReviews-review-reviewer-profile-status--verified.okeReviews-review-reviewer-profile-status--verified {
+  color: #f38732;
+}
+
+.okeReviews.okeReviews .okeReviews-question,
+.okeReviews.okeReviews.okeReviews--theme .okeReviews-question {
+  margin-top: 1.5em;
+}
+
+.okeReviews.okeReviews .okeReviews-answer,
+.okeReviews.okeReviews.okeReviews--theme .okeReviews-answer {
+  margin: 1.5em 0 1.5em 2em;
+  padding-left: 2em;
+  border-left: 2px solid #f38732;
+}

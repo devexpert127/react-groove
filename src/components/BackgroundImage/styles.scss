@@ -1,0 +1,52 @@
+@import '../../scss/global.scss';
+
+.BackgroundImage {
+  position: relative;
+
+  &:before {
+    content: '';
+    display: block;
+    padding-top: 50%;
+    @media (max-width: $breakpoint_sm) {
+      padding-top: 80%;
+    }
+  }
+}
+
+@each $ratio_key, $ratio in $banner_ratios {
+  .BackgroundImage--#{$ratio_key} {
+    &:before {
+      padding-top: $ratio;
+    }
+  }
+}
+
+@each $ratio_key, $ratio in $banner_ratios {
+  @media (min-width: $breakpoint_md) and (max-width: $breakpoint_lg) {
+    .BackgroundImage--#{$ratio_key}-md {
+      &:before {
+        padding-top: $ratio;
+      }
+    }
+  }
+}
+
+@each $ratio_key, $ratio in $banner_ratios {
+  @media (max-width: $breakpoint_sm) {
+    .BackgroundImage--#{$ratio_key}-sm {
+      &:before {
+        padding-top: $ratio;
+      }
+    }
+  }
+}
+
+.BackgroundImage--img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center center;
+}

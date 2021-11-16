@@ -1,0 +1,21 @@
+.StoreLocator {
+  padding: 3.75rem 0;
+}
+
+.StoreLocator-leadText {
+  text-align: center;
+}
+
+.storerocket-store-locator * + * {
+  margin-top: 0;
+}
+
+/* StoreRocket Changes */
+.StoreLocator #storerocket-panel,
+.StoreLocator #storerocket-map-container {
+  z-index: 10;
+}
+
+.StoreLocator #storerocket-search {
+  z-index: 14;
+}

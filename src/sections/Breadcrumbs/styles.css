@@ -1,0 +1,27 @@
+.Breadcrumbs {
+  padding: 1.5em 0 0;
+  font-size: 0.875em;
+}
+
+.Breadcrumb {
+  text-decoration: none;
+}
+
+.Breadcrumb-list {
+  padding: 0;
+  list-style: none;
+}
+.Breadcrumb-list li {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.Breadcrumb-item {
+  margin-right: 0.25em;
+}
+
+.Breadcrumb-title,
+.Breadcrumb-divide {
+  text-transform: uppercase;
+  color: #f38732;
+}

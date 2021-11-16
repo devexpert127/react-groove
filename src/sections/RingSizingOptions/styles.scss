@@ -1,0 +1,86 @@
+@import '../../scss/global.scss';
+
+.RingSizingOptions {
+  padding: $section_padding;
+}
+
+.RingSizingOptions-title {
+  margin-bottom: $gutter_vertical;
+  text-align: center;
+  font-size: $font_size_xl;
+  line-height: 1.2;
+}
+
+.RingSizingOptions-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -$gutter_vertical / 2;
+}
+
+.RingSizingOption {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 100%;
+  margin: $gutter_vertical;
+  padding: $gutter_vertical;
+  font-size: $font_size_xs;
+  text-align: center;
+
+  a:not(.Button):focus {
+    background-color: transparent;
+  }
+
+  &__or {
+    position: absolute;
+    bottom: -$gutter_vertical / 2;
+    left: 50%;
+    transform: translateX(-50%) translateY($gutter_vertical * 0.75);
+    margin-top: 0;
+    color: $brand_color_accent;
+    font-size: $font_size_md;
+    font-weight: $font_weight_bold;
+  }
+
+  @media (min-width: $breakpoint_md) {
+    flex: 0 1 calc((100% / 3) - #{$gutter_vertical * 4});
+    margin: 0 $gutter_vertical * 2;
+    padding: 0 $gutter_vertical / 2;
+
+    &__or {
+      top: 50%;
+      right: -$gutter_vertical;
+      bottom: auto;
+      left: auto;
+      transform: translateX($gutter_vertical * 0.75) translateY(-50%);
+    }
+  }
+}
+
+.RingSizingOption-title {
+  margin-bottom: $gutter_vertical / 2;
+  font-size: $font_size_md;
+  font-weight: normal;
+}
+
+.RingSizingOption-icon {
+  width: 100%;
+  max-height: 15em;
+  margin: 0 auto $gutter_vertical / 2;
+  padding: 0.5rem;
+  transition: $transition_duration_hover ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.RingSizingOption-description {
+  margin-bottom: auto;
+  letter-spacing: 0.05em;
+
+  p + p {
+    margin-top: 0;
+  }
+}

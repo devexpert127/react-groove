@@ -1,0 +1,13 @@
+@import '../../scss/global.scss';
+
+.Article-video {
+  padding-top: 1.5rem;
+}
+
+.Article-video-content {
+  @include embed;
+  @include embed-16x9;
+  iframe {
+    @include embed-item;
+  }
+}

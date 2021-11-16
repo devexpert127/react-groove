@@ -1,0 +1,10 @@
+@import '../../scss/global.scss';
+
+.ArticlesList {
+  padding: $section_padding;
+  text-align: center;
+
+  .ArticlesList-button {
+    font-size: $font_size_md;
+  }
+}

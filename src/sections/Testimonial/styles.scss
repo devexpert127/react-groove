@@ -1,0 +1,42 @@
+@import '../../scss/global.scss';
+
+$rotation_angle: 4deg;
+
+.Testimonial {
+  padding: $section_padding_tall;
+  text-align: center;
+  position: relative;
+
+  &:before,
+  &:after {
+    content: '';
+    width: 100%;
+    height: 80%;
+    background: rgba(231, 231, 231, 0.5);
+    position: absolute;
+    left: 0;
+    top: 10%;
+    transform: skew($rotation_angle) rotate($rotation_angle);
+    z-index: -1;
+  }
+
+  &:after {
+    transform: skew(-$rotation_angle) rotate(-$rotation_angle);
+  }
+
+  p {
+    color: $brand_color_accent;
+    font-size: 1.125em;
+    font-style: italic;
+    line-height: 1.6;
+
+    @media (min-width: $breakpoint_sm) {
+      font-size: 1.5em;
+    }
+  }
+}
+
+.Testimonial-content--reading-length {
+  @include reading-length;
+  margin: 0 auto;
+}

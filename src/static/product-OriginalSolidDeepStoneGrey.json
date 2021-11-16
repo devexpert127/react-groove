@@ -1,0 +1,459 @@
+{
+    "availableForSale": true,
+    "discount": {
+        "discountAmount": "",
+        "displayMessage": "BOGO 50% OFF ",
+        "enabled": false,
+        "name": "Discounts - ALL rings (including zeus)",
+        "priceChange": 0
+    },
+    "externalId": 8291683976,
+    "maxPrice": 29.95,
+    "media": [
+        {
+            "_id": "92f8e275-5006-4046-bc3a-b8234aa1ffd7",
+            "details": {
+                "_type": "image",
+                "alt": "Original Solid Deep Stone Grey - Groove Life Silicone Wedding Rings",
+                "height": 1280,
+                "mimeType": "image/jpeg",
+                "name": "mens_silicone_rings_deep_stone_grey.jpg",
+                "size": 89804,
+                "src": "https://f.shgcdn.com/6040b8eb-def3-4727-ada5-b41ecafa7302/",
+                "storageID": "6040b8eb-def3-4727-ada5-b41ecafa7302",
+                "width": 1920
+            }
+        },
+        {
+            "_id": "f34d0da1-2549-4d17-bc10-6568c9435252",
+            "details": {
+                "_type": "image",
+                "alt": "Original Solid Deep Stone Grey - Groove Life Silicone Wedding Rings",
+                "height": 1280,
+                "mimeType": "image/jpeg",
+                "name": "deep_stone_grey_silicone_rings.jpg",
+                "size": 97458,
+                "src": "https://f.shgcdn.com/10178887-c139-4efd-aef7-ff8b5727334c/",
+                "storageID": "10178887-c139-4efd-aef7-ff8b5727334c",
+                "width": 1920
+            }
+        },
+        {
+            "_id": "3aa015de-b211-4ca1-b233-2e74e64361b3",
+            "details": {
+                "_type": "image",
+                "alt": "Original Solid Deep Stone Grey - Groove Life Silicone Wedding Rings",
+                "height": 1280,
+                "mimeType": "image/jpeg",
+                "name": "deep_stone_grey_silicone_wedding_bands.jpg",
+                "size": 88129,
+                "src": "https://f.shgcdn.com/b4950fbd-99cb-4d77-b799-fb499282d80a/",
+                "storageID": "b4950fbd-99cb-4d77-b799-fb499282d80a",
+                "width": 1920
+            }
+        },
+        {
+            "_id": "b54cb70e-3ea0-4467-8bd0-9ef89bf1797e",
+            "details": {
+                "_type": "image",
+                "alt": "Groove Life 94 Year No BS Warranty ",
+                "height": 1280,
+                "mimeType": "image/png",
+                "name": "NO_BS_1920x1080_7968d214-e989-484a-92cb-3a3bd257ad47.png",
+                "size": 118745,
+                "src": "https://f.shgcdn.com/9de3e485-4b58-430f-b929-f18066aafbb4/",
+                "storageID": "9de3e485-4b58-430f-b929-f18066aafbb4",
+                "width": 1920
+            }
+        },
+        {
+            "_id": "8820c904-5219-41cb-8182-278c63e65600",
+            "details": {
+                "_type": "image",
+                "alt": "hidden",
+                "height": 2516,
+                "mimeType": "image/jpeg",
+                "name": "Amazon-RingSizeChart_694c458b-f45e-4974-a72e-9cdf1d69fe57.jpg",
+                "size": 335117,
+                "src": "https://f.shgcdn.com/4d991277-db11-4555-8683-1a0452f4f71a/",
+                "storageID": "4d991277-db11-4555-8683-1a0452f4f71a",
+                "width": 4472
+            }
+        },
+        {
+            "_id": "a6f7770b-4f68-4d0b-8551-596d5210ebdf",
+            "details": {
+                "_type": "image",
+                "alt": "hidden",
+                "height": 307,
+                "name": "Original_1024x1024_7604905b-b80a-403f-a27a-1ccd676728f8.jpg",
+                "src": "https://f.shgcdn.com/817b3803-0b11-48ab-9d0f-ce97d62ec6e6/",
+                "storageID": "817b3803-0b11-48ab-9d0f-ce97d62ec6e6",
+                "width": 307
+            }
+        }
+    ],
+    "minPrice": 29.95,
+    "name": "Original Solid Deep Stone Grey",
+    "options": [
+        {
+            "_id": "602b8260-e516-4059-9716-c117af18cf98",
+            "name": "Size",
+            "values": [
+                {
+                    "_id": "13035b6a-2abd-4c68-9cc4-48ef721a0347",
+                    "name": "Size",
+                    "value": "7"
+                },
+                {
+                    "_id": "31e5053b-2024-4a70-9e33-3ab60609d6ad",
+                    "name": "Size",
+                    "value": "8"
+                },
+                {
+                    "_id": "80235512-27b8-4ec7-8015-449fae40aa82",
+                    "name": "Size",
+                    "value": "9"
+                },
+                {
+                    "_id": "fc052f1d-50fa-4bf5-87fd-47e0cacf9588",
+                    "name": "Size",
+                    "value": "10"
+                },
+                {
+                    "_id": "66db10e2-5584-48c6-a0b7-4e351c0a5771",
+                    "name": "Size",
+                    "value": "11"
+                },
+                {
+                    "_id": "9fc1efe9-30be-4b3d-801a-d51f310ab481",
+                    "name": "Size",
+                    "value": "12"
+                },
+                {
+                    "_id": "c6195f55-5b39-4973-b486-c8482fdcc149",
+                    "name": "Size",
+                    "value": "13"
+                },
+                {
+                    "_id": "776f6981-e90c-42f6-8506-3a9e4d69fdd0",
+                    "name": "Size",
+                    "value": "14"
+                },
+                {
+                    "_id": "5329a95d-6895-4ef2-a39c-a90265cd92df",
+                    "name": "Size",
+                    "value": "15"
+                }
+            ]
+        }
+    ],
+    "slug": "groove-original-silicone-mens-ring",
+    "tags": [
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "20-30",
+        "2020",
+        "7",
+        "8",
+        "9",
+        "all-hishers",
+        "allsale",
+        "Amazon",
+        "best",
+        "blue",
+        "Ebay",
+        "edgesolid",
+        "expivi_available",
+        "Facebook Marketplace",
+        "grey",
+        "leapyear29",
+        "men",
+        "original",
+        "originalwire",
+        "ring360",
+        "Sale",
+        "size-10",
+        "size-11",
+        "size-13",
+        "size-14",
+        "size-15",
+        "size-7",
+        "size-8",
+        "size-9",
+        "Solid",
+        "solid-color-silicone-rings",
+        "Solid-combined",
+        "tag-best-seller",
+        "tag-ships-in-24",
+        "tag20",
+        "ua",
+        "val",
+        "Walmart",
+        "zoto",
+        "zthin"
+    ],
+    "type": "Groove Original",
+    "typeCollection": {
+        "productSwitcher": null,
+        "products": [
+            {
+                "_id": "ba765d84-4669-4461-8f0c-6c90f1f77a11",
+                "images": []
+            },
+            {
+                "_id": "61f3ff9e-2954-4cf1-ad69-04b6d181e56d",
+                "images": []
+            },
+            {
+                "_id": "3f0fba1e-01f9-43bc-b8dc-3cd4a964c8e3",
+                "images": []
+            },
+            {
+                "_id": "0de13502-7ff8-4fa5-bb66-869878b7a112",
+                "images": []
+            },
+            {
+                "_id": "f56e4396-e87c-403a-a5a0-81ebb5668831",
+                "images": []
+            },
+            {
+                "_id": "dd8d79bc-ba15-49f3-9052-0692aba355f2",
+                "images": []
+            },
+            {
+                "_id": "721d041e-213c-4694-83e9-6efa29690ce2",
+                "images": []
+            },
+            {
+                "_id": "483ab237-b5ea-449f-9b93-f17e326ce8ae",
+                "images": []
+            },
+            {
+                "_id": "a8d66bcc-9a66-4f09-9d34-6a279c25bbac",
+                "images": []
+            },
+            {
+                "_id": "6d930f08-f707-4fcb-8e7d-736a2dd3284f",
+                "images": []
+            },
+            {
+                "_id": "a6e9e009-d260-4146-82cd-23d3316695bd",
+                "images": []
+            },
+            {
+                "_id": "b725e2a8-df91-4c1d-8f21-3a092d41ad7e",
+                "images": []
+            },
+            {
+                "_id": "6e3cc63e-298a-4532-a37a-2012e23bf612",
+                "images": []
+            },
+            {
+                "_id": "4c5c04fa-48a7-42be-b067-f072d2f44385",
+                "images": []
+            },
+            {
+                "_id": "0472fa42-5c03-4876-b0fd-16678abdbf51",
+                "images": []
+            },
+            {
+                "_id": "4bfefbf9-5418-44f9-96d5-88a2b43730be",
+                "images": []
+            },
+            {
+                "_id": "e81fff3e-c1a9-4c22-9283-bf6a634bc22a",
+                "images": []
+            },
+            {
+                "_id": "b4305816-eb73-425b-a804-0783a7c82a08",
+                "images": []
+            }
+        ]
+    },
+    "variants": [
+        {
+            "_id": "e620fc94-8342-49ea-821e-188b913b6d2d",
+            "availableForSale": true,
+            "externalId": 27672315720,
+            "media": [],
+            "name": "7",
+            "originalPrice": 0,
+            "position": 1,
+            "price": 29.95,
+            "quantity": 2298,
+            "selectedOptions": [
+                {
+                    "_id": "13035b6a-2abd-4c68-9cc4-48ef721a0347",
+                    "name": "Size",
+                    "storefrontId": "gid://shopify/ProductOption/9955641544/7",
+                    "value": "7"
+                }
+            ],
+            "storefrontId": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8yNzY3MjMxNTcyMA=="
+        },
+        {
+            "_id": "9e9a7678-e00c-4c3e-bfae-497568a2feb5",
+            "availableForSale": true,
+            "externalId": 27672315784,
+            "media": [],
+            "name": "8",
+            "originalPrice": 0,
+            "position": 2,
+            "price": 29.95,
+            "quantity": 521,
+            "selectedOptions": [
+                {
+                    "_id": "31e5053b-2024-4a70-9e33-3ab60609d6ad",
+                    "name": "Size",
+                    "storefrontId": "gid://shopify/ProductOption/9955641544/8",
+                    "value": "8"
+                }
+            ],
+            "storefrontId": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8yNzY3MjMxNTc4NA=="
+        },
+        {
+            "_id": "fff3cca7-ff01-4198-aeae-acc88c7f40ea",
+            "availableForSale": true,
+            "externalId": 27672315848,
+            "media": [],
+            "name": "9",
+            "originalPrice": 0,
+            "position": 3,
+            "price": 29.95,
+            "quantity": 463,
+            "selectedOptions": [
+                {
+                    "_id": "80235512-27b8-4ec7-8015-449fae40aa82",
+                    "name": "Size",
+                    "storefrontId": "gid://shopify/ProductOption/9955641544/9",
+                    "value": "9"
+                }
+            ],
+            "storefrontId": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8yNzY3MjMxNTg0OA=="
+        },
+        {
+            "_id": "5fd313e6-223b-4988-bcd5-771184cc580c",
+            "availableForSale": true,
+            "externalId": 27672315912,
+            "media": [],
+            "name": "10",
+            "originalPrice": 0,
+            "position": 4,
+            "price": 29.95,
+            "quantity": 520,
+            "selectedOptions": [
+                {
+                    "_id": "fc052f1d-50fa-4bf5-87fd-47e0cacf9588",
+                    "name": "Size",
+                    "storefrontId": "gid://shopify/ProductOption/9955641544/10",
+                    "value": "10"
+                }
+            ],
+            "storefrontId": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8yNzY3MjMxNTkxMg=="
+        },
+        {
+            "_id": "e5e62a1b-f3bd-4c25-bf02-e04a12f1db89",
+            "availableForSale": true,
+            "externalId": 27672315976,
+            "media": [],
+            "name": "11",
+            "originalPrice": 0,
+            "position": 5,
+            "price": 29.95,
+            "quantity": 2570,
+            "selectedOptions": [
+                {
+                    "_id": "66db10e2-5584-48c6-a0b7-4e351c0a5771",
+                    "name": "Size",
+                    "storefrontId": "gid://shopify/ProductOption/9955641544/11",
+                    "value": "11"
+                }
+            ],
+            "storefrontId": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8yNzY3MjMxNTk3Ng=="
+        },
+        {
+            "_id": "1301d139-1643-4afe-bd95-bc2eb4cb91c3",
+            "availableForSale": false,
+            "externalId": 27672316040,
+            "media": [],
+            "name": "12",
+            "originalPrice": 0,
+            "position": 6,
+            "price": 29.95,
+            "quantity": -5,
+            "selectedOptions": [
+                {
+                    "_id": "9fc1efe9-30be-4b3d-801a-d51f310ab481",
+                    "name": "Size",
+                    "storefrontId": "gid://shopify/ProductOption/9955641544/12",
+                    "value": "12"
+                }
+            ],
+            "storefrontId": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8yNzY3MjMxNjA0MA=="
+        },
+        {
+            "_id": "9a85db53-2fa6-4da2-bae5-a05b64a77644",
+            "availableForSale": true,
+            "externalId": 27672316104,
+            "media": [],
+            "name": "13",
+            "originalPrice": 0,
+            "position": 7,
+            "price": 29.95,
+            "quantity": 2756,
+            "selectedOptions": [
+                {
+                    "_id": "c6195f55-5b39-4973-b486-c8482fdcc149",
+                    "name": "Size",
+                    "storefrontId": "gid://shopify/ProductOption/9955641544/13",
+                    "value": "13"
+                }
+            ],
+            "storefrontId": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8yNzY3MjMxNjEwNA=="
+        },
+        {
+            "_id": "803aab9e-65bb-460a-9256-cd8447fe245c",
+            "availableForSale": true,
+            "externalId": 27672316168,
+            "media": [],
+            "name": "14",
+            "originalPrice": 0,
+            "position": 8,
+            "price": 29.95,
+            "quantity": 609,
+            "selectedOptions": [
+                {
+                    "_id": "776f6981-e90c-42f6-8506-3a9e4d69fdd0",
+                    "name": "Size",
+                    "storefrontId": "gid://shopify/ProductOption/9955641544/14",
+                    "value": "14"
+                }
+            ],
+            "storefrontId": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8yNzY3MjMxNjE2OA=="
+        },
+        {
+            "_id": "bb55ce82-e8ca-4841-9428-3dab193373a4",
+            "availableForSale": true,
+            "externalId": 19371319230531,
+            "media": [],
+            "name": "15",
+            "originalPrice": 0,
+            "position": 9,
+            "price": 29.95,
+            "quantity": 561,
+            "selectedOptions": [
+                {
+                    "_id": "5329a95d-6895-4ef2-a39c-a90265cd92df",
+                    "name": "Size",
+                    "storefrontId": "gid://shopify/ProductOption/9955641544/15",
+                    "value": "15"
+                }
+            ],
+            "storefrontId": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8xOTM3MTMxOTIzMDUzMQ=="
+        }
+    ]
+}

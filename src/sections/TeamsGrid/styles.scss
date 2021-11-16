@@ -1,0 +1,69 @@
+@import '../../scss/global.scss';
+
+.TeamsGrid {
+  padding: $section_padding;
+}
+
+.TeamsGrid-filter {
+  text-align: center;
+
+  & label {
+    @include visually-hidden;
+  }
+
+  & input {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+}
+
+.TeamsGrid-filterTitle {
+  margin-bottom: 20px;
+}
+
+.TeamsGrid-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: ($gutter_horizontal * 0.5);
+  padding: 0 ($gutter_horizontal * 0.5);
+  @media (min-width: $breakpoint_md) {
+    padding-left: 0;
+    padding-right: 0;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.TeamsGrid-link {
+  display: grid;
+  margin: 0;
+  text-align: center;
+  min-width: 0; // grid fix
+}
+
+.TeamsGrid-link:hover {
+  opacity: 0.95;
+}
+
+.TeamsGrid-link:focus {
+  // override default <a> tag styling
+  background: none;
+  box-shadow: none;
+}
+
+.TeamsGrid-image {
+  align-self: center;
+  margin: auto;
+}
+
+.TeamsGrid-buttonWrapper {
+  margin-top: 0;
+  min-width: 0;
+}
+
+.TeamsGrid-button {
+  @media (max-width: $breakpoint_sm) {
+    $horizontal-padding: ($gutter_horizontal * 0.5);
+    padding-left: $horizontal-padding;
+    padding-right: $horizontal-padding;
+  }
+}

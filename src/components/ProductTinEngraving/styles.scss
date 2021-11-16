@@ -1,0 +1,50 @@
+@import '../../scss/global.scss';
+
+.TinEngraving {
+  width: 100%;
+}
+
+.TinEngraving-modal {
+  position: absolute;
+  z-index: 6;
+  margin-top: 0;
+  background-color: #fff;
+
+  img {
+    max-width: 300px;
+  }
+}
+
+.TinEngraving-container {
+  display: flex;
+  align-items: center;
+}
+
+.TinEngraving-checkbox {
+  margin-right: 0.5em;
+  vertical-align: top;
+  margin-bottom: (3.5/16 * 1rem);
+}
+
+.TinEngraving-modalTrigger,
+.TinEngraving-infoIcon {
+  display: inherit;
+}
+
+.TinEngraving-modalTrigger {
+  @include button-unstyled;
+  margin-top: 0;
+  margin-left: 0.5em;
+  align-items: inherit;
+}
+
+.TinEngraving-infoIcon {
+  svg {
+    width: 1.2em;
+    height: 1.5em;
+  }
+}
+
+.TinEngraving-imageDescription {
+  @include visually-hidden;
+}

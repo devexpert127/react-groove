@@ -1,0 +1,65 @@
+.ButtonAccordion {
+  padding: 3.75rem 0;
+}
+.ButtonAccordion img {
+  max-width: 300px;
+  width: auto;
+}
+.ButtonAccordion img[alt*='Logo'],
+.ButtonAccordion img[alt*='logo'],
+.ButtonAccordion img[alt*='Icon'],
+.ButtonAccordion img[alt*='icon'] {
+  max-width: 100px;
+}
+.ButtonAccordion img[alt*='dots'] {
+  max-width: 40px;
+}
+
+.ButtonAccordion .Accordion {
+  margin: 0 auto;
+  max-width: 32rem;
+}
+
+.ButtonAccordion .AccordionItem-body {
+  text-align: center;
+}
+
+.ButtonAccordion h2 {
+  text-align: center;
+}
+
+.ButtonAccordion h2 + .Accordion {
+  margin-top: 1rem;
+}
+
+.Accordion--button .AccordionItem {
+  padding: 0;
+  position: relative;
+}
+
+.Accordion--button .AccordionItem + .AccordionItem {
+  margin-top: 1rem;
+}
+
+.Accordion--button .AccordionItem-heading > button {
+  background-color: #f38732;
+  background-color: var(--accordion-color);
+  border-radius: 1.5em;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  padding: 1em;
+  text-align: center;
+  text-transform: none;
+}
+
+.Accordion--button .AccordionItem-headingText {
+  flex: 1;
+  padding-left: 1em;
+  margin-right: 0.5em;
+}
+
+.Accordion--button .AccordionItem-body {
+  padding: 1rem 0;
+}

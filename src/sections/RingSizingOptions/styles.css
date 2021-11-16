@@ -1,0 +1,80 @@
+.RingSizingOptions {
+  padding: 3.75rem 0;
+}
+
+.RingSizingOptions-title {
+  margin-bottom: 1.5em;
+  text-align: center;
+  font-size: 2em;
+  line-height: 1.2;
+}
+
+.RingSizingOptions-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -0.75em;
+}
+
+.RingSizingOption {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 100%;
+  margin: 1.5em;
+  padding: 1.5em;
+  font-size: 0.875em;
+  text-align: center;
+}
+.RingSizingOption a:not(.Button):focus {
+  background-color: transparent;
+}
+.RingSizingOption__or {
+  position: absolute;
+  bottom: -0.75em;
+  left: 50%;
+  transform: translateX(-50%) translateY(1.125em);
+  margin-top: 0;
+  color: #f38732;
+  font-size: 1.25em;
+  font-weight: 800;
+}
+@media (min-width: 60em) {
+  .RingSizingOption {
+    flex: 0 1 calc((100% / 3) - 6em);
+    margin: 0 3em;
+    padding: 0 0.75em;
+  }
+  .RingSizingOption__or {
+    top: 50%;
+    right: -1.5em;
+    bottom: auto;
+    left: auto;
+    transform: translateX(1.125em) translateY(-50%);
+  }
+}
+
+.RingSizingOption-title {
+  margin-bottom: 0.75em;
+  font-size: 1.25em;
+  font-weight: normal;
+}
+
+.RingSizingOption-icon {
+  width: 100%;
+  max-height: 15em;
+  margin: 0 auto 0.75em;
+  padding: 0.5rem;
+  transition: 0.3s ease-in-out;
+}
+.RingSizingOption-icon:hover {
+  transform: scale(1.05);
+}
+
+.RingSizingOption-description {
+  margin-bottom: auto;
+  letter-spacing: 0.05em;
+}
+.RingSizingOption-description p + p {
+  margin-top: 0;
+}

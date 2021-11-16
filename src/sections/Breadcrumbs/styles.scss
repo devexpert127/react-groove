@@ -1,0 +1,24 @@
+@import '../../scss/global.scss';
+
+.Breadcrumbs {
+  padding: $gutter_vertical 0 0;
+  font-size: $font_size_xs;
+}
+
+.Breadcrumb {
+  text-decoration: none;
+}
+
+.Breadcrumb-list {
+  @include list-inline;
+}
+
+.Breadcrumb-item {
+  margin-right: 0.25em;
+}
+
+.Breadcrumb-title,
+.Breadcrumb-divide {
+  text-transform: uppercase;
+  color: $highlight_color;
+}

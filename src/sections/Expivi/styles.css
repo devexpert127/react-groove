@@ -1,0 +1,280 @@
+.Expivi {
+  padding: 3.75rem 0;
+}
+.Expivi * + * {
+  margin-top: 0;
+}
+
+@media (max-width: 60em) {
+  .Expivi-viewer {
+    max-height: 400px;
+  }
+}
+
+.Expivi-container {
+  position: relative;
+  display: grid;
+  grid-template: 400px 1fr / 1fr;
+}
+@media (min-width: 60em) {
+  .Expivi-container {
+    grid-template: 600px / 66.667% 33.333%;
+  }
+}
+
+.Expivi-details {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.Expivi-addToCart {
+  text-align: center;
+}
+@media (min-width: 60em) {
+  .Expivi-addToCart {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 66.667%;
+    padding: 1.5rem;
+  }
+}
+.Expivi-addToCart .price {
+  font-weight: 800;
+}
+.Expivi-addToCart .Button {
+  margin-top: 1.5rem;
+}
+.Expivi-addToCart.bad-input button {
+  background: rgba(25, 24, 24, 0.5);
+}
+.Expivi-addToCart .Expivi-addToCart--error-message {
+  color: red;
+  font-size: 14px;
+}
+
+/*========Expivi changes=========*/
+.v-application {
+  background-color: #fff !important;
+}
+
+.v-stepper--vertical .v-stepper__content {
+  margin: -8px -36px -16px 20px !important;
+  /*border-left: none !important;*/
+}
+
+.v-application .v-stepper__step__step.primary {
+  background-color: black !important;
+}
+
+.v-application .v-stepper__step__step * {
+  color: white !important;
+}
+
+.v-stepper__wrapper .container > .row {
+  justify-content: center !important;
+}
+
+/*v-stepper title*/
+.v-stepper__wrapper h4 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  color: black;
+  font-weight: bold;
+}
+
+.v-stepper__wrapper .container.text-xs-left {
+  text-align: center;
+}
+
+.v-stepper__wrapper .container.text-xs-left > label {
+  display: none;
+  /*text-transform: uppercase;*/
+  /*font-size: 1.3rem;*/
+  /*color: black;*/
+  /*font-weight: bold;*/
+}
+
+.v-stepper > .container:nth-child(4) .v-stepper__wrapper .container.text-xs-left > label {
+  display: block;
+}
+
+/* dont show horizontal scroller titles */
+.inline-items-container > .mb-4 > span {
+  /*display: none;*/
+}
+
+/*v-stepper next step button*/
+.v-stepper__wrapper > .container > .layout.justify-end {
+  justify-content: center !important;
+  position: relative;
+}
+
+.v-stepper__wrapper > .container > .layout.justify-end > .spacer {
+  display: none !important;
+}
+
+.v-stepper__wrapper > .container > .layout.justify-end > button.step-btn-next {
+  background-color: #f47b20;
+  color: white !important;
+  text-transform: uppercase;
+}
+
+.v-stepper__wrapper > .container > .layout.justify-end > button.step-btn-next * {
+  color: white !important;
+}
+
+.v-stepper__wrapper > .container > .layout.justify-end > button.step-btn-prev {
+  display: none;
+  /*font-size: 0.4rem;*/
+  /*background: transparent;*/
+  /*color: #6c6c6c !important;*/
+  /*flex: none;*/
+  /*position: absolute;*/
+  /*bottom: 0px;*/
+  /*left: 0px;*/
+  /*min-width: 0;*/
+  /*padding: 2px;*/
+}
+
+.v-stepper__content.step-content-line {
+  padding-top: 0px !important;
+}
+
+/*rounded tiles*/
+.ps > .row {
+  justify-content: center;
+}
+
+[data-v-07106344] .container .tile-card.v-card.v-sheet[data-v-c9758838] {
+  width: auto !important;
+  min-height: 60px;
+}
+[data-v-07106344]
+  .container
+  .tile-card.v-card.v-sheet[data-v-c9758838]
+  [data-v-c9758838].v-card__title.tile-title {
+  display: none;
+}
+
+[data-v-5ee5d4fb].col.col-6 {
+  max-width: calc(100% / 3);
+}
+
+.tile-card.v-card.v-sheet {
+  width: 30px !important;
+}
+
+.tile-card.v-card.v-sheet > .v-image,
+.tile-card.v-card.v-sheet > .color-tile {
+  height: 30px !important;
+}
+
+/*customization choice*/
+.container[id='49706'] .tile-card.v-card.v-sheet,
+.container[id='49707'] .tile-card.v-card.v-sheet,
+.container[id='49708'] .tile-card.v-card.v-sheet {
+  width: 80px !important;
+}
+
+.container[id='49706'] .tile-card.v-card.v-sheet > .v-image,
+.container[id='49707'] .tile-card.v-card.v-sheet > .v-image,
+.container[id='49708'] .tile-card.v-card.v-sheet > .v-image {
+  height: 80px !important;
+}
+
+/* engraving */
+.v-subheader {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  color: black;
+  font-weight: bold;
+  justify-content: center;
+}
+
+.v-text-field__slot > label {
+  /*margin: 0.4rem;*/
+  color: rgba(0, 0, 0, 0.7) !important;
+}
+
+.v-text-field__slot > input {
+  background-color: #f0f0f0 !important;
+  padding: 1.4rem !important;
+  text-align: center;
+  height: 3rem;
+}
+
+.v-select__slot {
+  background-color: #f0f0f0 !important;
+  padding: 0.3rem !important;
+  text-align: center;
+  height: 3rem;
+}
+
+/* dropdown */
+.list-items .v-avatar {
+  display: none;
+}
+
+.select-field-btn .v-avatar.v-list-item__avatar {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .tooltip.popover.vue-popover-theme.open {
+    left: 4px !important;
+  }
+}
+
+.v-list-item__title {
+  padding-left: 1rem;
+}
+
+.expivi-page-container .sticky-container .viewer-container .bottom-content .expivi-add-to-cart {
+  background-color: #f47b20 !important;
+  font-weight: initial;
+  padding: 0 16px !important;
+  font-size: 0.875rem;
+  height: 36px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  min-width: 64px !important;
+}
+
+/* hide titles */
+.v-stepper__wrapper h4,
+.v-stepper__wrapper .h4 {
+  display: none;
+}
+
+/* tiles */
+.tile-card .tile-title {
+  white-space: nowrap;
+}
+
+div[id='50205'] .tile-card.v-card.v-sheet,
+div[id='50206'] .tile-card.v-card.v-sheet,
+div[id='50207'] .tile-card.v-card.v-sheet {
+  width: 70px !important;
+  font-weight: bold;
+}
+
+.tile-card.py-4.v-card {
+  width: auto !important;
+}
+
+.tile-card [data-v-c9758838] {
+  font-size: 14px;
+}
+
+[data-v-13b092c0].col-6 {
+  max-width: calc(33% - 24px) !important;
+  margin: 12px;
+}
+
+[data-xpv-key='customization_container'] .container--fluid .row .col-6 {
+  width: calc(100% / 3);
+  flex: none;
+}

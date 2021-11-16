@@ -1,0 +1,136 @@
+@import '../../scss/global.scss';
+
+.OkendoReviews {
+  padding: $section_padding;
+}
+
+.OkendoReviews__title {
+  text-align: center;
+}
+
+.OkendoReviews__widget {
+  position: relative;
+
+  [data-oke-reviews-nav-bar] {
+    @media only screen and (min-width: $breakpoint_md) {
+      width: 50%;
+    }
+  }
+}
+
+.OkendoReviews__modal {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  margin-top: 0;
+
+  @media only screen and (min-width: $breakpoint_md) {
+    position: absolute;
+    position: absolute;
+    top: 0;
+    right: 0;
+    justify-content: flex-end;
+    width: 50%;
+  }
+
+  .Modal-content {
+    width: 95%;
+    max-width: 75em;
+    max-height: 80%;
+    padding: 0;
+  }
+
+  iframe {
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 75em;
+    min-height: 960px;
+    margin-top: 0;
+    border: none;
+  }
+
+  .LoadingSpinner-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+// beat the cascade specificity beast
+.okeReviews.okeReviews,
+.okeReviews.okeReviews.okeReviews--theme {
+  * + * {
+    margin-top: 0;
+  }
+
+  @media only screen and (max-width: $breakpoint_md) {
+    .okeReviews-widgetNavBar {
+      display: flex;
+      font-size: 10px;
+    }
+
+    .okeReviews-widgetNavBar-item:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  .okeReviews-widgetNavBar-item[aria-selected=false] {
+    border-bottom: 2px solid transparent;
+  }
+
+  .okeReviews-widgetNavBar-item[aria-selected=true] {
+    border-bottom: 2px solid $brand_color_accent;
+  }
+
+  .okeReviews-widgetNavBar-count {
+    background-color: $brand_color_accent;
+  }
+
+  .okeReviews-barGraph-layer--foreground {
+    background-color: $brand_color_accent;
+  }
+
+  .okeReviews-reviewsWidget-reviewsAggregate {
+    margin-top: 0;
+  }
+
+  .okeReviews-reviewsAggregate-ratingDistribution {
+    margin-top: 1em;
+  }
+
+  .okeReviews-reviewsAggregate-mod {
+    margin-top: 1.5em;
+  }
+
+  .okeReviews-avatar {
+    background-color: $brand_color_accent;
+    color: $brand_color_white;
+  }
+
+  .okeReviews-starRating-indicator {
+    position: static;
+    width: 125px;
+    height: 25px;
+    vertical-align: middle;
+  }
+
+  .okeReviews-badge--recommended.okeReviews-badge--recommended {
+    background: $brand_color_accent;
+  }
+
+  .okeReviews-review-reviewer-profile-status--verified.okeReviews-review-reviewer-profile-status--verified {
+    color: $brand_color_accent;
+  }
+
+  .okeReviews-question {
+    margin-top: 1.5em;
+  }
+
+  .okeReviews-answer {
+    margin: 1.5em 0 1.5em 2em;
+    padding-left: 2em;
+    border-left: 2px solid $brand_color_accent;
+  }
+}

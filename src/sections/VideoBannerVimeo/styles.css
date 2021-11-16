@@ -1,0 +1,30 @@
+.VideoBannerVimeo {
+  position: relative;
+  display: block;
+  height: 0;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+}
+
+.VideoBannerVimeo--16x9 {
+  padding-bottom: 56.25%;
+}
+
+.VideoBannerVimeo--4x3 {
+  padding-bottom: 75%;
+}
+
+.VideoBannerVimeo--17x9 {
+  padding-bottom: 52.94118%;
+}
+
+.VideoBannerVimeo-player {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}

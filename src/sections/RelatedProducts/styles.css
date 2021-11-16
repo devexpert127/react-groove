@@ -1,0 +1,42 @@
+.RelatedProducts {
+  padding: 3.75rem 0;
+}
+
+.RelatedProducts-title {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.RelatedProducts-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -0.75em;
+  margin-right: -0.75em;
+  position: relative;
+  list-style-type: none;
+}
+
+.RelatedProducts .ProductCard {
+  flex: 1 1 50%;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  margin-top: 0;
+}
+@media (min-width: 60em) {
+  .RelatedProducts .ProductCard {
+    flex: 0 1 25%;
+  }
+}
+
+.RelatedProducts .ProductCard-meta {
+  margin-bottom: 0;
+}
+
+.RelatedProducts + .RichTextContent {
+  padding-top: 0;
+}
+@media (min-width: 60em) {
+  .RelatedProducts + .RichTextContent {
+    padding-top: 3.75rem;
+  }
+}

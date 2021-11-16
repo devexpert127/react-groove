@@ -1,0 +1,30 @@
+@import '../../scss/global.scss';
+
+.ShowcaseGallery {
+  .showcase-button,
+  button.showcase-button {
+    @include button-base;
+    @include button-primary;
+    border-width: 2px;
+
+    span {
+      font-weight: $font_weight_extrabold;
+    }
+  }
+}
+
+.ShowcaseGallery--padding-top {
+  padding-top: 1.5em;
+
+  @media (min-width: $breakpoint_md) {
+    padding-top: $section_padding_single_direction;
+  }
+}
+
+.ShowcaseGallery--padding-bottom {
+  padding-bottom: 1.5em;
+
+  @media (min-width: $breakpoint_md) {
+    padding-bottom: $section_padding_single_direction;
+  }
+}

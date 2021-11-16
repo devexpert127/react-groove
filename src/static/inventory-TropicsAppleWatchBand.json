@@ -1,0 +1,59 @@
+{
+    "products": {
+      "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzY1NDgwNjkxMjIxMTU=": {
+          "availableForSale": false,
+          "quantity": 0
+      }
+    },
+    "productVariants": {
+        "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zOTI5Njk4Mjc0NTE1NQ==": {
+            "availableForSale": false,
+            "quantity": 0
+        },
+        "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zOTI5Njk4Mjc3NzkyMw==": {
+            "availableForSale": false,
+            "quantity": 0
+        },
+        "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zOTI5Njk4MjgxMDY5MQ==": {
+            "availableForSale": false,
+            "quantity": 0
+        },
+        "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zOTI5Njk4Mjg0MzQ1OQ==": {
+            "availableForSale": false,
+            "quantity": 0
+        },
+        "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zOTI5Njk4Mjg3NjIyNw==": {
+            "availableForSale": false,
+            "quantity": 0
+        },
+        "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zOTI5Njk4MjkwODk5NQ==": {
+            "availableForSale": false,
+            "quantity": 0
+        },
+        "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zOTI5Njk4Mjk0MTc2Mw==": {
+            "availableForSale": false,
+            "quantity": 0
+        },
+        "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zOTI5Njk4Mjk3NDUzMQ==": {
+            "availableForSale": false,
+            "quantity": 0
+        },
+        "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zOTI5Njk4MzAwNzI5OQ==": {
+            "availableForSale": false,
+            "quantity": 0
+        },
+        "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zOTI5Njk4MzA0MDA2Nw==": {
+            "availableForSale": false,
+            "quantity": 0
+        },
+        "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zOTI5Njk4MzA3MjgzNQ==": {
+            "availableForSale": false,
+            "quantity": 0
+        },
+        "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zOTI5Njk4MzEwNTYwMw==": {
+            "availableForSale": false,
+            "quantity": 0
+        }
+    },
+    "status": "loaded"
+}

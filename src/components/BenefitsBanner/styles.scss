@@ -1,0 +1,166 @@
+@import '../../scss/global.scss';
+
+.BenefitsBanner {
+  padding: $section_padding;
+}
+
+.BenefitsBanner--noTopPadding {
+  padding-top: 0;
+}
+
+.BenefitsBanner--noBottomPadding {
+  padding-bottom: 0;
+}
+
+.BenefitsBanner--hide-mobile {
+  display: none;
+
+  @media (min-width: $breakpoint_lg) {
+    display: inherit;
+  }
+}
+
+.BenefitsBanner-block {
+  position: relative;
+
+  .BackgroundImage {
+    margin-top: 0;
+  }
+
+  .BackgroundImage--mobile {
+    @media (min-width: $breakpoint_lg) {
+      display: none;
+    }
+  }
+
+  .BackgroundImage--desktop {
+    display: none;
+
+    @media (min-width: $breakpoint_lg) {
+      display: inherit;
+    }
+  }
+}
+
+.BenefitsBanner-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: grid;
+  grid-template-rows: repeat(4, minmax(0, 1fr));
+  width: 100%;
+  height: 100%;
+  margin-top: 0;
+
+  @media (min-width: $breakpoint_lg) {
+    @include hero-content;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: auto;
+    max-width: 40%;
+    height: auto;
+    text-align: center;
+  }
+}
+
+.BenefitsBanner--content--hidden {
+  @include visually-hidden;
+}
+
+.BenefitsBanner-benefit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+  margin-top: 0;
+  padding: $gutter-vertical $gutter_horizontal;
+
+  &:nth-child(1),
+  &:nth-child(2) {
+    justify-self: flex-end;
+  }
+
+  &:nth-child(3),
+  &:nth-child(4) {
+    justify-self: flex-start;
+  }
+
+  &:nth-child(1),
+  &:nth-child(3) {
+    margin-top: 1.5em;
+  }
+
+  &:nth-child(2),
+  &:nth-child(4) {
+    margin-bottom: 1.5em;
+  }
+
+  @media (min-width: $breakpoint_lg_mobile) {
+    width: 50%;
+  }
+
+  @media (min-width: $breakpoint_md) and (max-width: $breakpoint_lg) {
+    padding: ($gutter-vertical * 1.5) ($gutter_horizontal * 1.5);
+  }
+
+  @media (min-width: $breakpoint_lg) {
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(3),
+    &:nth-child(4) {
+      justify-self: center;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.BenefitsBanner-benefitIcon,
+.BenefitsBanner-benefitTitle {
+  color: $brand_color_accent;
+}
+
+.BenefitsBanner-benefitIcon {
+  align-self: center;
+  max-width: 4em;
+  svg {
+    max-width: 4em;
+  }
+}
+
+.BenefitsBanner-benefitTitle {
+  font-size: 1.3em;
+
+  @media (min-width: $breakpoint_sm) {
+    font-size: 1.5em;
+  }
+
+  @media (min-width: $breakpoint_md) {
+    font-size: 2em;
+  }
+
+  @media (min-width: $breakpoint_lg_mobile) {
+    font-size: 1.75em;
+  }
+}
+
+.BenefitsBanner-benefitDescription {
+  margin-top: 0.75em;
+  font-size: 0.75em;
+
+  @media (min-width: $breakpoint_lg_mobile) {
+    font-size: 1.25em;
+  }
+
+  @media (min-width: $breakpoint_md) {
+    font-size: 1.5em;
+  }
+
+  @media (min-width: $breakpoint_lg) {
+    font-size: 1em;
+  }
+}

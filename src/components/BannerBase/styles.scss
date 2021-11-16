@@ -1,0 +1,80 @@
+@import '../../scss/global.scss';
+
+.Banner {
+  position: relative;
+  color: $text_color_light;
+  background-color: $brand_color_mid_gray;
+  overflow: hidden;
+
+  // DEBUG
+  // &, & * { border: 2px solid #dc0 }
+
+  & > .PageWidth {
+    position: inherit;
+  }
+}
+
+.Banner-image--overlay {
+  position: relative;
+}
+
+.Banner-image--overlay:before {
+  position: relative;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.Image.Banner-image--overlay:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.Banner--limit-height {
+  .BackgroundImage {
+    @media (min-width: $breakpoint_sm) {
+      max-height: 50vh;
+    }
+  }
+}
+
+.Banner-title {
+  @include title;
+  width: max-content;
+  max-width: 100%;
+  text-align: left;
+
+  @media (min-width: $breakpoint_md) {
+    @include font-size-xxl;
+  }
+}
+
+
+.Banner-bg {
+  margin-top: 0;
+}
+
+.Banner-link {
+  @include block-link;
+  color: inherit;
+  transition: $transition_duration_hover;
+    
+  &:focus-within {
+    color: $highlight_color;
+
+    .Button--primary {
+      color: $text_hover_color_button_primary;
+      background-color: $background_hover_color_button_primary;
+      border-color: $border_color_hover_button_primary;
+    }
+    .Button--default {
+      color: $text_hover_color_button;
+      background-color: $background_hover_color_button;
+      border-color: $border_color_hover_button;
+    }
+  }
+}

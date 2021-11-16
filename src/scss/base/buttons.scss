@@ -1,0 +1,157 @@
+@mixin button-base {
+  display: inline-block;
+  -webkit-appearance: none;
+
+  @if ($padding_button) {
+    padding: $padding_button;
+  } @else {
+    padding: ($gutter_horizontal / 4) ($gutter_vertical / 1.5);
+  }
+
+  font-family: $font_family_button;
+  font-weight: $font_weight_button;
+  font-size: $font_size_button;
+  line-height: $line_height_button;
+  letter-spacing: $letter_spacing_button;
+  vertical-align: middle;
+  color: currentColor;
+  text-decoration: none;
+  text-align: center;
+
+  @if ($uppercase_button) {
+    text-transform: uppercase;
+  }
+
+  background: none;
+  border-color: currentColor;
+  border-style: $border_style_button;
+  border-width: $border_size_button;
+  border-radius: $border_radius_button;
+  transition: $transition_duration_hover;
+
+  svg {
+    vertical-align: middle;
+  }
+
+  &:hover,
+  &:active {
+    color: $highlight_color;
+    cursor: pointer;
+  }
+
+  &:focus,
+  &:focus-visible {
+    outline: none; // replaced by styles below
+    background: inherit;
+    box-shadow: 0 0 0 0.2em $outline_color;
+  }
+
+  &:focus:not(:focus-visible) {
+    box-shadow: none;
+  }
+
+  &:disabled {
+    color: $button_disabled_color;
+    cursor: default;
+
+    b,
+    strong,
+    i,
+    em {
+      color: currentColor;
+    }
+  }
+}
+
+@mixin button-style(
+  $color,
+  $background_color: false,
+  $border_color: false,
+  $color_hover: false,
+  $background_color_hover: false,
+  $border_color_hover: false,
+  $focus_color: false,
+  $disabled_color: false,
+  $disabled_background_color: false,
+  $disabled_border_color: false
+) {
+  color: $color;
+  @if ($background_color) {
+    background-color: $background_color;
+  }
+  @if ($border_color) {
+    border-color: $border_color;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    @if ($color_hover) {
+      color: $color_hover;
+    }
+    @if ($background_color_hover) {
+      background-color: $background_color_hover;
+    }
+    @if ($border_color_hover) {
+      border-color: $border_color_hover;
+    }
+  }
+
+  &:focus,
+  &:focus-visible {
+    @if ($focus_color) {
+      box-shadow: 0 0 0 0.2em $focus_color;
+    }
+  }
+
+  &:focus:not(:focus-visible) {
+    box-shadow: none;
+  }
+
+  &:disabled {
+    @if ($disabled_color) {
+      color: $disabled_color;
+    }
+    @if ($disabled_background_color) {
+      background-color: $disabled_background_color;
+    }
+    @if ($disabled_border_color) {
+      border-color: $disabled_border_color;
+    }
+  }
+}
+
+@mixin button-default {
+  @include button-style(
+    $text_color_button,
+    $background_color_button,
+    $border_color_button,
+    $text_hover_color_button,
+    $background_hover_color_button,
+    $border_color_hover_button,
+    $focus_color_button,
+    $text_color_disabled_button,
+    $background_color_disabled_button,
+    $border_color_disabled_button
+  );
+}
+
+@mixin button-primary {
+  @include button-style(
+    $text_color_button_primary,
+    $background_color_button_primary,
+    $border_color_button_primary,
+    $text_hover_color_button_primary,
+    $background_hover_color_button_primary,
+    $border_color_hover_button_primary,
+    $focus_color_button_primary,
+    $text_color_disabled_button_primary,
+    $background_color_disabled_button_primary,
+    $border_color_disabled_button_primary
+  );
+}
+
+@mixin button-unstyled {
+  padding: 0;
+  border: none;
+}

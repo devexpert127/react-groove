@@ -1,0 +1,153 @@
+.UpsellPopup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.UpsellPopup-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  overflow: auto;
+  flex-direction: column;
+  width: 95%;
+  max-width: 45em;
+  max-height: 95%;
+  padding: 1.5rem;
+  text-align: center;
+  background-color: #fff;
+}
+@media (min-width: 60em) {
+  .UpsellPopup-content {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 3rem;
+    grid-gap: 0 3rem;
+  }
+}
+
+.UpsellPopup-header {
+  flex: 1 1 100%;
+}
+
+.UpsellPopup-product-image,
+.UpsellPopup-product-form {
+  flex: 1 1 calc(50% - 1.5rem);
+}
+
+.UpsellPopup-title {
+  color: #f38732;
+}
+
+.UpsellPopup-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 0;
+  padding: 0.5rem;
+  color: #b7b7b7;
+}
+.UpsellPopup-close svg {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.UpsellPopup-icon-text {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+.UpsellPopup-price {
+  display: flex;
+  justify-content: center;
+  grid-gap: 0 0.5em;
+}
+.UpsellPopup-price dd {
+  margin-left: 0;
+}
+.UpsellPopup-price dt {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+.UpsellPopup-price-sale {
+  color: #ff100b;
+  font-weight: 800;
+}
+
+.UpsellPopup-price-regular {
+  position: relative;
+}
+.UpsellPopup-price-regular:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  border-bottom: #ff100b solid 2px;
+}
+
+.UpsellPopup-options {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 60em) {
+  .UpsellPopup-options {
+    flex-direction: row;
+    flex-wrap: wrap;
+    grid-gap: 0.75rem;
+  }
+}
+
+.UpsellPopup-option {
+  text-align: left;
+}
+@media (min-width: 60em) {
+  .UpsellPopup-option {
+    flex: 0 1 calc(50% - 0.375em);
+    margin-top: 0;
+  }
+  [data-options='1'] .UpsellPopup-option {
+    flex: 0 1 100%;
+  }
+}
+.UpsellPopup-option label {
+  font-size: 0.875em;
+  text-transform: uppercase;
+}
+
+.UpsellPopup-select-wrapper {
+  position: relative;
+  margin-top: 0;
+}
+
+.UpsellPopup-select {
+  width: 100%;
+  padding: 0.75em calc(0.75em + 1.5rem) 0.75em 1.5em;
+  border: 2px solid #191818;
+}
+
+.UpsellPopup-add-button,
+.UpsellPopup-dismiss-button {
+  width: 100%;
+}

@@ -1,0 +1,65 @@
+@import '../../scss/global.scss';
+
+.QuantityInput-label {
+  display: block;
+  margin-bottom: $gutter_vertical / 6;
+  font-size: $font_size_xs;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.QuantityInput-numberWrapper {
+  border: $border_size_product_input $border_style $border_color_product_input;
+  display: flex;
+  margin-top: $gutter_vertical / 6;
+  width: 100%;
+
+}
+
+.QuantityInput-decButton,
+.QuantityInput-incButton {
+  margin: 0;
+  border: 0;
+  background-color: $brand_color_white;
+  text-align: center;
+  z-index: 1;
+}
+
+.QuantityInput-decButton {
+  left: 0;
+  padding: $padding_button_vertical $padding_button_vertical / 2 $padding_button_vertical
+    $padding_button_vertical;
+}
+
+.QuantityInput-incButton {
+  right: 0;
+  padding: $padding_button_vertical $padding_button_vertical $padding_button_vertical
+    $padding_button_vertical / 2;
+}
+
+.QuantityInput-input {
+  margin-top: $gutter_vertical / 6;
+  padding: $padding_button_vertical $gutter_horizontal;
+}
+
+input[type='number'].QuantityInput-input {
+  border: none;
+  flex: 1;
+  padding: $padding_button_vertical 0;
+  text-align: center;
+  -moz-appearance: textfield;
+
+  &::-webkit-inner-spin-button,
+  &::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+// ToDo:
+// 1. I think this can be removed, class is not in the html/css
+.QuantityInput-error {
+  display: block;
+  font-size: 15px;
+  color: red;
+}

@@ -1,0 +1,62 @@
+@import '../../scss/global.scss';
+
+.TextColumns {
+  padding: $section_padding;
+}
+
+.TextColumns-title {
+  text-align: center;
+  font-size: $font_size_xl;
+}
+
+.TextColumns-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.TextColumn {
+  text-align: center;
+  flex: 1 1 50%;
+  margin-top: 0;
+  padding: 1.5em;
+
+  @media (min-width: $breakpoint_md) {
+    flex: 1 1 25%;
+  }
+}
+
+.TextColumn-title {
+  font-size: $font_size_lg;
+}
+
+.TextColumn-image {
+  width: 100%;
+  height: auto;
+}
+
+.TextColumn-image--video {
+  max-width: 100%;
+  height: auto;
+}
+
+.TextColumn-image--icon {
+  max-width: none;
+  height: 4.6875em;
+  transition: $transition_duration_hover ease-in-out;
+
+  @media (min-width: $breakpoint_lg) {
+    height: 6.25em;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.TextColumn-description {
+  margin-top: 1em;
+  font-size: $font_size_xs;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}

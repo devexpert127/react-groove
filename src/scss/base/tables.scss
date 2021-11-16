@@ -1,0 +1,95 @@
+// Responsive tables base
+@mixin responsive-table {
+  @if $include_tables_responsive {
+    table {
+      display: block;
+    }
+
+    thead {
+      display: none;
+    }
+
+    tbody,
+    tfoot,
+    tr,
+    td,
+    th {
+      display: block;
+      margin-top: 0;
+    }
+
+    tr {
+      padding: ($gutter_horizontal / 2) ($gutter_vertical / 2);
+    }
+
+    td:before {
+      content: attr(title);
+      display: inline-block;
+      margin-right: 2%;
+      font-weight: $font_weight_bold;
+    }
+  }
+}
+
+// Stripes
+@mixin table-stripes {
+  tbody tr {
+    transition: $transition_duration_hover;
+    &:nth-child(odd) {
+      background-color: $background_color_table;
+    }
+    &:hover {
+      background-color: $background_hover_color_table;
+    }
+  }
+}
+
+// Borders
+@mixin table-borders-horizontal {
+  thead,
+  tfoot {
+    border-top: $border_color_table $border_style_table $border_size_table_lg;
+    border-bottom: $border_color_table $border_style_table $border_size_table_lg;
+  }
+
+  tbody tr {
+    border-bottom: $border_color_table $border_style_table $border_size_table;
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
+
+@mixin table-borders-horizontal-responsive {
+  @if $include_tables_responsive {
+    tbody tr:first-child {
+      border-top: $border_color_table $border_style_table $border_size_table_lg;
+    }
+  }
+}
+
+@mixin table-borders-vertical {
+  @media (min-width: $breakpoint_tables) {
+    td,
+    th {
+      border-left: $border_color_table $border_style_table $border_size_table;
+      &:last-child {
+        border-right: $border_color_table $border_style_table $border_size_table;
+      }
+    }
+  }
+}
+
+@mixin table-borders-vertical-responsive {
+  @if $include_tables_responsive {
+    tr {
+      border-left: $border_color_table $border_style_table $border_size_table;
+      border-right: $border_color_table $border_style_table $border_size_table;
+    }
+  }
+}
+
+@mixin table-borders {
+  @include table-borders-horizontal;
+  @include table-borders-vertical;
+}

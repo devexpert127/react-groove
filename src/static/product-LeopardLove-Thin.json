@@ -1,0 +1,302 @@
+{
+    "availableForSale": true,
+    "externalId": 4389335892035,
+    "maxPrice": 34.95,
+    "media": [
+        {
+            "_id": "23ba1b48-1058-4e5e-aee1-41bfd1f59b82",
+            "details": {
+                "_type": "image",
+                "alt": "Pink Leopard Thin | Groove Life",
+                "height": 960,
+                "name": "pink_leopard_thin_view_01.png",
+                "src": "https://f.shgcdn.com/74be977f-af20-479a-9768-a95aa3f801dd/",
+                "storageID": "74be977f-af20-479a-9768-a95aa3f801dd",
+                "width": 1440
+            }
+        },
+        {
+            "_id": "80bb4e2e-c374-4c6b-b212-d7bc9423689b",
+            "details": {
+                "_type": "image",
+                "alt": "Leopard Love - Thin - Groove Life Silicone Wedding Rings",
+                "height": 1280,
+                "name": "Pink_Leopard_Thin_VIEW_02.jpg",
+                "src": "https://f.shgcdn.com/bf5c0bd6-783f-45db-b01f-2ee32359dd88/",
+                "storageID": "bf5c0bd6-783f-45db-b01f-2ee32359dd88",
+                "width": 1920
+            }
+        },
+        {
+            "_id": "c5c7643d-2608-44b3-8e31-6d216fd59dce",
+            "details": {
+                "_type": "image",
+                "alt": "Leopard Love - Thin - Groove Life Silicone Wedding Rings",
+                "height": 1280,
+                "name": "Pink_Leopard_Thin_VIEW_03.jpg",
+                "src": "https://f.shgcdn.com/52157ee4-5990-4aaa-9dfa-edb8e5008cd8/",
+                "storageID": "52157ee4-5990-4aaa-9dfa-edb8e5008cd8",
+                "width": 1920
+            }
+        },
+        {
+            "_id": "fe6fa22a-eeec-431f-b397-7a8ccbab2d57",
+            "details": {
+                "_type": "image",
+                "alt": "Leopard Love - Thin - Groove Life Silicone Wedding Rings",
+                "height": 1280,
+                "name": "NO_BS_1920x1080_d13b4acc-b344-4a9f-bc1a-e452ab05ea8a.png",
+                "src": "https://f.shgcdn.com/b4eb9291-4c86-42c5-9e90-229636e28408/",
+                "storageID": "b4eb9291-4c86-42c5-9e90-229636e28408",
+                "width": 1920
+            }
+        },
+        {
+            "_id": "4f8115b0-62b3-4183-9f28-b3faf097ecca",
+            "details": {
+                "_type": "image",
+                "alt": "Leopard Love - Thin - Groove Life Silicone Wedding Rings",
+                "height": 400,
+                "name": "CUSTOMIZED_LOGO_FOR_WEBSITE_788bd0c5-295e-45b5-9b39-debee754daec.png",
+                "src": "https://f.shgcdn.com/0b6f7b20-369b-4c45-9436-5c228c8995a2/",
+                "storageID": "0b6f7b20-369b-4c45-9436-5c228c8995a2",
+                "width": 600
+            }
+        }
+    ],
+    "minPrice": 34.95,
+    "name": "Leopard Love - Thin",
+    "options": [
+        {
+            "_id": "08110b00-2f14-4f7f-8342-63c46a13ed62",
+            "name": "Size",
+            "values": [
+                {
+                    "_id": "f8739c96-75c8-43de-8e96-9e04bad71cdd",
+                    "name": "Size",
+                    "value": "4"
+                },
+                {
+                    "_id": "70bcec06-e23b-4056-9b40-75b8b1a2dac1",
+                    "name": "Size",
+                    "value": "5"
+                },
+                {
+                    "_id": "3b28f967-3614-4f7e-9f7b-6e2a6a395067",
+                    "name": "Size",
+                    "value": "6"
+                },
+                {
+                    "_id": "a173c113-9056-46c6-ba90-91f5ea520ea3",
+                    "name": "Size",
+                    "value": "7"
+                },
+                {
+                    "_id": "9d6b90a1-29e2-42d8-9f0d-512f3d4d630d",
+                    "name": "Size",
+                    "value": "8"
+                },
+                {
+                    "_id": "a3dad6fd-3582-41ca-bebc-e75939c1fc9e",
+                    "name": "Size",
+                    "value": "9"
+                },
+                {
+                    "_id": "98abc5c0-f569-472c-b642-23ca6623fe0a",
+                    "name": "Size",
+                    "value": "10"
+                },
+                {
+                    "_id": "aefcfc7b-61af-48d0-8e2e-b80d442a24d4",
+                    "name": "Size",
+                    "value": "11"
+                }
+            ]
+        }
+    ],
+    "slug": "thin-aspire-leopard-love",
+    "tags": [
+        "2020",
+        "30-40",
+        "allsale",
+        "aspire",
+        "best",
+        "GSA Exclude",
+        "leapyear29",
+        "leopard",
+        "men-and-womens-patterned-silicone-wedding-rings",
+        "New",
+        "pink",
+        "ReturnLogic Exclusion",
+        "ring360",
+        "sale",
+        "size-10",
+        "size-5",
+        "size-6",
+        "size-7",
+        "size-8",
+        "size-9",
+        "tag-limited-edition",
+        "tag-ships-in-24",
+        "tag20",
+        "thin",
+        "ua",
+        "UF1",
+        "women"
+    ],
+    "type": "Groove Aspire",
+    "variants": [
+        {
+            "_id": "6522500b-f9c9-4f31-b4e0-59c709925d90",
+            "availableForSale": false,
+            "externalId": 31361956446275,
+            "name": "4",
+            "originalPrice": 0,
+            "position": 1,
+            "price": 34.95,
+            "quantity": 0,
+            "selectedOptions": [
+                {
+                    "_id": "f8739c96-75c8-43de-8e96-9e04bad71cdd",
+                    "name": "Size",
+                    "storefrontId": "gid://shopify/ProductOption/5713644781635/4",
+                    "value": "4"
+                }
+            ],
+            "storefrontId": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zMTM2MTk1NjQ0NjI3NQ=="
+        },
+        {
+            "_id": "bc617339-5a77-49ab-bd82-224cab3ba3ac",
+            "availableForSale": true,
+            "externalId": 31361956479043,
+            "name": "5",
+            "originalPrice": 0,
+            "position": 2,
+            "price": 34.95,
+            "quantity": 8,
+            "selectedOptions": [
+                {
+                    "_id": "70bcec06-e23b-4056-9b40-75b8b1a2dac1",
+                    "name": "Size",
+                    "storefrontId": "gid://shopify/ProductOption/5713644781635/5",
+                    "value": "5"
+                }
+            ],
+            "storefrontId": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zMTM2MTk1NjQ3OTA0Mw=="
+        },
+        {
+            "_id": "a168c14b-c6cb-4832-ada8-940be90f5d3d",
+            "availableForSale": true,
+            "externalId": 31361956511811,
+            "name": "6",
+            "originalPrice": 0,
+            "position": 3,
+            "price": 34.95,
+            "quantity": 58,
+            "selectedOptions": [
+                {
+                    "_id": "3b28f967-3614-4f7e-9f7b-6e2a6a395067",
+                    "name": "Size",
+                    "storefrontId": "gid://shopify/ProductOption/5713644781635/6",
+                    "value": "6"
+                }
+            ],
+            "storefrontId": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zMTM2MTk1NjUxMTgxMQ=="
+        },
+        {
+            "_id": "3b17f3e2-19ed-40e2-aa4b-4399f7bbe231",
+            "availableForSale": true,
+            "externalId": 31361956544579,
+            "name": "7",
+            "originalPrice": 0,
+            "position": 4,
+            "price": 34.95,
+            "quantity": 64,
+            "selectedOptions": [
+                {
+                    "_id": "a173c113-9056-46c6-ba90-91f5ea520ea3",
+                    "name": "Size",
+                    "storefrontId": "gid://shopify/ProductOption/5713644781635/7",
+                    "value": "7"
+                }
+            ],
+            "storefrontId": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zMTM2MTk1NjU0NDU3OQ=="
+        },
+        {
+            "_id": "c20ba392-023d-46e1-8fe9-1939c8831bdb",
+            "availableForSale": true,
+            "externalId": 31361956577347,
+            "name": "8",
+            "originalPrice": 0,
+            "position": 5,
+            "price": 34.95,
+            "quantity": 65,
+            "selectedOptions": [
+                {
+                    "_id": "9d6b90a1-29e2-42d8-9f0d-512f3d4d630d",
+                    "name": "Size",
+                    "storefrontId": "gid://shopify/ProductOption/5713644781635/8",
+                    "value": "8"
+                }
+            ],
+            "storefrontId": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zMTM2MTk1NjU3NzM0Nw=="
+        },
+        {
+            "_id": "028e7141-ffad-4f35-95ab-477c0daba8a2",
+            "availableForSale": true,
+            "externalId": 31361956610115,
+            "name": "9",
+            "originalPrice": 0,
+            "position": 6,
+            "price": 34.95,
+            "quantity": 35,
+            "selectedOptions": [
+                {
+                    "_id": "a3dad6fd-3582-41ca-bebc-e75939c1fc9e",
+                    "name": "Size",
+                    "storefrontId": "gid://shopify/ProductOption/5713644781635/9",
+                    "value": "9"
+                }
+            ],
+            "storefrontId": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zMTM2MTk1NjYxMDExNQ=="
+        },
+        {
+            "_id": "7e321b16-a85e-46c8-830d-2900dde00077",
+            "availableForSale": true,
+            "externalId": 31361956642883,
+            "name": "10",
+            "originalPrice": 0,
+            "position": 7,
+            "price": 34.95,
+            "quantity": 35,
+            "selectedOptions": [
+                {
+                    "_id": "98abc5c0-f569-472c-b642-23ca6623fe0a",
+                    "name": "Size",
+                    "storefrontId": "gid://shopify/ProductOption/5713644781635/10",
+                    "value": "10"
+                }
+            ],
+            "storefrontId": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zMTM2MTk1NjY0Mjg4Mw=="
+        },
+        {
+            "_id": "85e540cb-1c5c-420c-9f5d-99a18de4df6b",
+            "availableForSale": false,
+            "externalId": 31361956675651,
+            "name": "11",
+            "originalPrice": 0,
+            "position": 8,
+            "price": 34.95,
+            "quantity": 0,
+            "selectedOptions": [
+                {
+                    "_id": "aefcfc7b-61af-48d0-8e2e-b80d442a24d4",
+                    "name": "Size",
+                    "storefrontId": "gid://shopify/ProductOption/5713644781635/11",
+                    "value": "11"
+                }
+            ],
+            "storefrontId": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zMTM2MTk1NjY3NTY1MQ=="
+        }
+    ]
+}

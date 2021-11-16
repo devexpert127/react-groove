@@ -1,0 +1,113 @@
+@import '../../scss/global.scss';
+
+.TestimonialsBanner {
+  font-size: 0.5em;
+
+  @media (min-width: $breakpoint_md) {
+    font-size: 0.75em;
+  }
+
+  @media (min-width: $breakpoint_lg) {
+    font-size: 1em;
+  }
+
+  .PageWidth {
+    margin-top: 0;
+  }
+}
+
+.TestimonialsBanner--dark {
+  color: $brand_color_white;
+}
+
+.TestimonialsBanner--noTopPadding {
+  padding-top: 0;
+
+  .Image {
+    padding-top: 0;
+  }
+}
+
+.TestimonialsBanner--noBottomPadding {
+  padding-bottom: 0;
+
+  .Image {
+    padding-bottom: 0;
+  }
+}
+
+.TestimonialsBanner-container {
+  @include hero-content;
+}
+
+.TestimonialsBanner-content {
+  margin: 0 auto;
+  padding: 3em 5em;
+
+  @media (min-width: $breakpoint_md) {
+    max-width: 75%;
+    margin: 0;
+    padding: 3em 5em;
+  }
+
+  @media (min-width: $breakpoint_lg) {
+    padding: 6em 5em;
+  }
+}
+
+.TestimonialsBanner-content--hidden {
+  @include visually-hidden;
+}
+
+.TestimonialsBanner-quote {
+  @include font-size-xxl;
+  padding-left: 0; // reset default blockquote styles
+  border-left: 0; // reset default blockquote styles
+  font-weight: 800;
+  text-transform: none;
+  letter-spacing: normal;
+
+  &__open,
+  &__close {
+    position: absolute;
+    font-size: 2.5em;
+  }
+
+  &__open {
+    margin-top: -0.6em;
+    margin-left: -0.6em;
+  }
+
+  &__close {
+    position: absolute;
+    margin-top: 0.25em;
+    margin-left: 0.15em;
+  }
+}
+
+.TestimonialsBanner-quote--smallText {
+  font-size: 2.5em;
+
+  @media (min-width: $breakpoint_md) {
+    @include font-size-xl;
+  }
+}
+
+.TestimonialsBanner-attribution {
+  @include font-size-xl;
+  display: block;
+  margin-top: 3em;
+  margin-right: 2em;
+  font-style: normal;
+  text-align: right;
+  text-transform: none;
+
+  @media (min-width: $breakpoint_md) {
+    margin-top: 4em;
+    @include font-size-lg;
+  }
+
+  @media (min-width: $breakpoint_lg) {
+    @include font-size-md;
+  }
+}

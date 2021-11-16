@@ -1,0 +1,94 @@
+@import '../../scss/global.scss';
+
+.VisualBlocks {
+  padding: $section_padding;
+}
+
+.VisualBlocks-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -$gutter_vertical / 2;
+  margin-right: -$gutter_vertical / 2;
+}
+
+.VisualBlock {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 calc((100% / 3));
+  padding: $gutter_vertical / 2;
+  margin: 0;
+  @media (max-width: $breakpoint_md) {
+    flex: 1 1 100%;
+  }
+}
+
+.VisualBlock-visual {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.VisualBlock-title {
+  font-size: $font_size_lg;
+  font-weight: $font_weight_bold;
+}
+
+.VisualBlock-description {
+  margin-top: 1em;
+  margin-bottom: auto;
+  font-size: $font_size_xs;
+  letter-spacing: 0.05em;
+}
+
+.VisualBlocks-superimposeText {
+  .VisualBlock {
+    position: relative;
+
+    &:hover {
+      .VisualBlock-textContainer {
+        opacity: 1;
+      }
+    }
+  }
+
+  .VisualBlock-textContainer {
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    position: absolute;
+    top: $gutter_vertical / 2;
+    left: $gutter_vertical / 2;
+    right: 0;
+    bottom: 0;
+    width: calc(100% - #{$gutter_vertical});
+    height: calc(100% - #{$gutter_vertical});
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -ms-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+  }
+
+  .VisualBlock-text {
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  .VisualBlock-title {
+    color: $brand_color_white;
+  }
+
+  .VisualBlock-description {
+    color: $brand_color_accent;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 12px;
+  }
+}

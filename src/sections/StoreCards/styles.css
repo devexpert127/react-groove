@@ -1,0 +1,110 @@
+.StoreCards {
+  text-align: center;
+}
+.StoreCards--padding-top {
+  padding-top: 3.75rem;
+}
+.StoreCards--padding-bottom {
+  padding-bottom: 3.75rem;
+}
+
+.StoreCards-container {
+  max-width: 64em;
+}
+
+.StoreCards-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  margin-top: 3rem;
+  margin-left: -0.375em;
+  margin-right: -0.375em;
+  padding-left: 0;
+}
+
+.StoreCard {
+  position: relative;
+  flex: 0 0 100%;
+  padding-top: 100%;
+}
+@media (min-width: 37.5em) {
+  .StoreCard {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding-top: 50%;
+  }
+}
+@media (min-width: 60em) {
+  .StoreCard {
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+    padding-top: 33.333%;
+  }
+}
+@supports (aspect-ratio: auto) {
+  .StoreCard {
+    padding-top: 0;
+  }
+}
+
+.StoreCard-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0.375em;
+  padding: 3rem 1.5rem;
+  color: #fff;
+  background-color: #191818;
+}
+@supports (aspect-ratio: auto) {
+  .StoreCard-content {
+    position: relative;
+    aspect-ratio: 1 / 1;
+  }
+}
+
+.StoreCard-content--link {
+  display: block;
+  text-decoration: none;
+}
+.StoreCard-content--link:active,
+.StoreCard-content--link:hover,
+.StoreCard-content--link:focus {
+  color: #f38732;
+}
+.StoreCard-content--link:focus {
+  background-color: #191818;
+}
+.StoreCard-content--link:focus-visible {
+  color: #f38732;
+  background-color: #191818;
+}
+
+.StoreCard-details {
+  text-transform: uppercase;
+}
+.StoreCard-details dt {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+.StoreCard-details dd {
+  margin-left: 0;
+}
+
+.StoreCard-details-group {
+  display: inline-block;
+  margin: 0 0.125em;
+}
+
+.StoreCard-details-group--address {
+  display: block;
+}

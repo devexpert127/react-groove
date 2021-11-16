@@ -1,0 +1,44 @@
+@keyframes overlayFadeIn {
+  from {
+    opacity: 0;
+    visibility: hidden;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.DrawerOverlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  bottom: 0;
+  content: '';
+  left: 0;
+  opacity: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  animation: overlayFadeIn 0.45s forwards;
+  visibility: hidden;
+  z-index: 999;
+}
+
+.DrawerOverlay.loaded {
+  transition: all 0.45s cubic-bezier(0.29, 0.63, 0.44, 1);
+  animation: unset;
+}
+
+.DrawerContainer.is-open .DrawerOverlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+.DrawerContent {
+  margin-top: 0;
+}
+
+.has-drawer {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+}

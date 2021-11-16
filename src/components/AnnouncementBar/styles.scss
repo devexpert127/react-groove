@@ -1,0 +1,59 @@
+@import '../../scss/global.scss';
+
+.AnnouncementBar {
+  position: relative;
+  padding: 1rem;
+  font-size: 0.6875em;
+  letter-spacing: 0.05em;
+  text-align: center;
+  text-transform: uppercase;
+  color: $brand_color_white;
+  background-color: $brand_color_dark_gray;
+  margin-top: 0;
+  max-height: 50px;
+
+  @media (min-width: $breakpoint_pdp_form) {
+    padding: 1.25rem 1rem;
+  }
+}
+
+.AnnouncementBar--hidden {
+  display: none;
+}
+
+@media (min-width: $breakpoint_pdp_form) {
+  .AnnouncementBar-slider {
+    padding: 1px 0;
+  }
+}
+
+.AnnouncementBar-item a {
+  color: inherit;
+
+  &:hover,
+  &:focus {
+    color: $link_color;
+  }
+}
+
+.AnnouncementBar-item[hidden] {
+  visibility: hidden;
+}
+
+.AnnouncementBar-close {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  height: 100%;
+  transform: translateY(-50%);
+  margin: 0;
+  border: none;
+
+  .Icon {
+    max-width: 1.5em;
+  }
+}
+
+.AnnouncementBar-closeText {
+  @include visually-hidden;
+}

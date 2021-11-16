@@ -1,0 +1,22 @@
+@import '../../scss/global.scss';
+
+.VideoGif {
+  padding-top: 1.5rem;
+
+  .VideoGif-content {
+    @include reading-length;
+    margin: 0 auto;
+  }
+
+  video {
+    width: 100%;
+  }
+
+  .VideoGif--align-center {
+    text-align: center;
+  }
+
+  .VideoGif--align-right {
+    text-align: right;
+  }
+}

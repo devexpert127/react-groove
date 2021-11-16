@@ -1,0 +1,57 @@
+.QuantityInput-label {
+  display: block;
+  margin-bottom: 0.25em;
+  font-size: 0.875em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.QuantityInput-numberWrapper {
+  border: 2px solid #191818;
+  display: flex;
+  margin-top: 0.25em;
+  width: 100%;
+}
+
+.QuantityInput-decButton,
+.QuantityInput-incButton {
+  margin: 0;
+  border: 0;
+  background-color: #fff;
+  text-align: center;
+  z-index: 1;
+}
+
+.QuantityInput-decButton {
+  left: 0;
+  padding: 0.75em 0.375em 0.75em 0.75em;
+}
+
+.QuantityInput-incButton {
+  right: 0;
+  padding: 0.75em 0.75em 0.75em 0.375em;
+}
+
+.QuantityInput-input {
+  margin-top: 0.25em;
+  padding: 0.75em 1.5rem;
+}
+
+input[type='number'].QuantityInput-input {
+  border: none;
+  flex: 1;
+  padding: 0.75em 0;
+  text-align: center;
+  -moz-appearance: textfield;
+}
+input[type='number'].QuantityInput-input::-webkit-inner-spin-button,
+input[type='number'].QuantityInput-input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.QuantityInput-error {
+  display: block;
+  font-size: 15px;
+  color: red;
+}

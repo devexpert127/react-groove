@@ -1,0 +1,104 @@
+@import '../../scss/global.scss';
+
+.StoreCards {
+  text-align: center;
+
+  &--padding-top {
+    padding-top: $section_padding_single_direction;
+  }
+  &--padding-bottom {
+    padding-bottom: $section_padding_single_direction;
+  }
+}
+
+.StoreCards-container {
+  max-width: $breakpoint_1024;
+}
+
+.StoreCards-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  margin-top: 3rem;
+  margin-left: -0.375em;
+  margin-right: -0.375em;
+  padding-left: 0;
+}
+
+.StoreCard {
+  position: relative;
+  flex: 0 0 100%;
+  padding-top: 100%;
+
+  @media (min-width: $breakpoint_sm) {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding-top: 50%;
+  }
+
+  @media (min-width: $breakpoint_md) {
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+    padding-top: 33.333%;
+  }
+
+  @supports (aspect-ratio: auto) {
+    padding-top: 0;
+  }
+}
+
+.StoreCard-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0.375em;
+  padding: 3rem 1.5rem;
+  color: $brand_color_white;
+  background-color: $brand_color_black;
+
+  @supports (aspect-ratio: auto) {
+    position: relative;
+    aspect-ratio: 1 / 1;
+  }
+}
+
+.StoreCard-content--link {
+  display: block;
+  text-decoration: none;
+
+  &:active,
+  &:hover,
+  &:focus {
+    color: $highlight_color;
+  }
+  &:focus {
+    background-color: $brand_color_black;
+  }
+  // Safari throws away the whole selector group if it finds :focus-visible so we have to seperate this out so we don't loose our styles
+  &:focus-visible {
+    color: $highlight_color;
+    background-color: $brand_color_black;
+  }
+}
+
+.StoreCard-details {
+  text-transform: uppercase;
+  dt {
+    @include visually-hidden;
+  }
+  dd {
+    margin-left: 0;
+  }
+}
+
+.StoreCard-details-group {
+  display: inline-block;
+  margin: 0 0.125em;
+}
+
+.StoreCard-details-group--address {
+  display: block;
+}

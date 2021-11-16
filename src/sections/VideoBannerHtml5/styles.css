@@ -1,0 +1,7 @@
+.VideoBannerHTML5-video {
+  margin-top: 0;
+}
+.VideoBannerHTML5-video video {
+  display: block;
+  width: 100%;
+}

@@ -1,0 +1,78 @@
+.RichTextContent {
+  padding: 3.75rem 0;
+}
+
+.RichTextContent--dark {
+  color: #fff;
+  background-color: #1f1f1e;
+}
+
+.RichTextContent--grey {
+  background: #e7e9ea;
+}
+
+.RichTextContent--cutaway {
+  padding: 125px 0 75px 0;
+  clip-path: polygon(50% 10%, 100% 0%, 100% 100%, 0% 100%, 0% 0%);
+  -webkit-clip-path: polygon(50% 10%, 100% 0%, 100% 100%, 0% 100%, 0% 0%);
+}
+@media (min-width: 60em) {
+  .RichTextContent--cutaway {
+    padding: 300px 0 100px 0;
+    clip-path: polygon(50% 25%, 100% 0%, 100% 100%, 0% 100%, 0% 0%);
+    -webkit-clip-path: polygon(50% 25%, 100% 0%, 100% 100%, 0% 100%, 0% 0%);
+  }
+}
+
+.RichTextContent--noTopPadding {
+  padding-top: 0;
+}
+
+.RichTextContent--noBottomPadding {
+  padding-bottom: 0;
+}
+
+.RichTextContent--restrictImageWidths img {
+  max-width: 200px;
+}
+
+.RichTextContent-content {
+  margin-top: 0;
+}
+.RichTextContent-content h1 b,
+.RichTextContent-content h1 strong,
+.RichTextContent-content h2 b,
+.RichTextContent-content h2 strong,
+.RichTextContent-content h3 b,
+.RichTextContent-content h3 strong,
+.RichTextContent-content h4 b,
+.RichTextContent-content h4 strong,
+.RichTextContent-content h5 b,
+.RichTextContent-content h5 strong,
+.RichTextContent-content h6 b,
+.RichTextContent-content h6 strong {
+  color: #f38732;
+}
+
+.RichTextContent-subtitle {
+  margin-top: 1rem;
+}
+
+.RichText--align-center .RichTextContent-content {
+  text-align: center;
+}
+
+.RichText--align-right .RichTextContent-content {
+  text-align: right;
+}
+
+.RichTextContent-content--reading-length {
+  max-width: 46.875rem;
+}
+.RichText--align-center .RichTextContent-content--reading-length {
+  margin-left: auto;
+  margin-right: auto;
+}
+.RichText--align-right .RichTextContent-content--reading-length {
+  margin-left: auto;
+}

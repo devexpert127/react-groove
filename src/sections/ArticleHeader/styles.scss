@@ -1,0 +1,36 @@
+@import '../../scss/global.scss';
+
+.Article-header {
+  padding: $section_padding;
+  padding-bottom: 0;
+}
+
+.Article-header-content {
+  @include reading-length;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Article-title {
+  @include font-size-lg;
+  letter-spacing: 0.1em;
+  font-weight: $font_weight_base;
+}
+
+.Article-rule {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: $highlight_color solid 3px;
+}
+
+.Article-meta {
+  font-weight: $font_weight_bold;
+  dt {
+    @include visually-hidden;
+  }
+  dd {
+    display: inline;
+    margin: 0 0.25em 0 0;
+  }
+}

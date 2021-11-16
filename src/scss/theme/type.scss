@@ -1,0 +1,35 @@
+@mixin title($color: $text_color_light, $border_weight: 0.0625em) {
+  position: relative;
+  padding-left: 0.25em;
+  @if ($color) {
+    color: $color;
+  }
+  font-weight: $font_weight_base;
+
+  &:before {
+    content: '';
+    height: 75%;
+    position: absolute;
+    left: -$border_weight;
+    top: 50%;
+    transform: translateY(-50%);
+    border-left: solid $border_weight $highlight_color;
+  }
+
+  b,
+  strong {
+    color: $highlight_color;
+    font-weight: $font_weight_extrabold;
+  }
+}
+
+@mixin code {
+  font-size: 0.75em;
+  line-height: 1.5em;
+  font-weight: 400;
+  padding: 0 0.25em;
+  border-radius: 3px;
+  background-color: #333;
+  color: $highlight_color;
+  text-shadow: 0 1px 0 #000;
+}

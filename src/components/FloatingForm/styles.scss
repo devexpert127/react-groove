@@ -1,0 +1,53 @@
+@import '../../scss/global.scss';
+.FloatingForm {
+  margin-top: 1em;
+  transition: opacity 0.2s ease-in-out, z-index 0.2s ease-in-out;
+
+  /* Floating product form */
+  &--floating {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 0;
+    margin: 0;
+    padding: $gutter_vertical / 2 $gutter_horizontal / 2;
+    color: $brand_color_white;
+    background: $brand_color_black;
+    opacity: 0;
+    pointer-events: none;
+
+    @media (min-width: $breakpoint_md) {
+      display: none;
+    }
+
+    .ProductTitle,
+    .ProductBox-input,
+    .ProductBox-submit {
+      opacity: 0;
+      transition: opacity 0.2s ease-in-out;
+    }
+
+    .ProductTitle {
+      font-size: $font_size_xs;
+    }
+
+    .ProductBox-input,
+    .ProductBox-submit .Button {
+      font-size: $font_size_sm;
+      line-height: 1.75;
+    }
+  }
+
+  &--floating-visible {
+    opacity: 1;
+    z-index: 10;
+    pointer-events: all;
+
+    .ProductTitle,
+    .ProductBox-input,
+    .ProductBox-submit {
+      opacity: 1;
+    }
+  }
+}

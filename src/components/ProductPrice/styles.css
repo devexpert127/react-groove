@@ -1,0 +1,49 @@
+.ProductPrice-prices {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  grid-gap: 0.75rem;
+  margin-top: 0;
+  align-self: stretch;
+  flex: 1;
+}
+.ProductPrice-prices dd {
+  margin-left: 0;
+}
+.ProductPrice-prices dt {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+.ProductPrice.ProductPrice--onSale .ProductPrice-sale {
+  color: #f38732;
+}
+
+.ProductPrice-regular--discount {
+  font-size: 0.875em;
+}
+
+.ProductPrice-sezzle {
+  margin-top: 0;
+}
+
+.ProductPrice .sezzle-checkout-button-wrapper {
+  padding: 0;
+}
+
+.ProductPrice .sezzle-checkout-button-wrapper .sezzle-button-text {
+  line-height: inherit;
+  margin: 0;
+}
+
+.ProductPrice__pre-text-wrap {
+  display: inline-block;
+  margin-top: 0;
+  margin-left: 0.25em;
+}

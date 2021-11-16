@@ -1,0 +1,15 @@
+@import '../../scss/global.scss';
+
+.FeaturedArticles {
+  display: flex;
+  flex-wrap: wrap;
+
+  .ArticleCard {
+    flex: 1 1 calc(100% / 3);
+    margin-top: 0;
+
+    @media (max-width: $breakpoint_md) {
+      flex: 1 1 100%;
+    }
+  }
+}

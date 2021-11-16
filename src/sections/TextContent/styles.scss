@@ -1,0 +1,25 @@
+@import '../../scss/global.scss';
+
+.TextContent {
+  padding: $section_padding;
+}
+
+.TextContent-title {
+  font-size: $font_size_lg;
+  color: $highlight_color;
+}
+
+.TextContent--align-center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.TextContent--align-right {
+  text-align: right;
+  margin-left: auto;
+}
+
+.TextContent--reading-length {
+  @include reading-length;
+}

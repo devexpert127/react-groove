@@ -1,0 +1,776 @@
+{
+  "availableForSale": false,
+  "externalId": 6548069122115,
+  "maxPrice": 44.95,
+  "media": [{
+    "_id": "97eb08df-71b1-4bbc-8009-4013a6dcf18e",
+    "details": {
+      "_type": "image",
+      "alt": "Tropics Apple Watch Band | Groove Life",
+      "height": 1867,
+      "mimeType": "image/png",
+      "name": "TropicsApplePeachSVView1.png",
+      "size": 1641148,
+      "src": "https://f.shgcdn.com/14343794-2e47-4bb9-be10-06bcadb9a5c2/",
+      "storageID": "14343794-2e47-4bb9-be10-06bcadb9a5c2",
+      "width": 2800
+    }
+  }, {
+    "_id": "9e11e55a-afb6-40d6-8d16-090db728ffbe",
+    "details": {
+      "_type": "image",
+      "alt": "Tropics Apple Watch Band | Groove Life",
+      "height": 1867,
+      "mimeType": "image/jpeg",
+      "name": "TropicsApplePeachSVView2.jpg",
+      "size": 287102,
+      "src": "https://f.shgcdn.com/9dc7cfbb-e41a-4416-86a6-56e1777b2ca7/",
+      "storageID": "9dc7cfbb-e41a-4416-86a6-56e1777b2ca7",
+      "width": 2800
+    }
+  }, {
+    "_id": "a9e0009e-1414-456b-8d64-993e2f357fe6",
+    "details": {
+      "_type": "image",
+      "alt": "Tropics Apple Watch Band | Groove Life",
+      "height": 1867,
+      "mimeType": "image/jpeg",
+      "name": "TropicsApplePeachSVView3.jpg",
+      "size": 282180,
+      "src": "https://f.shgcdn.com/d043db7c-aac4-4cf5-96a5-8b34d85e1e1c/",
+      "storageID": "d043db7c-aac4-4cf5-96a5-8b34d85e1e1c",
+      "width": 2800
+    }
+  }, {
+    "_id": "a472512b-9752-44ad-a0ea-30b99846e469",
+    "details": {
+      "_type": "image",
+      "alt": "Tropics Apple Watch Band | Groove Life",
+      "height": 1867,
+      "mimeType": "image/jpeg",
+      "name": "TropicsApplePeachSVView4.jpg",
+      "size": 325899,
+      "src": "https://f.shgcdn.com/025118fc-1a6c-4574-8420-bc80f4cc9f56/",
+      "storageID": "025118fc-1a6c-4574-8420-bc80f4cc9f56",
+      "width": 2800
+    }
+  }, {
+    "_id": "377c34d0-a171-454c-950c-d2ac9630d013",
+    "details": {
+      "_type": "image",
+      "alt": "Tropics Apple Watch Band | Groove Life",
+      "height": 1867,
+      "mimeType": "image/png",
+      "name": "TropicsApplePeachRGView1.png",
+      "size": 1638734,
+      "src": "https://f.shgcdn.com/631f2e27-b8d6-4363-952a-15ae389a5d5b/",
+      "storageID": "631f2e27-b8d6-4363-952a-15ae389a5d5b",
+      "width": 2800
+    }
+  }, {
+    "_id": "0280338c-27fc-4ec8-a1ca-7355b1e74201",
+    "details": {
+      "_type": "image",
+      "alt": "Tropics Apple Watch Band | Groove Life",
+      "height": 1867,
+      "mimeType": "image/jpeg",
+      "name": "TropicsApplePeachRGView2.jpg",
+      "size": 286481,
+      "src": "https://f.shgcdn.com/7dff356d-e979-4e67-8d3e-ec8852a61bb2/",
+      "storageID": "7dff356d-e979-4e67-8d3e-ec8852a61bb2",
+      "width": 2800
+    }
+  }, {
+    "_id": "61577a21-cfaa-4e2f-aa6d-6ff4b73cf03c",
+    "details": {
+      "_type": "image",
+      "alt": "Tropics Apple Watch Band | Groove Life",
+      "height": 1867,
+      "mimeType": "image/jpeg",
+      "name": "TropicsApplePeachRGView3.jpg",
+      "size": 287869,
+      "src": "https://f.shgcdn.com/2ca5867b-0fbd-43f3-92b6-e63d64c51b90/",
+      "storageID": "2ca5867b-0fbd-43f3-92b6-e63d64c51b90",
+      "width": 2800
+    }
+  }, {
+    "_id": "7c9f7122-2c58-44dd-b38d-61030206c5dc",
+    "details": {
+      "_type": "image",
+      "alt": "Tropics Apple Watch Band | Groove Life",
+      "height": 1867,
+      "mimeType": "image/jpeg",
+      "name": "TropicsApplePeachRGView4.jpg",
+      "size": 326307,
+      "src": "https://f.shgcdn.com/b5d7fad6-6edd-4411-9122-a83022b190c8/",
+      "storageID": "b5d7fad6-6edd-4411-9122-a83022b190c8",
+      "width": 2800
+    }
+  }, {
+    "_id": "7fbae71f-a1f8-4d0f-a754-67e04995eaa9",
+    "details": {
+      "_type": "image",
+      "alt": "Tropics Apple Watch Band | Groove Life",
+      "height": 1867,
+      "mimeType": "image/png",
+      "name": "TropicsApplePeachSGView1.png",
+      "size": 1590799,
+      "src": "https://f.shgcdn.com/0a0ca53c-369d-4e9b-b71c-48cb4cac339a/",
+      "storageID": "0a0ca53c-369d-4e9b-b71c-48cb4cac339a",
+      "width": 2800
+    }
+  }, {
+    "_id": "fa74435a-9a17-4781-97d8-fb001d9bd75f",
+    "details": {
+      "_type": "image",
+      "alt": "Tropics Apple Watch Band | Groove Life",
+      "height": 1867,
+      "mimeType": "image/jpeg",
+      "name": "TropicsApplePeachSGView2.jpg",
+      "size": 284728,
+      "src": "https://f.shgcdn.com/46f5cc46-783d-41c5-9e97-d3d1d86fc1b7/",
+      "storageID": "46f5cc46-783d-41c5-9e97-d3d1d86fc1b7",
+      "width": 2800
+    }
+  }, {
+    "_id": "46ff5ac6-2a25-4eb6-a13f-d7a7889330dd",
+    "details": {
+      "_type": "image",
+      "alt": "Tropics Apple Watch Band | Groove Life",
+      "height": 1867,
+      "mimeType": "image/jpeg",
+      "name": "TropicsApplePeachSGView3.jpg",
+      "size": 280446,
+      "src": "https://f.shgcdn.com/8c711783-7056-41f5-b433-2f4972e3e0a2/",
+      "storageID": "8c711783-7056-41f5-b433-2f4972e3e0a2",
+      "width": 2800
+    }
+  }, {
+    "_id": "3e75d3e4-014a-46d4-b58f-457af2750c10",
+    "details": {
+      "_type": "image",
+      "alt": "Tropics Apple Watch Band | Groove Life",
+      "height": 1867,
+      "mimeType": "image/jpeg",
+      "name": "TropicsApplePeachSGView4.jpg",
+      "size": 324217,
+      "src": "https://f.shgcdn.com/b596e4df-9dbe-4693-a09e-b6b3c7b3dc3c/",
+      "storageID": "b596e4df-9dbe-4693-a09e-b6b3c7b3dc3c",
+      "width": 2800
+    }
+  }, {
+    "_id": "7b6b5ac4-e3aa-4b75-b380-74d9fdfc9c09",
+    "details": {
+      "_type": "image",
+      "alt": "Groove Life 94 Year No BS Warranty ",
+      "height": 1280,
+      "mimeType": "image/png",
+      "name": "NO_BS_1920x1080_68e8b753-dafc-4c7d-8316-68c7f50ff337.png",
+      "size": 118745,
+      "src": "https://f.shgcdn.com/841a8b9c-ea63-4c1b-ac5a-2c3f52f20262/",
+      "storageID": "841a8b9c-ea63-4c1b-ac5a-2c3f52f20262",
+      "width": 1920
+    }
+  }, {
+    "_id": "e41cecf7-4101-4b0b-b345-bf678c434583",
+    "details": {
+      "_type": "image",
+      "alt": "Groove Life Customized in Tennessee ",
+      "height": 400,
+      "mimeType": "image/png",
+      "name": "CUSTOMIZED_LOGO_FOR_WEBSITE_87282c08-f33e-4aba-ab07-eef3033eb288.png",
+      "size": 25461,
+      "src": "https://f.shgcdn.com/b37ce3b5-b2f3-4f6f-9be6-2f4dd514d9dd/",
+      "storageID": "b37ce3b5-b2f3-4f6f-9be6-2f4dd514d9dd",
+      "width": 600
+    }
+  }, {
+    "_id": "e9bfc401-507a-4462-aebf-99921f70114c",
+    "details": {
+      "_type": "image",
+      "alt": "hidden",
+      "height": 1500,
+      "mimeType": "image/jpeg",
+      "name": "WB_NEW_Size_Chart_Width_Amazon_e916e170-6f3e-4019-b0cc-e9ea3f96b549.jpg",
+      "size": 131270,
+      "src": "https://f.shgcdn.com/ea74072f-b18f-4cf0-bc44-9809a49d0736/",
+      "storageID": "ea74072f-b18f-4cf0-bc44-9809a49d0736",
+      "width": 1500
+    }
+  }, {
+    "_id": "a4e76df9-816a-4017-a02d-64b897d3d7f9",
+    "details": {
+      "_type": "image",
+      "alt": "hidden",
+      "height": 1500,
+      "mimeType": "image/jpeg",
+      "name": "WB_NEW_Size_Chart_Length_Amazon_72a3892b-d6bf-475d-921b-0cfc9d8bd333.jpg",
+      "size": 178671,
+      "src": "https://f.shgcdn.com/26a44a0f-b1f5-4831-b797-2515a717b524/",
+      "storageID": "26a44a0f-b1f5-4831-b797-2515a717b524",
+      "width": 1500
+    }
+  }],
+  "minPrice": 44.95,
+  "name": "Tropics - Apple Watch Band",
+  "options": [{
+    "_id": "4fc925c8-d954-417e-9132-b369448b4df9",
+    "name": "Watch Face Size",
+    "values": [{
+      "_id": "d4da03f2-c2c3-4e3e-b84f-835c724f75bf",
+      "name": "Watch Face Size",
+      "value": "Wide 42mm/44mm"
+    }, {
+      "_id": "daba1497-f555-49f2-a23f-8425e398311f",
+      "name": "Watch Face Size",
+      "value": "Narrow 38mm/40mm"
+    }]
+  }, {
+    "_id": "86a7b9a7-971e-41ab-92e2-1184e872a121",
+    "name": "Band Length",
+    "values": [{
+      "_id": "6ecebf18-86bd-438d-bba6-41a1bb075813",
+      "name": "Band Length",
+      "value": "Short"
+    }, {
+      "_id": "b2932bda-67df-4324-8f09-e64caa4d57d3",
+      "name": "Band Length",
+      "value": "Long"
+    }]
+  }, {
+    "_id": "a9d70895-b326-47d6-886e-894aeccf1b41",
+    "name": "Hardware Color",
+    "values": [{
+      "_id": "f5814838-970e-4728-85da-415a249998d3",
+      "name": "Hardware Color",
+      "value": "Silver"
+    }, {
+      "_id": "6f67e76e-65f3-4555-84e6-b2b4904f0a56",
+      "name": "Hardware Color",
+      "value": "Space Gray"
+    }, {
+      "_id": "fcea1ccf-82c7-4506-b897-e7df79ea284a",
+      "name": "Hardware Color",
+      "value": "Rose Gold"
+    }]
+  }],
+  "slug": "tropics-apple-watch-band",
+  "tags": ["2020WB", "40-50", "allsale", "apple", "aspire", "aspirewb", "AspireWBv3", "best", "blue", "featured", "groove-watch-bands", "leapyear44", "long", "Narrow 38mm/40mm", "sale", "SEP", "SEPWatchBand", "Shipping_CustomProduct", "short", "Silver", "space gray", "tag-limited-edition", "tag-ships-in-24", "tag30", "UF1", "Walmart", "Watchband", "Wide 42mm/44mm", "women", "ZEUSWBWOMEN"],
+  "type": "Groove Apple Aspire Watch Band",
+  "typeCollection": {
+    "hideDontKnowYourRingSize": true,
+    "products": [{
+      "_id": "06c7b539-65d8-4492-943b-c3c822f49d10"
+    }, {
+      "_id": "37f21b9c-2a0d-467f-926b-d5f3286a292c"
+    }, {
+      "_id": "25295822-88d4-4bde-ab95-d4f4fab9b088"
+    }, {
+      "_id": "b17eec58-06ef-4a04-94ea-a7d720014a8c"
+    }, {
+      "_id": "d1648131-8c8f-485c-b873-e1b5deecb40c"
+    }, {
+      "_id": "1ec89e33-8080-4d1b-a9bb-7e191cb1a4c6"
+    }, {
+      "_id": "246ebc8e-5d2e-4385-888e-d2515a9a9a7a"
+    }, {
+      "_id": "8be26b9c-28da-4525-b857-1a4e84965c19"
+    }, {
+      "_id": "6de0de06-3d41-41b7-bf3f-7b1aa3734e16"
+    }, {
+      "_id": "f76bef2d-ffd2-42b1-b231-8681dd4a6ea5"
+    }, {
+      "_id": "340fc46b-608b-49a1-a697-7689ce714ecb"
+    }, {
+      "_id": "f96868ef-c448-4ac4-9834-42584c73e21c"
+    }, {
+      "_id": "950a82e6-bb68-4634-be87-f7f15468dcb5"
+    }, {
+      "_id": "d3ac3bc2-10bc-4f49-829f-270c5ea0be7e"
+    }, {
+      "_id": "dcf5d5c8-ca83-4d7c-b897-3d6d41d5677a"
+    }]
+  },
+  "variants": [{
+    "_id": "4e9b13de-d182-416a-9f1f-b508c3a23080",
+    "availableForSale": false,
+    "externalId": 39296982745155,
+    "media": [{
+      "_id": "97eb08df-71b1-4bbc-8009-4013a6dcf18e",
+      "details": {
+        "_type": "image",
+        "alt": "Tropics Apple Watch Band | Groove Life",
+        "height": 1867,
+        "mimeType": "image/png",
+        "name": "TropicsApplePeachSVView1.png",
+        "size": 1641148,
+        "src": "https://f.shgcdn.com/14343794-2e47-4bb9-be10-06bcadb9a5c2/",
+        "storageID": "14343794-2e47-4bb9-be10-06bcadb9a5c2",
+        "width": 2800
+      }
+    }],
+    "name": "Wide 42mm/44mm / Short / Silver",
+    "originalPrice": 0,
+    "position": 1,
+    "price": 44.95,
+    "quantity": 0,
+    "selectedOptions": [{
+      "_id": "d4da03f2-c2c3-4e3e-b84f-835c724f75bf",
+      "name": "Watch Face Size",
+      "storefrontId": "gid://shopify/ProductOption/8421645615171/Wide 42mm/44mm",
+      "value": "Wide 42mm/44mm"
+    }, {
+      "_id": "6ecebf18-86bd-438d-bba6-41a1bb075813",
+      "name": "Band Length",
+      "storefrontId": "gid://shopify/ProductOption/8421645647939/Short",
+      "value": "Short"
+    }, {
+      "_id": "f5814838-970e-4728-85da-415a249998d3",
+      "name": "Hardware Color",
+      "storefrontId": "gid://shopify/ProductOption/8421645680707/Silver",
+      "value": "Silver"
+    }],
+    "storefrontId": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zOTI5Njk4Mjc0NTE1NQ=="
+  }, {
+    "_id": "0c025c55-fa08-47d3-8476-f3b2ac2ac561",
+    "availableForSale": false,
+    "externalId": 39296982810691,
+    "media": [{
+      "_id": "7fbae71f-a1f8-4d0f-a754-67e04995eaa9",
+      "details": {
+        "_type": "image",
+        "alt": "Tropics Apple Watch Band | Groove Life",
+        "height": 1867,
+        "mimeType": "image/png",
+        "name": "TropicsApplePeachSGView1.png",
+        "size": 1590799,
+        "src": "https://f.shgcdn.com/0a0ca53c-369d-4e9b-b71c-48cb4cac339a/",
+        "storageID": "0a0ca53c-369d-4e9b-b71c-48cb4cac339a",
+        "width": 2800
+      }
+    }],
+    "name": "Wide 42mm/44mm / Long / Space Gray",
+    "originalPrice": 0,
+    "position": 3,
+    "price": 44.95,
+    "quantity": 0,
+    "selectedOptions": [{
+      "_id": "d4da03f2-c2c3-4e3e-b84f-835c724f75bf",
+      "name": "Watch Face Size",
+      "storefrontId": "gid://shopify/ProductOption/8421645615171/Wide 42mm/44mm",
+      "value": "Wide 42mm/44mm"
+    }, {
+      "_id": "b2932bda-67df-4324-8f09-e64caa4d57d3",
+      "name": "Band Length",
+      "storefrontId": "gid://shopify/ProductOption/8421645647939/Long",
+      "value": "Long"
+    }, {
+      "_id": "6f67e76e-65f3-4555-84e6-b2b4904f0a56",
+      "name": "Hardware Color",
+      "storefrontId": "gid://shopify/ProductOption/8421645680707/Space Gray",
+      "value": "Space Gray"
+    }],
+    "storefrontId": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zOTI5Njk4MjgxMDY5MQ=="
+  }, {
+    "_id": "97bb2b91-d791-44d3-b842-1ad123243b36",
+    "availableForSale": false,
+    "externalId": 39296982843459,
+    "media": [{
+      "_id": "7fbae71f-a1f8-4d0f-a754-67e04995eaa9",
+      "details": {
+        "_type": "image",
+        "alt": "Tropics Apple Watch Band | Groove Life",
+        "height": 1867,
+        "mimeType": "image/png",
+        "name": "TropicsApplePeachSGView1.png",
+        "size": 1590799,
+        "src": "https://f.shgcdn.com/0a0ca53c-369d-4e9b-b71c-48cb4cac339a/",
+        "storageID": "0a0ca53c-369d-4e9b-b71c-48cb4cac339a",
+        "width": 2800
+      }
+    }],
+    "name": "Narrow 38mm/40mm / Short / Space Gray",
+    "originalPrice": 0,
+    "position": 4,
+    "price": 44.95,
+    "quantity": 0,
+    "selectedOptions": [{
+      "_id": "daba1497-f555-49f2-a23f-8425e398311f",
+      "name": "Watch Face Size",
+      "storefrontId": "gid://shopify/ProductOption/8421645615171/Narrow 38mm/40mm",
+      "value": "Narrow 38mm/40mm"
+    }, {
+      "_id": "6ecebf18-86bd-438d-bba6-41a1bb075813",
+      "name": "Band Length",
+      "storefrontId": "gid://shopify/ProductOption/8421645647939/Short",
+      "value": "Short"
+    }, {
+      "_id": "6f67e76e-65f3-4555-84e6-b2b4904f0a56",
+      "name": "Hardware Color",
+      "storefrontId": "gid://shopify/ProductOption/8421645680707/Space Gray",
+      "value": "Space Gray"
+    }],
+    "storefrontId": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zOTI5Njk4Mjg0MzQ1OQ=="
+  }, {
+    "_id": "71f5c013-0499-4f3f-8bc5-3351bf912c35",
+    "availableForSale": false,
+    "externalId": 39296982876227,
+    "media": [{
+      "_id": "7fbae71f-a1f8-4d0f-a754-67e04995eaa9",
+      "details": {
+        "_type": "image",
+        "alt": "Tropics Apple Watch Band | Groove Life",
+        "height": 1867,
+        "mimeType": "image/png",
+        "name": "TropicsApplePeachSGView1.png",
+        "size": 1590799,
+        "src": "https://f.shgcdn.com/0a0ca53c-369d-4e9b-b71c-48cb4cac339a/",
+        "storageID": "0a0ca53c-369d-4e9b-b71c-48cb4cac339a",
+        "width": 2800
+      }
+    }],
+    "name": "Wide 42mm/44mm / Short / Space Gray",
+    "originalPrice": 0,
+    "position": 5,
+    "price": 44.95,
+    "quantity": 0,
+    "selectedOptions": [{
+      "_id": "d4da03f2-c2c3-4e3e-b84f-835c724f75bf",
+      "name": "Watch Face Size",
+      "storefrontId": "gid://shopify/ProductOption/8421645615171/Wide 42mm/44mm",
+      "value": "Wide 42mm/44mm"
+    }, {
+      "_id": "6ecebf18-86bd-438d-bba6-41a1bb075813",
+      "name": "Band Length",
+      "storefrontId": "gid://shopify/ProductOption/8421645647939/Short",
+      "value": "Short"
+    }, {
+      "_id": "6f67e76e-65f3-4555-84e6-b2b4904f0a56",
+      "name": "Hardware Color",
+      "storefrontId": "gid://shopify/ProductOption/8421645680707/Space Gray",
+      "value": "Space Gray"
+    }],
+    "storefrontId": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zOTI5Njk4Mjg3NjIyNw=="
+  }, {
+    "_id": "32f5cfe0-ad84-4a1c-92a3-d93bfc23e18b",
+    "availableForSale": false,
+    "externalId": 39296982941763,
+    "media": [{
+      "_id": "97eb08df-71b1-4bbc-8009-4013a6dcf18e",
+      "details": {
+        "_type": "image",
+        "alt": "Tropics Apple Watch Band | Groove Life",
+        "height": 1867,
+        "mimeType": "image/png",
+        "name": "TropicsApplePeachSVView1.png",
+        "size": 1641148,
+        "src": "https://f.shgcdn.com/14343794-2e47-4bb9-be10-06bcadb9a5c2/",
+        "storageID": "14343794-2e47-4bb9-be10-06bcadb9a5c2",
+        "width": 2800
+      }
+    }],
+    "name": "Wide 42mm/44mm / Long / Silver",
+    "originalPrice": 0,
+    "position": 7,
+    "price": 44.95,
+    "quantity": 0,
+    "selectedOptions": [{
+      "_id": "d4da03f2-c2c3-4e3e-b84f-835c724f75bf",
+      "name": "Watch Face Size",
+      "storefrontId": "gid://shopify/ProductOption/8421645615171/Wide 42mm/44mm",
+      "value": "Wide 42mm/44mm"
+    }, {
+      "_id": "b2932bda-67df-4324-8f09-e64caa4d57d3",
+      "name": "Band Length",
+      "storefrontId": "gid://shopify/ProductOption/8421645647939/Long",
+      "value": "Long"
+    }, {
+      "_id": "f5814838-970e-4728-85da-415a249998d3",
+      "name": "Hardware Color",
+      "storefrontId": "gid://shopify/ProductOption/8421645680707/Silver",
+      "value": "Silver"
+    }],
+    "storefrontId": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zOTI5Njk4Mjk0MTc2Mw=="
+  }, {
+    "_id": "af7a1ecc-f6c1-4867-ac55-aa461652fe37",
+    "availableForSale": false,
+    "externalId": 39296982974531,
+    "media": [{
+      "_id": "97eb08df-71b1-4bbc-8009-4013a6dcf18e",
+      "details": {
+        "_type": "image",
+        "alt": "Tropics Apple Watch Band | Groove Life",
+        "height": 1867,
+        "mimeType": "image/png",
+        "name": "TropicsApplePeachSVView1.png",
+        "size": 1641148,
+        "src": "https://f.shgcdn.com/14343794-2e47-4bb9-be10-06bcadb9a5c2/",
+        "storageID": "14343794-2e47-4bb9-be10-06bcadb9a5c2",
+        "width": 2800
+      }
+    }],
+    "name": "Narrow 38mm/40mm / Short / Silver",
+    "originalPrice": 0,
+    "position": 8,
+    "price": 44.95,
+    "quantity": 0,
+    "selectedOptions": [{
+      "_id": "daba1497-f555-49f2-a23f-8425e398311f",
+      "name": "Watch Face Size",
+      "storefrontId": "gid://shopify/ProductOption/8421645615171/Narrow 38mm/40mm",
+      "value": "Narrow 38mm/40mm"
+    }, {
+      "_id": "6ecebf18-86bd-438d-bba6-41a1bb075813",
+      "name": "Band Length",
+      "storefrontId": "gid://shopify/ProductOption/8421645647939/Short",
+      "value": "Short"
+    }, {
+      "_id": "f5814838-970e-4728-85da-415a249998d3",
+      "name": "Hardware Color",
+      "storefrontId": "gid://shopify/ProductOption/8421645680707/Silver",
+      "value": "Silver"
+    }],
+    "storefrontId": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zOTI5Njk4Mjk3NDUzMQ=="
+  }, {
+    "_id": "ddc74635-08bc-4f8d-9a5d-4998235007ab",
+    "availableForSale": false,
+    "externalId": 39296983007299,
+    "media": [{
+      "_id": "377c34d0-a171-454c-950c-d2ac9630d013",
+      "details": {
+        "_type": "image",
+        "alt": "Tropics Apple Watch Band | Groove Life",
+        "height": 1867,
+        "mimeType": "image/png",
+        "name": "TropicsApplePeachRGView1.png",
+        "size": 1638734,
+        "src": "https://f.shgcdn.com/631f2e27-b8d6-4363-952a-15ae389a5d5b/",
+        "storageID": "631f2e27-b8d6-4363-952a-15ae389a5d5b",
+        "width": 2800
+      }
+    }],
+    "name": "Narrow 38mm/40mm / Short / Rose Gold",
+    "originalPrice": 0,
+    "position": 9,
+    "price": 44.95,
+    "quantity": 0,
+    "selectedOptions": [{
+      "_id": "daba1497-f555-49f2-a23f-8425e398311f",
+      "name": "Watch Face Size",
+      "storefrontId": "gid://shopify/ProductOption/8421645615171/Narrow 38mm/40mm",
+      "value": "Narrow 38mm/40mm"
+    }, {
+      "_id": "6ecebf18-86bd-438d-bba6-41a1bb075813",
+      "name": "Band Length",
+      "storefrontId": "gid://shopify/ProductOption/8421645647939/Short",
+      "value": "Short"
+    }, {
+      "_id": "fcea1ccf-82c7-4506-b897-e7df79ea284a",
+      "name": "Hardware Color",
+      "storefrontId": "gid://shopify/ProductOption/8421645680707/Rose Gold",
+      "value": "Rose Gold"
+    }],
+    "storefrontId": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zOTI5Njk4MzAwNzI5OQ=="
+  }, {
+    "_id": "e3bae5a4-ec5c-468f-851a-ae0661e2efe8",
+    "availableForSale": false,
+    "externalId": 39296983072835,
+    "media": [{
+      "_id": "377c34d0-a171-454c-950c-d2ac9630d013",
+      "details": {
+        "_type": "image",
+        "alt": "Tropics Apple Watch Band | Groove Life",
+        "height": 1867,
+        "mimeType": "image/png",
+        "name": "TropicsApplePeachRGView1.png",
+        "size": 1638734,
+        "src": "https://f.shgcdn.com/631f2e27-b8d6-4363-952a-15ae389a5d5b/",
+        "storageID": "631f2e27-b8d6-4363-952a-15ae389a5d5b",
+        "width": 2800
+      }
+    }],
+    "name": "Wide 42mm/44mm / Short / Rose Gold",
+    "originalPrice": 0,
+    "position": 11,
+    "price": 44.95,
+    "quantity": 0,
+    "selectedOptions": [{
+      "_id": "d4da03f2-c2c3-4e3e-b84f-835c724f75bf",
+      "name": "Watch Face Size",
+      "storefrontId": "gid://shopify/ProductOption/8421645615171/Wide 42mm/44mm",
+      "value": "Wide 42mm/44mm"
+    }, {
+      "_id": "6ecebf18-86bd-438d-bba6-41a1bb075813",
+      "name": "Band Length",
+      "storefrontId": "gid://shopify/ProductOption/8421645647939/Short",
+      "value": "Short"
+    }, {
+      "_id": "fcea1ccf-82c7-4506-b897-e7df79ea284a",
+      "name": "Hardware Color",
+      "storefrontId": "gid://shopify/ProductOption/8421645680707/Rose Gold",
+      "value": "Rose Gold"
+    }],
+    "storefrontId": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zOTI5Njk4MzA3MjgzNQ=="
+  }, {
+    "_id": "c241ddd4-c1dc-45e4-b895-2c5041aebe42",
+    "availableForSale": false,
+    "externalId": 39296983105603,
+    "media": [{
+      "_id": "377c34d0-a171-454c-950c-d2ac9630d013",
+      "details": {
+        "_type": "image",
+        "alt": "Tropics Apple Watch Band | Groove Life",
+        "height": 1867,
+        "mimeType": "image/png",
+        "name": "TropicsApplePeachRGView1.png",
+        "size": 1638734,
+        "src": "https://f.shgcdn.com/631f2e27-b8d6-4363-952a-15ae389a5d5b/",
+        "storageID": "631f2e27-b8d6-4363-952a-15ae389a5d5b",
+        "width": 2800
+      }
+    }],
+    "name": "Wide 42mm/44mm / Long / Rose Gold",
+    "originalPrice": 0,
+    "position": 12,
+    "price": 44.95,
+    "quantity": 0,
+    "selectedOptions": [{
+      "_id": "d4da03f2-c2c3-4e3e-b84f-835c724f75bf",
+      "name": "Watch Face Size",
+      "storefrontId": "gid://shopify/ProductOption/8421645615171/Wide 42mm/44mm",
+      "value": "Wide 42mm/44mm"
+    }, {
+      "_id": "b2932bda-67df-4324-8f09-e64caa4d57d3",
+      "name": "Band Length",
+      "storefrontId": "gid://shopify/ProductOption/8421645647939/Long",
+      "value": "Long"
+    }, {
+      "_id": "fcea1ccf-82c7-4506-b897-e7df79ea284a",
+      "name": "Hardware Color",
+      "storefrontId": "gid://shopify/ProductOption/8421645680707/Rose Gold",
+      "value": "Rose Gold"
+    }],
+    "storefrontId": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zOTI5Njk4MzEwNTYwMw=="
+  }],
+  "removedVariants": [{
+    "_id": "1ed910f9-a299-4377-8ae9-519bd4f5f26a",
+    "availableForSale": false,
+    "externalId": 39296982777923,
+    "media": [{
+      "_id": "7fbae71f-a1f8-4d0f-a754-67e04995eaa9",
+      "details": {
+        "_type": "image",
+        "alt": "Tropics Apple Watch Band | Groove Life",
+        "height": 1867,
+        "mimeType": "image/png",
+        "name": "TropicsApplePeachSGView1.png",
+        "size": 1590799,
+        "src": "https://f.shgcdn.com/0a0ca53c-369d-4e9b-b71c-48cb4cac339a/",
+        "storageID": "0a0ca53c-369d-4e9b-b71c-48cb4cac339a",
+        "width": 2800
+      }
+    }],
+    "name": "Narrow 38mm/40mm / Long / Space Gray",
+    "originalPrice": 0,
+    "position": 2,
+    "price": 44.95,
+    "quantity": 0,
+    "selectedOptions": [{
+      "_id": "daba1497-f555-49f2-a23f-8425e398311f",
+      "name": "Watch Face Size",
+      "storefrontId": "gid://shopify/ProductOption/8421645615171/Narrow 38mm/40mm",
+      "value": "Narrow 38mm/40mm"
+    }, {
+      "_id": "b2932bda-67df-4324-8f09-e64caa4d57d3",
+      "name": "Band Length",
+      "storefrontId": "gid://shopify/ProductOption/8421645647939/Long",
+      "value": "Long"
+    }, {
+      "_id": "6f67e76e-65f3-4555-84e6-b2b4904f0a56",
+      "name": "Hardware Color",
+      "storefrontId": "gid://shopify/ProductOption/8421645680707/Space Gray",
+      "value": "Space Gray"
+    }],
+    "storefrontId": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zOTI5Njk4Mjc3NzkyMw=="
+  }, {
+    "_id": "9f7f9c7c-ed58-4d10-ac3c-c6ef7363144f",
+    "availableForSale": false,
+    "externalId": 39296982908995,
+    "media": [{
+      "_id": "97eb08df-71b1-4bbc-8009-4013a6dcf18e",
+      "details": {
+        "_type": "image",
+        "alt": "Tropics Apple Watch Band | Groove Life",
+        "height": 1867,
+        "mimeType": "image/png",
+        "name": "TropicsApplePeachSVView1.png",
+        "size": 1641148,
+        "src": "https://f.shgcdn.com/14343794-2e47-4bb9-be10-06bcadb9a5c2/",
+        "storageID": "14343794-2e47-4bb9-be10-06bcadb9a5c2",
+        "width": 2800
+      }
+    }],
+    "name": "Narrow 38mm/40mm / Long / Silver",
+    "originalPrice": 0,
+    "position": 6,
+    "price": 44.95,
+    "quantity": 0,
+    "selectedOptions": [{
+      "_id": "daba1497-f555-49f2-a23f-8425e398311f",
+      "name": "Watch Face Size",
+      "storefrontId": "gid://shopify/ProductOption/8421645615171/Narrow 38mm/40mm",
+      "value": "Narrow 38mm/40mm"
+    }, {
+      "_id": "b2932bda-67df-4324-8f09-e64caa4d57d3",
+      "name": "Band Length",
+      "storefrontId": "gid://shopify/ProductOption/8421645647939/Long",
+      "value": "Long"
+    }, {
+      "_id": "f5814838-970e-4728-85da-415a249998d3",
+      "name": "Hardware Color",
+      "storefrontId": "gid://shopify/ProductOption/8421645680707/Silver",
+      "value": "Silver"
+    }],
+    "storefrontId": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zOTI5Njk4MjkwODk5NQ=="
+  }, {
+    "_id": "c15d04d7-2614-41c9-98c7-917bd98ed460",
+    "availableForSale": false,
+    "externalId": 39296983040067,
+    "media": [{
+      "_id": "377c34d0-a171-454c-950c-d2ac9630d013",
+      "details": {
+        "_type": "image",
+        "alt": "Tropics Apple Watch Band | Groove Life",
+        "height": 1867,
+        "mimeType": "image/png",
+        "name": "TropicsApplePeachRGView1.png",
+        "size": 1638734,
+        "src": "https://f.shgcdn.com/631f2e27-b8d6-4363-952a-15ae389a5d5b/",
+        "storageID": "631f2e27-b8d6-4363-952a-15ae389a5d5b",
+        "width": 2800
+      }
+    }],
+    "name": "Narrow 38mm/40mm / Long / Rose Gold",
+    "originalPrice": 0,
+    "position": 10,
+    "price": 44.95,
+    "quantity": 0,
+    "selectedOptions": [{
+      "_id": "daba1497-f555-49f2-a23f-8425e398311f",
+      "name": "Watch Face Size",
+      "storefrontId": "gid://shopify/ProductOption/8421645615171/Narrow 38mm/40mm",
+      "value": "Narrow 38mm/40mm"
+    }, {
+      "_id": "b2932bda-67df-4324-8f09-e64caa4d57d3",
+      "name": "Band Length",
+      "storefrontId": "gid://shopify/ProductOption/8421645647939/Long",
+      "value": "Long"
+    }, {
+      "_id": "fcea1ccf-82c7-4506-b897-e7df79ea284a",
+      "name": "Hardware Color",
+      "storefrontId": "gid://shopify/ProductOption/8421645680707/Rose Gold",
+      "value": "Rose Gold"
+    }],
+    "storefrontId": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zOTI5Njk4MzA0MDA2Nw=="
+  }]
+}

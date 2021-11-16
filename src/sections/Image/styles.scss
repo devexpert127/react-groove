@@ -1,0 +1,25 @@
+@import '../../scss/global.scss';
+
+.Image {
+  margin-top: 0;
+  padding: $section_padding;
+}
+
+.Image--noTopPadding {
+  padding-top: 0;
+}
+
+.Image--noBottomPadding {
+  padding-bottom: 0;
+}
+
+.Image-image {
+  display: block;
+  height: auto;
+  margin-top: 0;
+  width: 100%;
+}
+
+.Image-link {
+  display: block;
+}

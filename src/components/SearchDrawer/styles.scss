@@ -1,0 +1,101 @@
+@import '../../scss/global.scss';
+
+@keyframes overlaySlideDown {
+  from {
+    transform: translateY(0%);
+   }
+
+   to {
+    transform: translateY(100%);
+   }
+}
+
+.SearchDrawer {
+  bottom: 100%;
+  left: 0;
+  overflow: hidden;
+  position: fixed;
+  animation: overlaySlideDown 0.45s forwards;
+  width: 100%;
+  z-index: 1000;
+}
+
+.SearchDrawer.loaded {
+  transition: all 0.45s cubic-bezier(0.29, 0.63, 0.44, 1);
+  animation: unset;
+}
+
+.DrawerContainer.is-open .SearchDrawer {
+  transform: translateY(100%);
+}
+.SearchDrawer-bar {
+  align-items: center;
+  background-color: #fff;
+  border-bottom: 1px solid #f5f5f5;
+  display: flex;
+  padding: 0.625rem 0.9375rem;
+}
+.SearchDrawer-bar > * {
+  margin: 0;
+}
+
+.SearchDrawer-searchIcon {
+  padding: 0;
+  border: none;
+  display: block;
+  line-height: 20px;
+  width: 20px;
+}
+
+.SearchDrawer-searchIcon,
+.SearchDrawer-close {
+  height: 20px;
+  @include button-unstyled;
+
+  .Icon {
+    height: 20px;
+
+    svg {
+      height: 100%;
+    }
+  }
+}
+.SearchDrawer-query {
+  flex: 1;
+  input {
+    // NOTE: We might want some kind of focus styles here.
+    border: none !important;
+    box-shadow: none !important;
+  }
+}
+.SearchDrawer-close {
+  cursor: pointer;
+}
+.SearchDrawer-details,
+.SearchDrawer-results {
+  background-color: #fff;
+  border-bottom: 1px solid #f5f5f5;
+  margin-top: 0;
+  padding: 0.625rem 0.9375rem;
+}
+.SearchDrawer-details {
+  display: flex;
+  justify-content: space-between;
+  * + * {
+    margin: 0;
+  }
+}
+.SearchDrawer-results ul {
+  list-style: none;
+  padding: 0;
+}
+.SearchDrawer-resultMessage {
+  color: $button_disabled_color;
+}
+
+.SearchResult + .SearchResult {
+  margin-top: 0.625rem;
+}
+.SearchDrawer-form-hidden {
+  @include visually-hidden;
+}

@@ -1,0 +1,30 @@
+.HeroBanner {
+  font-size: 0.875em;
+}
+.HeroBanner:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+@media (min-width: 37.5em) {
+  .HeroBanner {
+    font-size: 1em;
+  }
+}
+@media (min-width: 75em) {
+  .HeroBanner {
+    font-size: 1.25em;
+  }
+}
+.HeroBanner p {
+  font-size: 0.875em;
+}
+
+.HeroBanner-image--has-content {
+  min-height: 20em;
+}
+@media (max-width: 37.5em) {
+  .HeroBanner-image--has-content:before {
+    padding-top: 120%;
+  }
+}

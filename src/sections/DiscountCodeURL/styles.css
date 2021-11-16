@@ -1,0 +1,12 @@
+.DiscountCodeURL {
+  padding: 1.5rem 0;
+}
+@media (min-width: 60em) {
+  .DiscountCodeURL {
+    padding: 3.75rem 0;
+  }
+}
+
+.DiscountCodeURL-content {
+  text-align: center;
+}

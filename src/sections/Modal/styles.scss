@@ -1,0 +1,56 @@
+@import '../../scss/global.scss';
+
+.Modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+.Modal--hidden {
+  display: none;
+}
+
+.Modal-content {
+  overflow: scroll;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 95%;
+  max-width: $breakpoint_lg;
+  max-height: 80%;
+  padding: 1.5rem 0.75rem;
+  background-color: #fff;
+
+  @media (min-width: $breakpoint_lg) {
+    padding: 3rem 1.5rem;
+  }
+}
+
+.Modal-close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  z-index: 10;
+  padding: 0;
+  text-align: center;
+  font-size: 0.875rem;
+  line-height: 1;
+  color: $brand_color_dark_gray;
+  font-weight: $font_weight_extrabold;
+  border: none;
+
+  @media (min-width: $breakpoint_lg) {
+    top: 0.75rem;
+    right: 0.75rem;
+  }
+
+  & + * {
+    margin-top: 0;
+  }
+}

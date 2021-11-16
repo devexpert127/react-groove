@@ -1,0 +1,17 @@
+@import '../../scss/global.scss';
+
+.VideoBannerVimeo {
+  @include embed;
+}
+.VideoBannerVimeo--16x9 {
+  @include embed-16x9;
+}
+.VideoBannerVimeo--4x3 {
+  @include embed-4x3;
+}
+.VideoBannerVimeo--17x9 {
+  @include embed-17x9;
+}
+.VideoBannerVimeo-player {
+  @include embed-item;
+}

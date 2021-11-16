@@ -1,0 +1,18 @@
+@import '../../scss/global.scss';
+
+.EmbedIframe {
+  padding: $section_padding;
+  text-align: center;
+}
+
+.EmbedIframe-title {
+  font-size: $font_size_xl;
+}
+
+.EmbedIframe-content {
+  @include embed;
+  @include embed-16x9;
+  iframe {
+    @include embed-item;
+  }
+}

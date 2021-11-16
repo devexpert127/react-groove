@@ -1,0 +1,24 @@
+@import '../../scss/global.scss';
+
+.KlaviyoBackInStockForm,
+.KlaviyoBackInStockForm-newsletterSubscribeWrapper {
+  margin: 0;
+}
+
+.KlaviyoBackInStockForm-email-label {
+  @include visually-hidden;
+}
+
+
+.KlaviyoBackInStockForm-hide {
+  display: none;
+}
+
+.KlaviyoBackInStockForm-submit {
+  width: 100%;
+}
+
+// todo: make class on element
+#KlaviyoBackInStockForm-newsletterSubscribe {
+  margin-right: 5px;
+}

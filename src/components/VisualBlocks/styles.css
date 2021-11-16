@@ -1,0 +1,89 @@
+.VisualBlocks {
+  padding: 3.75rem 0;
+}
+
+.VisualBlocks-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -0.75em;
+  margin-right: -0.75em;
+}
+
+.VisualBlock {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 calc((100% / 3));
+  padding: 0.75em;
+  margin: 0;
+}
+@media (max-width: 60em) {
+  .VisualBlock {
+    flex: 1 1 100%;
+  }
+}
+
+.VisualBlock-visual {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.VisualBlock-title {
+  font-size: 1.5em;
+  font-weight: 800;
+}
+
+.VisualBlock-description {
+  margin-top: 1em;
+  margin-bottom: auto;
+  font-size: 0.875em;
+  letter-spacing: 0.05em;
+}
+
+.VisualBlocks-superimposeText .VisualBlock {
+  position: relative;
+}
+.VisualBlocks-superimposeText .VisualBlock:hover .VisualBlock-textContainer {
+  opacity: 1;
+}
+
+.VisualBlocks-superimposeText .VisualBlock-textContainer {
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0.75em;
+  left: 0.75em;
+  right: 0;
+  bottom: 0;
+  width: calc(100% - 1.5em);
+  height: calc(100% - 1.5em);
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -ms-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.VisualBlocks-superimposeText .VisualBlock-text {
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.VisualBlocks-superimposeText .VisualBlock-title {
+  color: #fff;
+}
+
+.VisualBlocks-superimposeText .VisualBlock-description {
+  color: #f38732;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 12px;
+}

@@ -1,0 +1,33 @@
+@import '../../scss/global.scss';
+
+.SellingIcons {
+  font-size: 0.875em;
+
+  .TextColumn-title {
+    font-weight: $font_weight_base;
+  }
+
+  .TextColumn {
+    flex: 0 1 50%;
+    max-width: 50%;
+
+    @media (min-width: $breakpoint_md) {
+      flex: none;
+      max-width: none;
+    }
+  }
+
+  .TextColumn-image--icon {
+    width: 4.6875rem;
+    margin: auto;
+
+    @media (min-width: 64em) {
+      width: 6.25rem;
+    }
+  }
+
+  .TextColumn-title {
+    margin-top: 0.75em;
+    font-size: $font_size_md;
+  }
+}

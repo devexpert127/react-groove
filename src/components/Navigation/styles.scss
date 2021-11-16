@@ -1,0 +1,266 @@
+@import '../../scss/global.scss';
+
+// NOTE: this breakpoint is referenced in src/Components/Navigation/index.js, if you change value here OR in variables, change in js too!
+$nav_large_breakpoint: $breakpoint_large_nav;
+
+.Navigation {
+  font-weight: $font_weight_headings;
+  letter-spacing: $letter_spacing_navigation;
+  text-transform: uppercase;
+
+  ul {
+    @include list-unstyled;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.Navigation-item-link {
+  letter-spacing: $letter_spacing_navigation;
+}
+
+.Navigation-list {
+  margin-top: 0;
+}
+
+.Navigation-list--level-1 {
+  font-size: $font_size_xs;
+
+  @media (min-width: $nav_large_breakpoint) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+.Navigation-list--level-2 {
+  @media (min-width: $nav_large_breakpoint) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.Navigation-list--level-2,
+.Navigation-list--level-3 {
+  margin-left: $gutter_vertical / 2;
+  font-weight: $font_weight_base;
+  letter-spacing: $letter_spacing_navigation;
+
+  @media (min-width: $nav_large_breakpoint) {
+    margin-left: 0;
+  }
+}
+
+.Navigation-item--level-1 {
+  position: relative;
+  padding: 0 ($gutter_vertical / 2);
+}
+
+.Navigation-item--level-2:not(.Navigation-item--image) {
+  @media (min-width: $nav_large_breakpoint) {
+    flex: 1 1 10em;
+    margin-right: $gutter_vertical;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.Navigation-item--image-image {
+  width: 100%;
+  height: auto;
+}
+
+.Navigation-dropdown {
+  overflow: hidden;
+  margin-top: 0;
+  transition: all 0.5s;
+
+  .Navigation-item-link {
+    letter-spacing: $letter_spacing_navigation / 2;
+  }
+
+  @media (min-width: $nav_large_breakpoint) {
+    overflow: auto;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    width: 100vw;
+    max-width: 40em;
+    opacity: 0;
+    transition: opacity 0.5s;
+    .Navigation-item-link--active + & {
+      opacity: 1;
+    }
+  }
+}
+
+.Navigation-dropdown-content {
+  padding: ($gutter_vertical / 2) 0 $gutter_vertical;
+
+  @media (min-width: $nav_large_breakpoint) {
+    padding: $gutter_vertical;
+  }
+}
+
+.Navigation-dropdown--has-images {
+  @media (min-width: $nav_large_breakpoint) {
+    max-width: 60em;
+  }
+
+  .Navigation-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0;
+    margin-left: -$gutter_vertical / 4;
+    margin-right: -$gutter_vertical / 4;
+
+    @media (min-width: $nav_large_breakpoint) {
+      margin-top: $gutter_horizontal - ($gutter_horizontal / 2);
+    }
+
+    li {
+      flex: 0 1 50%;
+      padding: ($gutter_horizontal / 4) ($gutter_vertical / 4);
+
+      @media (min-width: $nav_large_breakpoint) {
+        flex: 1 1 25%;
+        min-width: 8em;
+        max-width: 25%;
+      }
+    }
+
+    @media (min-width: $nav_large_breakpoint) {
+      &[data-links='5'] li,
+      &[data-links='6'] li {
+        flex: 1 1 33.333%;
+        max-width: 33.333%;
+      }
+    }
+  }
+}
+
+.Navigation-subheader {
+  display: none;
+  font-size: $font_size_lg;
+  letter-spacing: $letter_spacing_navigation / 2;
+
+  @media (min-width: $nav_large_breakpoint) {
+    display: block;
+  }
+}
+
+.Navigation-item-link:not(.Navigation-item-link--block) {
+  display: block;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+
+  &:focus {
+    background: none;
+    box-shadow: none;
+  }
+}
+
+.Navigation-item-link--level-1:not(.Navigation-item-link--block) {
+  display: flex !important;
+  align-items: center;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+
+  @media (min-width: $nav_large_breakpoint) {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+}
+
+.Navigation-item-link--level-2:not(.Navigation-item-link--block) {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.Navigation-item-link--level-2:not(.Navigation-item-link--block) {
+  @media (min-width: $nav_large_breakpoint) {
+    @include title(false, 2px);
+    font-weight: $font_weight_headings;
+    line-height: 1.2;
+  }
+}
+
+.Navigation-item-link--level-3:not(.Navigation-item-link--block) {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: $font_size_xs;
+
+  @media (min-width: $nav_large_breakpoint) {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    font-size: $font_size_sm;
+  }
+}
+
+.Navigation-item-link--block {
+  @include block-link;
+  position: relative;
+
+  &:hover,
+  &:focus,
+  &:active {
+    opacity: 0.9;
+  }
+}
+
+.Navigation-item-link-arrow {
+  @include arrow-icon;
+  @include arrow-icon-rotate(270deg);
+  height: 0.75em;
+  width: 0.75em;
+  margin-left: 0.25em;
+
+  .Navigation-item-link--active & {
+    @include arrow-icon-rotate(0deg);
+  }
+
+  @media (min-width: $nav_large_breakpoint) {
+    display: none;
+  }
+}
+
+.Navigation-item-image-content {
+  @include hero-content(100%, 0, 0, -100%);
+  padding: 0.75em;
+}
+
+.Navigation-item-title {
+  @include title;
+  display: inline-block;
+  line-height: 1.2;
+
+  &:before {
+    height: 90%;
+  }
+}
+
+.Navigation-item--accessible-title {
+  @include visually-hidden;
+}
+
+.Header-action--menu-in-nav {
+  @include visually-hidden;
+
+  &:focus,
+  &:focus-visible {
+    @include visually-visible;
+  }
+
+  &:focus:not(:focus-visible) {
+    @include visually-hidden;
+  }
+
+  @media (min-width: $nav_large_breakpoint) {
+    display: none;
+  }
+}

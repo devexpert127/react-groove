@@ -1,0 +1,256 @@
+.Header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 15;
+  width: 100%;
+}
+
+.Header-content-wrapper {
+  position: relative;
+  margin-top: 0;
+  padding: 1.5rem 1.5em;
+  color: #191818;
+  background-color: #fff;
+  border-bottom: 1px solid #e7e9ea;
+}
+.Header-content-wrapper a {
+  color: #191818;
+}
+.Header-content-wrapper a:hover,
+.Header-content-wrapper a:focus {
+  color: #f38732;
+}
+@media (min-width: 37.5em) and (max-width: 64em) {
+  .Header-content-wrapper {
+    padding: 2em 1.5em;
+  }
+}
+@media (min-width: 64em) {
+  .Header-content-wrapper {
+    color: #fff;
+    background-color: #191818;
+    border-bottom: none;
+  }
+  .Header-content-wrapper a {
+    color: #fff;
+  }
+  .Header-content-wrapper a:hover,
+  .Header-content-wrapper a:focus {
+    color: #f38732;
+  }
+}
+
+.Header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (min-width: 86.25em) {
+  .Header-content {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 87.5rem;
+    width: 90%;
+  }
+}
+@media (min-width: 86.25em) and (min-width: 37.5em) {
+  .Header-content {
+    width: 90%;
+  }
+}
+@media (min-width: 86.25em) and (min-width: 60em) {
+  .Header-content {
+    width: 90%;
+  }
+}
+@media (min-width: 86.25em) and (min-width: 75em) {
+  .Header-content {
+    width: 85%;
+  }
+}
+@media (min-width: 86.25em) and (min-width: 93.75em) {
+  .Header-content {
+    width: 80%;
+  }
+}
+.Header-content > * {
+  margin-top: 0;
+}
+
+.Header-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (min-width: 64em) {
+  .Header-actions--mobile {
+    display: none;
+  }
+}
+
+.Header-action {
+  margin-top: 0;
+}
+.Header-action + .Header-action {
+  margin-left: 0.75em;
+}
+
+.Header-menu-button {
+  margin-top: 0;
+}
+.Header-menu-button span {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+.Header-menu-button--open {
+  display: block;
+}
+.Header-menu--is-open .Header-menu-button--open {
+  display: none;
+}
+
+.Header-menu-button--close {
+  display: none;
+}
+.Header-menu--is-open .Header-menu-button--close {
+  display: block;
+}
+
+.Header-action--menu {
+  padding: 0;
+  border: none;
+}
+
+.Header-action--cart {
+  font-size: 0.8em;
+  line-height: 2;
+  letter-spacing: 0.1em;
+  padding: 0;
+  border: none;
+  padding: 0.25em 0;
+}
+
+.Header-cart-count {
+  padding: 0.3rem 0.6rem;
+  margin-left: 0.6rem;
+  letter-spacing: normal;
+  border: currentColor solid 1px;
+}
+
+.Header-action--search {
+  padding: 0;
+  border: none;
+}
+.Header-action--search svg {
+  width: 2em;
+}
+.Header-action--search span {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+.Header-actions--left .Header-action--search {
+  margin-right: 0.75em;
+}
+.Header-actions--right .Header-action--search {
+  display: none;
+}
+@media (min-width: 64em) {
+  .Header-actions--right .Header-action--search {
+    display: block;
+  }
+}
+
+.Header-navigation {
+  overflow: auto;
+  position: absolute;
+  left: -100%;
+  top: 100%;
+  width: 100%;
+  height: 100vh;
+  padding: 1.5rem 0.75em;
+  color: #fff;
+  background-color: #191818;
+  transition: all 0.45s cubic-bezier(0.29, 0.63, 0.44, 1);
+}
+@media (min-width: 64em) {
+  .Header-navigation {
+    overflow: visible;
+    position: static;
+    width: auto;
+    height: auto;
+    padding: 0;
+  }
+}
+.Header-menu--is-open .Header-navigation {
+  left: 0;
+}
+.Header-navigation a {
+  color: #fff;
+}
+.Header-navigation a:hover,
+.Header-navigation a:focus {
+  color: #f38732;
+}
+
+.Header .Navigation-dropdown {
+  background-color: #191818;
+}
+
+.Header-wrapper {
+  padding-top: 8.275rem;
+}
+
+.Header-wrapper .NavigationSlider {
+  margin-top: 0;
+}
+@media (min-width: 64em) {
+  .Header-wrapper .NavigationSlider {
+    display: none;
+  }
+}
+
+.Header-wrapper .DrawerContainer {
+  margin-top: 0;
+}
+
+.Header-logo:focus,
+.Header-logo:focus-visible {
+  color: #191818 !important;
+}
+
+.Header-logo-title {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+.Header-mainContentAnchor {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}

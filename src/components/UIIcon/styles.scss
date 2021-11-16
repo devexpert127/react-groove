@@ -1,0 +1,16 @@
+@import '../../scss/global.scss';
+
+.Icon {
+    &-text {
+        &:first-child {
+            margin-right: 4px;
+        }
+        &:last-child {
+            margin-left: 4px;
+        }
+
+        &--hidden {
+            @include visually-hidden;
+        }
+    }
+}

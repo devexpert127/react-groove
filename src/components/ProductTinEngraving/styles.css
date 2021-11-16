@@ -1,0 +1,53 @@
+.TinEngraving {
+  width: 100%;
+}
+
+.TinEngraving-modal {
+  position: absolute;
+  z-index: 6;
+  margin-top: 0;
+  background-color: #fff;
+}
+.TinEngraving-modal img {
+  max-width: 300px;
+}
+
+.TinEngraving-container {
+  display: flex;
+  align-items: center;
+}
+
+.TinEngraving-checkbox {
+  margin-right: 0.5em;
+  vertical-align: top;
+  margin-bottom: 0.21875rem;
+}
+
+.TinEngraving-modalTrigger,
+.TinEngraving-infoIcon {
+  display: inherit;
+}
+
+.TinEngraving-modalTrigger {
+  padding: 0;
+  border: none;
+  margin-top: 0;
+  margin-left: 0.5em;
+  align-items: inherit;
+}
+
+.TinEngraving-infoIcon svg {
+  width: 1.2em;
+  height: 1.5em;
+}
+
+.TinEngraving-imageDescription {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}

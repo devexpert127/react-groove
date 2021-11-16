@@ -1,0 +1,104 @@
+@import '../../scss/global.scss';
+
+.ValueProps {
+  padding: 1em 0 2.5em;
+
+  .SvgImage {
+    width: 75px;
+    height: 75px;
+    max-width: none;
+  }
+
+  .SvgImage--lock {
+    width: (75px * 0.7);
+    height: (75px * 0.7);
+  }
+
+  @media (min-width: $breakpoint_md) {
+    padding: $section_padding;
+  }
+}
+
+.ValueProps--noTopPadding {
+  padding-top: 0;
+}
+
+.ValueProps--noBottomPadding {
+  padding-bottom: 0;
+}
+
+.ValueProps-title {
+  font-size: $font_size_xl;
+  text-align: center;
+}
+
+.ValueProps-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: -$gutter_vertical / 2;
+  margin-left: -$gutter_vertical / 2;
+
+  @media (min-width: $breakpoint_md) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.ValueProp {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 0;
+  padding: $gutter_vertical / 4 0;
+  text-align: left;
+  text-transform: uppercase;
+
+  @media (min-width: $breakpoint_md) {
+    justify-content: center;
+    padding: $gutter_vertical / 4 $gutter_horizontal / 2;
+  }
+}
+
+.ValueProp-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75px;
+  height: 75px;
+  max-width: none;
+}
+
+.ValueProp-text {
+  margin-top: 0;
+  margin-left: 1em;
+}
+
+.ValueProp-title {
+  font-size: $font_size_sm;
+  line-height: 2rem;
+
+  @media (min-width: $breakpoint_md) {
+    font-size: $font_size_md;
+  }
+}
+
+.ValueProp-image {
+  max-height: 4.6875em;
+  transition: $transition_duration_hover ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.ValueProp-subtitle {
+  margin-top: 0;
+  font-size: $font_size_sm;
+  text-transform: uppercase;
+  white-space: nowrap;
+
+  @media (min-width: $breakpoint_md) {
+    font-size: $font_size_xs;
+  }
+}

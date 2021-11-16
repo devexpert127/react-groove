@@ -1,0 +1,28 @@
+@import '../../scss/global.scss';
+
+$breakpoint_map: $breakpoint_sm;
+
+.StoreLocator {
+  padding: $section_padding;
+}
+
+.StoreLocator-leadText {
+  text-align: center;
+}
+
+.storerocket-store-locator {
+  * + * {
+    margin-top: 0;
+  }
+}
+
+/* StoreRocket Changes */
+.StoreLocator {
+  #storerocket-panel,
+  #storerocket-map-container {
+    z-index: 10;
+  }
+  #storerocket-search {
+    z-index: 14;
+  }
+}

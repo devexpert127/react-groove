@@ -1,0 +1,31 @@
+// Links
+// ---
+
+@mixin pretty-underlines {
+  text-decoration: none;
+  background-image: linear-gradient(to right, currentColor 0%, currentColor 100%);
+  background-repeat: repeat-x;
+  background-position: 0 $underline_position;
+  background-size: 100% $underline_weight;
+}
+
+@mixin force-redraw {
+  // Arbitrary webkit-only property that forces a redraw
+  // Fixes currentColor bug
+  // see: http://stackoverflow.com/questions/36046185/how-to-hack-around-linear-gradient-with-currentcolor-bug-in-chrome
+  @if ($include_pretty_underlines) {
+    -webkit-margin-start: -0.001px;
+  }
+}
+
+@mixin arrow-icon {
+  margin-top: 0;
+  transition: transform 0.1s ease-in-out, -webkit-transform 0.1s ease-in-out;
+  pointer-events: none;
+}
+
+@mixin arrow-icon-rotate($deg: 180deg) {
+  -ms-transform: rotate($deg);
+  -webkit-transform: rotate($deg);
+  transform: rotate($deg);
+}

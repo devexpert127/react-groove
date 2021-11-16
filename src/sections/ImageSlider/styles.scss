@@ -1,0 +1,121 @@
+@import '../../scss/global.scss';
+
+.ImageSlider {
+  padding: 0;
+  overflow: hidden;
+
+  // ---------------------------------------------------------
+  /** @group slide, img **/
+  &-slide {
+    display: block !important;
+    overflow: hidden;
+    background-color:$brand_color_mid_gray;
+    width: 100%;
+
+    & > img {
+      display: block;
+      height: auto;
+      margin-top: 0;
+      width: 100%;
+    }
+  }
+  // ---------------------------------------------------------
+  /** @group arrows **/
+  & .Slider__control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: 0;
+    z-index: 1;
+    cursor: pointer;
+    border-style: none;
+    padding: 0;
+    color: $brand_color_white;
+    border-radius: 100%;
+    opacity: 0.5;
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+      color: $brand_color_accent;
+    }
+    &__prev {
+      left: $gutter_horizontal / 4;
+    }
+
+    &__next {
+      right: $gutter_horizontal / 4;
+    }
+  }
+
+  & .Slider__control__icon {
+    max-width: 1.5em;
+
+    @media (min-width: $breakpoint_md) {
+      max-width: 2em;
+    }
+
+  }
+  // ---------------------------------------------------------
+  /** @group dots **/
+  &-dots {
+    position: absolute;
+    bottom: $gutter_horizontal / 2;
+    left: 0;
+    right: 0;
+    z-index: 2;
+
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+
+  &-dots-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+  }
+  // ---------------------------------------------------------
+  /** @group footer, small fonts, columns, external links **/
+  &-dot {
+    margin: 0 ($gutter_horizontal / 6);
+
+    &.active button::after {
+      opacity: 1;
+        background-color: $brand_color_white;
+    }
+  }
+
+  &-dot-button {
+    border-style: none;
+    padding:  6px; // gives a hit area of 32px....
+    border-radius: 100%;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 20px;
+      height: 20px;
+      border-radius: 100%;
+      opacity: 0.5;
+      background-color: rgba( $brand_color_black, 0.6);
+      transition: background-color $transition_duration_hover, color $transition_duration_hover,
+      opacity $transition_duration_hover;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      &::after {
+        opacity: 1;
+        background-color: $brand_color_accent;
+      }
+    }
+  }
+  &-dot-text {
+    @include visually-hidden;
+  }
+
+}

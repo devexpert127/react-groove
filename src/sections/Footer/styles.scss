@@ -1,0 +1,313 @@
+@import '../../scss/global.scss';
+
+.Footer {
+  padding: 2em;
+  background-color: $brand_color_black;
+  color: $brand_color_white;
+
+  .AccordionItem-heading {
+    justify-content: center;
+
+    @media (min-width: $breakpoint_lg) {
+      @include title;
+      display: block;
+      margin-left: 1px; // fix issue with border disappearing if rendered off pixel
+      font-size: 1.1em;
+      cursor: text;
+    }
+  }
+
+  .AccordionItem-headingText {
+    text-align: center;
+    @media (min-width: $breakpoint_lg) {
+      padding-left: 0.25em;
+    }
+  }
+
+  .Icon--arrow {
+    overflow: auto;
+    @include arrow-icon;
+    transform-origin: center center;
+
+    @media (min-width: $breakpoint_lg) {
+      display: none;
+    }
+  }
+
+  .AccordionItem--active .Icon--arrow {
+    @include arrow-icon-rotate;
+  }
+}
+
+.Footer-container {
+  @media (max-width: $breakpoint_lg) {
+    @include container;
+  }
+}
+
+.Footer-head {
+  padding: 2em 0;
+  border-bottom: 1px solid $brand_color_white;
+
+  @media (min-width: $breakpoint_lg) {
+    margin-bottom: 0.5em;
+  }
+}
+
+.Footer-headLogo {
+  font-size: 1rem;
+  margin: 0 auto;
+  text-align: center;
+
+  @media (min-width: $breakpoint_lg) {
+    margin: 0;
+    text-align: left;
+  }
+}
+
+.Footer-heading {
+  @include font-size-md;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 90%;
+  margin: 0 auto;
+  font-weight: 400;
+
+  @media (min-width: $breakpoint_lg) {
+    @include title;
+    display: block;
+    margin-left: 2px;
+    color: $brand_color_white;
+    font-size: 1.1em;
+  }
+}
+
+.Footer-headingText {
+  text-align: center;
+  @media (min-width: $breakpoint_lg) {
+    padding-left: 0.25em;
+  }
+}
+
+.Footer-menu {
+  border-bottom: 1px solid $brand_color_white;
+
+  @media (min-width: $breakpoint_lg) {
+    margin-top: 1em;
+    padding: 0;
+    border-bottom: 0;
+
+    &:last-child {
+      padding-left: 2em;
+    }
+  }
+}
+
+.Footer-submenu {
+  margin: 0;
+  padding: 1em 0;
+  list-style-type: none;
+}
+
+.Footer-menuItem {
+  text-align: center;
+
+  @media (min-width: $breakpoint_lg) {
+    text-align: left;
+  }
+}
+
+.Footer-submenuItem {
+  padding: 0.5em 0;
+  text-align: center;
+
+  @media (min-width: $breakpoint_lg) {
+    padding: 0.25em 0;
+    font-size: 0.9em;
+    text-align: left;
+  }
+}
+
+.Footer-menuLink,
+.Footer-submenuLink {
+  background-image: none;
+  color: $brand_color_white;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $brand_color_white;
+  }
+}
+
+.Footer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    'accordion'
+    'newsletter'
+    'social'
+    'text';
+  margin-top: 0;
+  padding: 0;
+
+  @media (min-width: $breakpoint_lg) {
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      'accordion accordion newsletter'
+      'text text social';
+  }
+
+  .AccordionItem {
+    @media (min-width: $breakpoint_lg) {
+      border: none;
+    }
+  }
+}
+
+.Footer-gridItem {
+  @media (min-width: $breakpoint_lg) {
+    margin-top: 1em;
+    padding: 0 0 0 2em;
+    border-bottom: 0;
+
+    &:first-child {
+      padding-left: 0;
+    }
+  }
+}
+
+.Footer-gridItem--footerText {
+  grid-area: text;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 0;
+  opacity: 0.6;
+
+  // @media (min-width: $breakpoint_lg) {
+  //   grid-column-start: 1;
+  //   grid-column-end: 3;
+  // }
+}
+
+.Footer-gridItem--socialIcons {
+  grid-area: social;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3em;
+  opacity: 0.6;
+
+  @media (min-width: $breakpoint_lg) {
+    justify-content: flex-end;
+    margin-top: 1em;
+  }
+}
+
+.Footer-newsletterWrapper {
+  margin-top: 0;
+  padding-top: 1.25em;
+
+  @media (min-width: $breakpoint_md) {
+    max-width: 50%;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $breakpoint_lg) {
+    max-width: 100%;
+    padding-top: 1.5em;
+  }
+
+  .Button {
+    flex: 0 auto;
+    margin-top: 0;
+  }
+}
+
+.Footer-newsletterForm {
+  display: block;
+
+  @media (min-width: $breakpoint_sm) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  * {
+    width: 100%;
+    margin-bottom: 5px;
+
+    @media (min-width: $breakpoint_sm) {
+      width: auto;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.Footer-newsletterForm--hidden {
+  display: none;
+}
+
+.Footer-newsletterInput {
+  flex: 1;
+  margin-top: 0;
+
+  @media (min-width: $breakpoint_lg) {
+    margin-right: 1em;
+  }
+}
+
+.Footer-newsletterLabel {
+  @include visually-hidden;
+}
+
+.Footer-newsletterError {
+  display: inherit;
+  flex: 100%;
+  margin-top: 0.5em;
+  color: $brand_color_red;
+}
+
+.Footer-newsletterError--hidden {
+  display: none;
+}
+
+.Footer-newsletterSuccess {
+  display: inherit;
+  margin-top: 0;
+}
+
+.Footer-newsletterSuccess--hidden {
+  display: none;
+}
+
+.Footer-text {
+  font-size: 0.75em;
+  text-align: center;
+
+  @media (min-width: $breakpoint_lg) {
+    text-align: left;
+  }
+}
+
+.Footer-socialLink {
+  margin: 0 1em 0 0;
+  color: $brand_color_white;
+
+  &:hover,
+  &:focus {
+    color: $brand_color_white;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.Footer-socialLink-text {
+  @include visually-hidden;
+}

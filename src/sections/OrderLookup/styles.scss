@@ -1,0 +1,9 @@
+@import '../../scss/global.scss';
+
+.OrderLookup {
+  padding: $section_padding;
+
+  .PageWidth {
+    @include reading-length;
+  }
+}

@@ -1,0 +1,151 @@
+.BackgroundImage {
+  position: relative;
+}
+.BackgroundImage:before {
+  content: '';
+  display: block;
+  padding-top: 50%;
+}
+@media (max-width: 37.5em) {
+  .BackgroundImage:before {
+    padding-top: 80%;
+  }
+}
+
+.BackgroundImage--150:before {
+  padding-top: 150%;
+}
+
+.BackgroundImage--1x1:before {
+  padding-top: 100%;
+}
+
+.BackgroundImage--25x23:before {
+  padding-top: 92.857%;
+}
+
+.BackgroundImage--5x4:before {
+  padding-top: 80%;
+}
+
+.BackgroundImage--4x3:before {
+  padding-top: 75%;
+}
+
+.BackgroundImage--16x9:before {
+  padding-top: 56.25%;
+}
+
+.BackgroundImage--2x1:before {
+  padding-top: 50%;
+}
+
+.BackgroundImage--3x1:before {
+  padding-top: 33.333%;
+}
+
+@media (min-width: 60em) and (max-width: 75em) {
+  .BackgroundImage--150-md:before {
+    padding-top: 150%;
+  }
+}
+
+@media (min-width: 60em) and (max-width: 75em) {
+  .BackgroundImage--1x1-md:before {
+    padding-top: 100%;
+  }
+}
+
+@media (min-width: 60em) and (max-width: 75em) {
+  .BackgroundImage--25x23-md:before {
+    padding-top: 92.857%;
+  }
+}
+
+@media (min-width: 60em) and (max-width: 75em) {
+  .BackgroundImage--5x4-md:before {
+    padding-top: 80%;
+  }
+}
+
+@media (min-width: 60em) and (max-width: 75em) {
+  .BackgroundImage--4x3-md:before {
+    padding-top: 75%;
+  }
+}
+
+@media (min-width: 60em) and (max-width: 75em) {
+  .BackgroundImage--16x9-md:before {
+    padding-top: 56.25%;
+  }
+}
+
+@media (min-width: 60em) and (max-width: 75em) {
+  .BackgroundImage--2x1-md:before {
+    padding-top: 50%;
+  }
+}
+
+@media (min-width: 60em) and (max-width: 75em) {
+  .BackgroundImage--3x1-md:before {
+    padding-top: 33.333%;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .BackgroundImage--150-sm:before {
+    padding-top: 150%;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .BackgroundImage--1x1-sm:before {
+    padding-top: 100%;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .BackgroundImage--25x23-sm:before {
+    padding-top: 92.857%;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .BackgroundImage--5x4-sm:before {
+    padding-top: 80%;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .BackgroundImage--4x3-sm:before {
+    padding-top: 75%;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .BackgroundImage--16x9-sm:before {
+    padding-top: 56.25%;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .BackgroundImage--2x1-sm:before {
+    padding-top: 50%;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .BackgroundImage--3x1-sm:before {
+    padding-top: 33.333%;
+  }
+}
+
+.BackgroundImage--img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center center;
+}

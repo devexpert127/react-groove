@@ -1,0 +1,9 @@
+@import '../../scss/global.scss';
+
+.JobList {
+  padding: $section_padding;
+
+  .PageWidth {
+    @include text-align(center);
+  }
+}

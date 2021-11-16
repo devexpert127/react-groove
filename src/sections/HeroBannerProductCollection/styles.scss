@@ -1,0 +1,74 @@
+@import '../../scss/global.scss';
+
+.HeroBannerProductCollection {
+  @include hero-block;
+}
+
+.HeroBannerProductCollection-image--has-content {
+  min-height: 20em;
+
+  @media (max-width: $breakpoint_sm) {
+    &:before {
+      padding-top: 120%;
+    }
+  }
+}
+
+.HeroBannerProductCollection-content {
+  @include hero-content(50%, 0, 0);
+  color: $text_color_light;
+  transition: $transition_duration_hover;
+
+  @media (max-width: $breakpoint_sm) {
+    top: 0;
+    transform: translate(0, 0);
+  }
+
+  @media (min-width: $breakpoint_sm) {
+    max-width: 50%;
+    padding: 1.5em 1em;
+  }
+
+  @media (min-width: $breakpoint_md) {
+    padding: 3em 1.5em;
+  }
+
+  @media (min-width: $breakpoint_lg) {
+    padding: 6em 3em;
+  }
+}
+
+.HeroBannerProductCollection-content--hidden {
+  @include visually-hidden;
+}
+
+.HeroBannerProductCollection-link {
+  @include block-link;
+
+  .HeroBannerProductCollection--has-effects & {
+    &:hover,
+    &:active,
+    &:focus {
+      .HeroBannerProductCollection-content {
+        color: $highlight_color;
+      }
+
+      .Button--primary {
+        color: $text_hover_color_button_primary;
+        background-color: $background_hover_color_button_primary;
+        border-color: $border_color_hover_button_primary;
+      }
+      .Button--default {
+        color: $text_hover_color_button;
+        background-color: $background_hover_color_button;
+        border-color: $border_color_hover_button;
+      }
+    }
+  }
+}
+
+.HeroBannerProductCollection-suptitle {
+  display: block;
+  font-size: 1.25rem;
+  font-weight: $font_weight_base;
+}

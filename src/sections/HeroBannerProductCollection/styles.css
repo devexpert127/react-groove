@@ -1,0 +1,111 @@
+.HeroBannerProductCollection {
+  font-size: 0.875em;
+}
+.HeroBannerProductCollection:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+@media (min-width: 37.5em) {
+  .HeroBannerProductCollection {
+    font-size: 1em;
+  }
+}
+@media (min-width: 75em) {
+  .HeroBannerProductCollection {
+    font-size: 1.25em;
+  }
+}
+.HeroBannerProductCollection p {
+  font-size: 0.875em;
+}
+
+.HeroBannerProductCollection-image--has-content {
+  min-height: 20em;
+}
+@media (max-width: 37.5em) {
+  .HeroBannerProductCollection-image--has-content:before {
+    padding-top: 120%;
+  }
+}
+
+.HeroBannerProductCollection-content {
+  width: 100%;
+  padding: 1em;
+  margin-top: 0;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  color: #fff;
+  transition: 0.3s;
+}
+@media (max-width: 37.5em) {
+  .HeroBannerProductCollection-content {
+    top: 0;
+    transform: translate(0, 0);
+  }
+}
+@media (min-width: 37.5em) {
+  .HeroBannerProductCollection-content {
+    max-width: 50%;
+    padding: 1.5em 1em;
+  }
+}
+@media (min-width: 60em) {
+  .HeroBannerProductCollection-content {
+    padding: 3em 1.5em;
+  }
+}
+@media (min-width: 75em) {
+  .HeroBannerProductCollection-content {
+    padding: 6em 3em;
+  }
+}
+
+.HeroBannerProductCollection-content--hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+.HeroBannerProductCollection-link {
+  display: block;
+  background: none !important;
+}
+.HeroBannerProductCollection--has-effects
+  .HeroBannerProductCollection-link:hover
+  .HeroBannerProductCollection-content,
+.HeroBannerProductCollection--has-effects
+  .HeroBannerProductCollection-link:active
+  .HeroBannerProductCollection-content,
+.HeroBannerProductCollection--has-effects
+  .HeroBannerProductCollection-link:focus
+  .HeroBannerProductCollection-content {
+  color: #f38732;
+}
+.HeroBannerProductCollection--has-effects .HeroBannerProductCollection-link:hover .Button--primary,
+.HeroBannerProductCollection--has-effects .HeroBannerProductCollection-link:active .Button--primary,
+.HeroBannerProductCollection--has-effects .HeroBannerProductCollection-link:focus .Button--primary {
+  color: #fff;
+  background-color: rgba(243, 135, 50, 0.6);
+  border-color: transparent;
+}
+.HeroBannerProductCollection--has-effects .HeroBannerProductCollection-link:hover .Button--default,
+.HeroBannerProductCollection--has-effects .HeroBannerProductCollection-link:active .Button--default,
+.HeroBannerProductCollection--has-effects .HeroBannerProductCollection-link:focus .Button--default {
+  color: #fff;
+  background-color: rgba(25, 24, 24, 0.6);
+  border-color: transparent;
+}
+
+.HeroBannerProductCollection-suptitle {
+  display: block;
+  font-size: 1.25rem;
+  font-weight: 400;
+}

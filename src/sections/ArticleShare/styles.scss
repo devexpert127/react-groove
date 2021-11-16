@@ -1,0 +1,121 @@
+@import '../../scss/global.scss';
+
+.Article-share {
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+  padding: 1em 1em 0 1em;
+  margin: 1em auto !important; // to override #root styles
+  max-width: 30em;
+  border-radius: 0px;
+  border: 1px solid #fff;
+  -webkit-box-shadow: 6px 6px 5px 0px rgba(0, 0, 0, 0.29);
+  -moz-box-shadow: 6px 6px 5px 0px rgba(0, 0, 0, 0.29);
+  box-shadow: 6px 6px 5px 0px rgba(0, 0, 0, 0.29);
+  text-align: center;
+  width: 90%;
+
+  .blog-post-share {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5em;
+  }
+
+  @media (min-width: $breakpoint_md) {
+    position: fixed;
+    top: 10em;
+    right: 2em;
+    z-index: 99999;
+    padding: 1em;
+    margin: 0 !important; // to override #root styles
+    width: auto;
+
+    .blog-post-share {
+      display: block;
+      margin-top: 1.5em;
+    }
+  }
+}
+
+.Article-share-button:last-child {
+  margin-bottom: 10px;
+}
+
+.Article-share-button {
+  display: block;
+  background-color: #3b5998;
+  margin: 10px;
+  margin-bottom: 24px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: relative;
+
+  svg {
+    fill: #fff;
+  }
+
+  &:focus,
+  &:hover {
+    box-shadow: none;
+  }
+
+  &.Article-share-button--facebook {
+    background-color: $social_media_color_facebook;
+  }
+
+  &.Article-share-button--twitter {
+    background-color: $social_media_color_twitter;
+  }
+
+  &.Article-share-button--reddit {
+    background-color: transparent;
+
+    .Icon {
+      width: 100%;
+    }
+
+    img,
+    svg,
+    path {
+      fill: $social_media_color_reddit;
+      padding: 0;
+    }
+  }
+
+  &.Article-share-button--linkedin {
+    background-color: $social_media_color_linkedin;
+  }
+
+  &.Article-share-button--google {
+    background-color: $social_media_color_google;
+  }
+
+  &.Article-share-button--pinterest {
+    background-color: transparent;
+
+    .Icon {
+      width: 100%;
+    }
+
+    img,
+    svg,
+    path {
+      fill: $social_media_color_pinterest;
+      padding: 0;
+    }
+  }
+
+  img,
+  svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 6px;
+  }
+
+  img {
+    display: block;
+  }
+}

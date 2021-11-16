@@ -1,0 +1,49 @@
+@import '../../scss/global.scss';
+
+.OkendoReviewStars {
+  display: inline-block;
+
+  &:hover {
+    border-bottom: solid 1px $highlight_color;
+  }
+
+  &:focus {
+    background: none;
+  }
+
+  * {
+    margin-top: 0;
+  }
+}
+
+// Specificity war with app css
+.okeReviews.okeReviews {
+  font-size: 13px;
+  line-height:  normal;
+
+  .okeReviews-reviewsSummary-ratingCount {
+    margin-bottom: 0;
+  }
+
+  .okeReviews-starRating {
+    width: 4.5em;
+    height: 1em;
+
+    .okeReviews-starRating-indicator {
+      width: 4.5em;
+      height: 1em;
+
+      .okeReviews-starRating-indicator-layer {
+        background-size: 4.5em 1em;
+      }
+    }
+  }
+
+  .okeReviews-reviewsSummary-ratingCount {
+    color: $brand_color_accent;
+  }
+
+  .okeReviews-reviewsSummary.is-okeReviews-empty {
+    display: none;
+  }
+}

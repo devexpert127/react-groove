@@ -1,0 +1,55 @@
+.Selector {
+  flex: 1 1 calc(50% - 1.5rem);
+  margin-top: 0.75em;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+@media (min-width: 37.5em) {
+  .Selector {
+    flex: 1 0 calc(25% - 2.25rem);
+  }
+}
+
+.Selector-inputLabel {
+  cursor: pointer;
+  display: block;
+  font-size: 0.875em;
+  margin-bottom: 0.25em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.ProductBox-form--floating .Selector-inputLabel {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+.Selector-selectWrapper {
+  position: relative;
+  margin-top: 0;
+}
+
+.Selector-input {
+  width: 100%;
+  margin-top: 0.25em;
+  padding: 0.75em calc(0.75em + 1.5rem) 0.75em 0.75em;
+  border: 2px solid #191818;
+}
+
+select.Selector-input {
+  display: block;
+  margin-left: 0;
+}
+.ProductBox-form--floating select.Selector-input {
+  margin-top: 0;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: #191818;
+}

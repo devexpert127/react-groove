@@ -1,0 +1,53 @@
+@import '../../scss/global.scss';
+
+.Article-content {
+  padding-top: 1.5rem;
+
+  h1 a,
+  h2 a,
+  h3 a,
+  h4 a,
+  h5 a {
+    color: $brand_color_accent;
+    text-decoration: underline;
+
+    &:hover,
+    &:active {
+      color: $link_color_hover;
+    }
+
+    &:focus {
+      outline: none; // replaced by styles below
+      color: $selection_color;
+      background: $outline_color;
+      box-shadow: 0 0 0 0.2em $outline_color;
+      text-shadow: none;
+    }
+  }
+}
+
+.Article-body {
+  @include reading-length;
+  margin-left: auto;
+  margin-right: auto;
+
+  h1,
+  h2,
+  h3 {
+    font-weight: $font_weight_base;
+  }
+
+  hr {
+    border-bottom: $highlight_color solid 3px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  img {
+    display: block;
+    margin: 1.5em auto;
+    width: 100%;
+    height: auto;
+  }
+}

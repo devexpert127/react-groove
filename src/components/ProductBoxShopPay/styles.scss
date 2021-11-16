@@ -1,0 +1,39 @@
+@import '../../scss/global.scss';
+.ShopPay {
+    font-size: 14px;
+    svg.shop-pay-logo {
+        max-width: 5em;
+        position: relative;
+        top: 0.3em;
+        padding-right: 6px;
+    }
+    button {
+        padding: 0 0 0 0;
+        text-transform: none;
+        text-decoration: underline;
+        letter-spacing: normal;
+        font-size: 14px;
+        margin:0;
+    }
+    .Modal {
+        h1 {
+           font-size: 32px;
+            font-weight: 600;
+            line-height: 120%;
+        }
+        p {
+            font-size: 18px;
+            .price {
+                color: #5a31f4;
+            }
+            sub {
+                text-align: center;
+                display: block;
+            }
+        }
+        svg {
+            display: block;
+            margin: auto;
+        }
+    }
+}

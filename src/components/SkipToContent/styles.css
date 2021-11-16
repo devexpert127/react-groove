@@ -1,0 +1,36 @@
+.SkipToContent {
+  position: absolute;
+  z-index: 5;
+  color: #fff;
+  background-color: #f38732;
+  border-color: transparent;
+}
+.SkipToContent:hover,
+.SkipToContent:active,
+.SkipToContent:focus {
+  color: #fff;
+  background-color: rgba(243, 135, 50, 0.6);
+  border-color: transparent;
+}
+.SkipToContent:focus,
+.SkipToContent:focus-visible {
+  box-shadow: 0 0 0 0.2em #191818;
+}
+.SkipToContent:focus:not(:focus-visible) {
+  box-shadow: none;
+}
+.SkipToContent:disabled {
+  color: #fff;
+  background-color: rgba(243, 135, 50, 0.6);
+  border-color: transparent;
+}
+.SkipToContent:not(:focus) {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}

@@ -1,0 +1,117 @@
+.Banner-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0;
+  color: inherit;
+  z-index: 2;
+  padding: 1.5em 2em;
+}
+@media (max-width: 37.5em) {
+  .Banner-content {
+    top: 0;
+    transform: translate(0, 0);
+  }
+}
+@media (min-width: 37.5em) {
+  .Banner-content--hero,
+  .Banner-content--video {
+    padding: 1.5em 1em;
+  }
+  .Banner-content--maxWidth {
+    max-width: 50%;
+  }
+}
+@media (min-width: 60em) {
+  .Banner-content {
+    padding: 3em;
+  }
+  .Banner-content--hero,
+  .Banner-content--video {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
+}
+@media (min-width: 75em) {
+  .Banner-content {
+    padding: 6em;
+  }
+  .Banner-content--hero,
+  .Banner-content--video {
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+}
+.Banner-content--top-left,
+.Banner-content--center-left,
+.Banner-content--bottom-left {
+  text-align: left;
+  align-items: left;
+}
+.Banner-content--top-center,
+.Banner-content--center-center,
+.Banner-content--bottom-center {
+  text-align: center;
+  align-items: center;
+}
+.Banner-content--top-center.Banner-content--maxWidth,
+.Banner-content--center-center.Banner-content--maxWidth,
+.Banner-content--bottom-center.Banner-content--maxWidth {
+  transform: translateX(50%);
+}
+.Banner-content--top-right,
+.Banner-content--center-right,
+.Banner-content--bottom-right {
+  text-align: right;
+  align-items: flex-end;
+}
+.Banner-content--top-right.Banner-content--maxWidth,
+.Banner-content--center-right.Banner-content--maxWidth,
+.Banner-content--bottom-right.Banner-content--maxWidth {
+  transform: translateX(100%);
+}
+.Banner-content--top-left,
+.Banner-content--top-center,
+.Banner-content--top-right {
+  justify-content: center;
+}
+.Banner-content--center-left,
+.Banner-content--center-center,
+.Banner-content--center-right {
+  justify-content: center;
+}
+.Banner-content--bottom-left,
+.Banner-content--bottom-center,
+.Banner-content--bottom-right {
+  justify-content: flex-end;
+}
+.Banner-content--left {
+  text-align: left;
+}
+.Banner-content--center {
+  text-align: center;
+}
+.Banner-content--right {
+  text-align: right;
+}
+.Banner-content--hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+.Banner-content-suptitle {
+  display: block;
+  font-size: 1.25rem;
+  font-weight: 400;
+}

@@ -1,0 +1,106 @@
+.ImageSlider {
+  padding: 0;
+  overflow: hidden;
+  /** @group slide, img **/
+  /** @group arrows **/
+  /** @group dots **/
+  /** @group footer, small fonts, columns, external links **/
+}
+.ImageSlider-slide {
+  display: block !important;
+  overflow: hidden;
+  background-color: #b7b7b7;
+  width: 100%;
+}
+.ImageSlider-slide > img {
+  display: block;
+  height: auto;
+  margin-top: 0;
+  width: 100%;
+}
+.ImageSlider .Slider__control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-top: 0;
+  z-index: 1;
+  cursor: pointer;
+  border-style: none;
+  padding: 0;
+  color: #fff;
+  border-radius: 100%;
+  opacity: 0.5;
+}
+.ImageSlider .Slider__control:hover,
+.ImageSlider .Slider__control:focus {
+  opacity: 1;
+  color: #f38732;
+}
+.ImageSlider .Slider__control__prev {
+  left: 0.375rem;
+}
+.ImageSlider .Slider__control__next {
+  right: 0.375rem;
+}
+.ImageSlider .Slider__control__icon {
+  max-width: 1.5em;
+}
+@media (min-width: 60em) {
+  .ImageSlider .Slider__control__icon {
+    max-width: 2em;
+  }
+}
+.ImageSlider-dots {
+  position: absolute;
+  bottom: 0.75rem;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+.ImageSlider-dots-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.ImageSlider-dot {
+  margin: 0 0.25rem;
+}
+.ImageSlider-dot.active button::after {
+  opacity: 1;
+  background-color: #fff;
+}
+.ImageSlider-dot-button {
+  border-style: none;
+  padding: 6px;
+  border-radius: 100%;
+}
+.ImageSlider-dot-button::after {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  opacity: 0.5;
+  background-color: rgba(25, 24, 24, 0.6);
+  transition: background-color 0.3s, color 0.3s, opacity 0.3s;
+}
+.ImageSlider-dot-button:hover::after,
+.ImageSlider-dot-button:focus::after,
+.ImageSlider-dot-button:active::after {
+  opacity: 1;
+  background-color: #f38732;
+}
+.ImageSlider-dot-text {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}

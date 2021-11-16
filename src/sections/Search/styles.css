@@ -1,0 +1,41 @@
+.Search {
+  padding: 3.75rem 0;
+}
+
+.Search .ProductCard {
+  overflow: hidden;
+}
+
+.Search .ProductCard-link:active,
+.Search .ProductCard-link:focus,
+.Search .ProductCard-link:hover {
+  box-shadow: none;
+  color: inherit;
+}
+
+.Search-results {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 3rem;
+}
+@media (min-width: 37.5em) {
+  .Search-results {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.Search-loadMore {
+  display: flex;
+  justify-content: center;
+}
+
+.Search-form-label {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}

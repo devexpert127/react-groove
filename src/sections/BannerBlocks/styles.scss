@@ -1,0 +1,76 @@
+@import '../../scss/global.scss';
+
+.BannerBlocks {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.BannerBlock {
+  flex: 1 1 100%;
+  margin-top: 0;
+
+  @media (min-width: $breakpoint_sm) {
+    flex: 1 1 50%;
+  }
+
+  @media (min-width: $breakpoint_md) {
+    flex: 50%;
+  }
+
+  @media (min-width: $breakpoint_lg) {
+    flex: 25%;
+  }
+
+  .BannerBlocks[data-banners='3'] & {
+    @media (min-width: $breakpoint_sm) and (max-width: $breakpoint_md) {
+      flex: 1 1 100%;
+    }
+  }
+}
+
+.BannerBlock-content {
+  @include hero-content;
+  padding: 1.5em 2em;
+}
+
+.BannerBlock-content--top-center,
+.BannerBlock-content--center-center,
+.BannerBlock-content--bottom-center {
+  text-align: center;
+}
+
+.BannerBlock-content--top-right,
+.BannerBlock-content--center-right,
+.BannerBlock-content--bottom-right {
+  text-align: right;
+}
+
+.BannerBlock-content--top-left,
+.BannerBlock-content--top-center,
+.BannerBlock-content--top-right {
+  top: 0;
+  transform: translate(-50%, 0);
+}
+
+.BannerBlock-content--bottom-left,
+.BannerBlock-content--bottom-center,
+.BannerBlock-content--bottom-right {
+  top: auto;
+  bottom: 0;
+  transform: translate(-50%, 0);
+}
+
+.BannerBlock-title {
+  @include title;
+  display: inline-block;
+  padding-left: 0.5em;
+  border-left: solid 2px $highlight_color;
+
+  &::before {
+    border-left: 0;
+  }
+}
+
+.BannerBlock-link {
+  @include block-link;
+}

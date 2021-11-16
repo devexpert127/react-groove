@@ -1,0 +1,11 @@
+@import '../../scss/global.scss';
+
+// .VideoBannerHTML5 {}
+
+.VideoBannerHTML5-video {
+  margin-top: 0;
+  & video {
+    display: block;
+    width: 100%;
+  }
+}

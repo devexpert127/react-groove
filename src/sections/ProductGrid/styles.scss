@@ -1,0 +1,281 @@
+@import '../../scss/global.scss';
+
+.ProductGrid-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  list-style-type: none;
+
+  @media (min-width: $breakpoint_sm) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.ProductGrid {
+  padding-top: $section_padding_single_direction;
+
+  // overwrite default ProductCard styles
+  .ProductCard {
+    overflow: hidden;
+  }
+
+  .ProductCard-link:hover,
+  .ProductCard-link:focus,
+  .ProductCard-link:active {
+    box-shadow: none;
+  }
+
+  .ProductCard-meta {
+    margin-bottom: 3em;
+
+    @media (min-width: $breakpoint_sm) {
+      margin-bottom: 1em;
+    }
+  }
+}
+
+.ProductGrid-products {
+  position: relative;
+  padding-bottom: $section_padding_single_direction;
+  text-align: center;
+}
+
+.ProductGrid-overlay {
+  opacity: 0;
+  pointer-events: none;
+  background-color: #000;
+  z-index: 4;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s;
+}
+
+.ProductGrid-overlay.active {
+  // only necessary on desktop
+  @media (min-width: $breakpoint_md) {
+    opacity: 0.4;
+    pointer-events: inherit;
+    cursor: pointer;
+  }
+}
+
+.ProductGrid-empty {
+  @include text-align(center);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.CollectionFilters-container {
+  font-size: 0.8em;
+}
+
+.CollectionFilters {
+  right: 100%;
+  top: 0;
+  overflow: auto;
+  position: fixed;
+  transition: transform 0.45s cubic-bezier(0.29, 0.63, 0.44, 1), height 0.5s ease;
+  width: 100%;
+  z-index: 4;
+  background-color: #fff;
+  padding: 40px;
+
+  @media (min-width: $breakpoint_md) {
+    right: 0;
+    top: 0;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 2px; // allows enough room for focus ring on apply button
+  }
+}
+
+.DrawerContainer.is-open .CollectionFilters {
+  transform: translateX(100%);
+
+  @media (min-width: $breakpoint_md) {
+    transform: translateX(0);
+  }
+}
+
+.CollectionFilters-mobileCloseButton {
+  display: none;
+
+  @media (max-width: $breakpoint_md) {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+}
+
+.CollectionFilters-mobileCloseButton-icon-text {
+  @include visually-hidden;
+}
+
+.CollectionFilters-filtersSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 4.5rem;
+  min-height: 2.175rem;
+
+  @media (min-width: $breakpoint_sm) {
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.CollectionFilters-filtersSection--sort-only {
+  @media (min-width: $breakpoint_sm) {
+    justify-content: flex-end;
+  }
+
+  .CollectionFilters-sortby {
+    position: relative;
+  }
+}
+
+.CollectionFilters-filtersSection .DrawerContainer::before {
+  content: none; // disables BG overlay when drawer is open
+}
+
+.CollectionFilters-form {
+  @media (min-width: $breakpoint_md) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0;
+    padding-top: 1.5rem;
+  }
+}
+
+.CollectionFilters-filterGroup {
+  position: relative;
+
+  @media (min-width: $breakpoint_md) {
+    margin-top: 0;
+    flex: 1 1 auto;
+    margin-right: 40px;
+  }
+
+  hr {
+    margin-top: 0;
+  }
+}
+
+.CollectionFilters-fieldset {
+  margin-top: 0;
+
+  label:hover,
+  input:focus + label {
+    color: $brand_color_accent;
+  }
+
+  input {
+    @include visually-hidden;
+  }
+
+  label {
+    display: block;
+    margin-top: .5em;
+    margin-left: 0;
+    text-transform: capitalize;
+    cursor: pointer;
+
+    &.selected {
+      font-weight: bold;
+    }
+  }
+}
+
+.CollectionFilters-apply {
+  @media (min-width: $breakpoint_md) {
+    width: 100%;
+  }
+}
+
+.CollectionFilters-buttonClear {
+  display: none;
+  margin: 0;
+  padding: 0 6px;
+  line-height: 10px;
+  font-size: 10px;
+  letter-spacing: 0;
+  border: none;
+  height: 20px;
+  background-color: #eee;
+  border-radius: 10px;
+  text-transform: lowercase;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.CollectionFilters-buttonClear:hover {
+  background-color: #ddd;
+}
+
+.CollectionFilters-filterGroup--selected .CollectionFilters-buttonClear {
+  display: block;
+}
+
+.CollectionFilters-filterButton {
+  width: 100%;
+  margin-bottom: 10px;
+  color: $brand_color_accent;
+  font-weight: $font_weight_bold;
+
+  @media (min-width: $breakpoint_sm) {
+    margin-bottom: 0;
+  }
+}
+
+.CollectionFilters-sortby {
+  position: relative;
+  margin-top: 0;
+  & > select,
+  &__selected {
+    @include button-base;
+    font-weight: $font_weight_extrabold;
+  }
+  &__selected {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: $brand_color_accent;
+    pointer-events: none;
+
+    margin-top: 0;
+  }
+  & > label {
+    @include visually-hidden;
+  }
+  & > select {
+    width: 100%;
+    margin-left: 0;
+    text-indent: -999em;
+    border-color: $brand_color_accent;
+    &:focus,
+    &:focus-visible {
+      outline: none; // replaced by styles below
+      background: inherit;
+      box-shadow: 0 0 0 0.2em $outline_color;
+    }
+    &:focus:not(:focus-visible) {
+      box-shadow: none;
+    }
+  }
+}
+
+// we don't need to see this part of the DrawerContainer component for this section
+.ProductGrid .DrawerOverlay {
+  display: none;
+  z-index: 0;
+}

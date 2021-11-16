@@ -1,0 +1,25 @@
+.ProductLabel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.75rem;
+  height: 3.75rem;
+  text-align: center;
+  line-height: 1.1;
+  font-weight: 800;
+  color: #fff;
+  background-color: #f38732;
+  border-radius: 50%;
+}
+
+.ProductLabel--new,
+.ProductLabel--widethin {
+  font-size: 90%;
+}
+
+.ProductLabel--best-seller,
+.ProductLabel--limited-edition,
+.ProductLabel--back-in-stock,
+.ProductLabel--sold-out {
+  font-size: 75%;
+}

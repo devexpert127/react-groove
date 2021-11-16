@@ -1,0 +1,29 @@
+@import '../../scss/global.scss';
+
+.Search {
+  padding: $section_padding;
+}
+.Search .ProductCard {
+  overflow: hidden;
+}
+.Search .ProductCard-link:active,
+.Search .ProductCard-link:focus,
+.Search .ProductCard-link:hover {
+  box-shadow: none;
+  color: inherit;
+}
+.Search-results {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 3rem;
+  @media (min-width: $breakpoint_sm) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+.Search-loadMore {
+  display: flex;
+  justify-content: center;
+}
+.Search-form-label {
+  @include visually-hidden;
+}

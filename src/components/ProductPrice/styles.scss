@@ -1,0 +1,45 @@
+@import '../../scss/global.scss';
+
+.ProductPrice-prices {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  grid-gap: $gutter_horizontal / 2;
+  margin-top: 0;
+  align-self: stretch;
+  flex: 1;
+  @include dl-list-unstyled;
+
+  dt {
+    @include visually-hidden;
+  }
+}
+
+.ProductPrice.ProductPrice--onSale .ProductPrice-sale {
+  color: $brand_color_accent;
+}
+
+.ProductPrice-regular--discount {
+  font-size: $font_size_xs;
+}
+
+.ProductPrice-sezzle {
+  margin-top: 0;
+}
+
+.ProductPrice {
+  .sezzle-checkout-button-wrapper {
+    padding: 0;
+  }
+
+  .sezzle-checkout-button-wrapper .sezzle-button-text {
+    line-height: inherit;
+    margin: 0;
+  }
+}
+
+.ProductPrice__pre-text-wrap {
+  display: inline-block;
+  margin-top: 0;
+  margin-left: 0.25em;
+}

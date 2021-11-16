@@ -1,0 +1,113 @@
+.Accordion {
+  margin: 0;
+}
+
+.Accordion--grid {
+  padding: 0;
+}
+@media (min-width: 75em) {
+  .Accordion--grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-area: accordion;
+    margin-top: 0;
+  }
+}
+
+.AccordionItem {
+  overflow: hidden;
+  margin: 0;
+  padding: 1em 0;
+  list-style-type: none;
+}
+.AccordionItem .Icon--plus-minus {
+  position: relative;
+}
+.AccordionItem .Icon--plus,
+.AccordionItem .Icon--minus {
+  margin-top: 0;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  transition: 0.3s all;
+}
+.AccordionItem .Icon--minus {
+  opacity: 0;
+}
+.AccordionItem.AccordionItem--active .Icon--minus {
+  opacity: 1;
+}
+.AccordionItem.AccordionItem--active .Icon--plus {
+  opacity: 0;
+}
+
+.Accordion--default .AccordionItem {
+  border-bottom: 1px solid currentColor;
+}
+
+.AccordionItem--grid {
+  border-bottom: 1px solid #fff;
+}
+@media (min-width: 75em) {
+  .AccordionItem--grid {
+    margin-top: 1em;
+    padding: 0 0 0 2em;
+    border-bottom: 0;
+  }
+  .AccordionItem--grid:first-child {
+    padding-left: 0;
+  }
+}
+
+.AccordionItem-heading {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.AccordionItem-heading button {
+  all: inherit;
+  flex: 1;
+  width: 100%;
+}
+
+.Accordion--default .AccordionItem-heading {
+  font-size: 1.25em;
+  line-height: 1.4;
+  margin: 0 auto;
+  font-weight: 400;
+}
+
+.AccordionItem-headingText {
+  margin-right: 0.5em;
+  pointer-events: none;
+}
+
+.AccordionItem-icon {
+  margin: 0;
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  display: flex;
+}
+
+.AccordionItem-content {
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+.AccordionItem--active .AccordionItem-content {
+  opacity: 1;
+}
+@media (min-width: 75em) {
+  .AccordionItem--grid .AccordionItem-content {
+    opacity: 1;
+  }
+}

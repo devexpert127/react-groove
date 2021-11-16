@@ -1,0 +1,61 @@
+.TextColumns {
+  padding: 3.75rem 0;
+}
+
+.TextColumns-title {
+  text-align: center;
+  font-size: 2em;
+}
+
+.TextColumns-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.TextColumn {
+  text-align: center;
+  flex: 1 1 50%;
+  margin-top: 0;
+  padding: 1.5em;
+}
+@media (min-width: 60em) {
+  .TextColumn {
+    flex: 1 1 25%;
+  }
+}
+
+.TextColumn-title {
+  font-size: 1.5em;
+}
+
+.TextColumn-image {
+  width: 100%;
+  height: auto;
+}
+
+.TextColumn-image--video {
+  max-width: 100%;
+  height: auto;
+}
+
+.TextColumn-image--icon {
+  max-width: none;
+  height: 4.6875em;
+  transition: 0.3s ease-in-out;
+}
+@media (min-width: 75em) {
+  .TextColumn-image--icon {
+    height: 6.25em;
+  }
+}
+.TextColumn-image--icon:hover {
+  transform: scale(1.05);
+}
+
+.TextColumn-description {
+  margin-top: 1em;
+  font-size: 0.875em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}

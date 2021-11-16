@@ -1,0 +1,77 @@
+@import '../../scss/global.scss';
+
+.Pagination {
+  margin-bottom: 1.5rem;
+}
+
+.Pagination-list {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding-left: 0;
+  font-size: $font_size_xs;
+  list-style-type: none;
+
+  @media screen and (min-width: $breakpoint_md) {
+    flex-wrap: nowrap;
+  }
+}
+
+.Pagination-list-item {
+  margin: 0 1em;
+  font-weight: $font_weight_bold;
+  cursor: pointer;
+}
+
+.Pagination-list-item--hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.Pagination-list-item--prev,
+.Pagination-list-item--next {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex: 100%;
+
+  @media screen and (min-width: $breakpoint_md) {
+    // position: absolute;
+    // top: 50%;
+    flex: initial;
+    // transform: translateY(-50%);
+  }
+}
+
+.Pagination-list-item--prev {
+  margin-bottom: 1.5rem;
+
+  @media screen and (min-width: $breakpoint_md) {
+    margin-bottom: 0;
+  }
+
+
+}
+
+.Pagination-list-item--next {
+  margin-top: 1.5rem;
+
+  @media screen and (min-width: $breakpoint_md) {
+    margin-top: 0;
+  }
+}
+
+.Pagination-list-item--current {
+  color: $brand_color_accent;
+  text-decoration: none;
+  cursor: default;
+}
+
+.Pagination-list-item--disabled {
+  color: $brand_color_mid_gray;
+  cursor: default;
+}
